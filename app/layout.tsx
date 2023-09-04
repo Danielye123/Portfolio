@@ -1,6 +1,8 @@
+import Theme from "@/components/Theme"
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { NavBar } from "@/components"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +17,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+<html lang="en" className={`${inter.className}`}>
+      <Theme>
+        <body>
+          <NavBar />
+          <div className="flex-col mx-auto pb-5 md:pb-5">{children}</div>
+        </body>
+      </Theme>
     </html>
   )
 }

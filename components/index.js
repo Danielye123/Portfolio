@@ -1,4 +1,4 @@
-import Nav from "./Nav.tsx";
+import NavBar from "./NavBar.tsx";
 import Hero from "./Hero.tsx";
 import Footer from "./Footer.tsx";
 import Skills from "./Skills.tsx";
@@ -7,7 +7,7 @@ import FeaturedProjects from "./FeaturedProjects.tsx";
 import Recommendations from "./Recommendations.tsx";
 
 export {
-    Nav,
+    NavBar,
     Hero,
     Footer,
     Skills,
