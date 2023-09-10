@@ -11,7 +11,7 @@ const NavBar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-4 w-full">
+    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[85px] w-full">
       <div className="text-[#6F74A7]">
         image
       </div>
