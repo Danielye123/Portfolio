@@ -8,9 +8,6 @@ const Skills = () => {
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em] underline underline-offset-1 decoration-[15px] decoration-[#FFBE62]">
       My skills
       </h1>
-      {/* <div className="bg-[#F3F8FF] width-[100px] height-[100px] rounded-full">
-        {skills.imgURL.map(())}
-      </div> */}
       <div className="flex flex-wrap justify-center pt-[48px] gap-[41px] px-[85px]">
         {skills.map((skill, index) => (
           <div 
