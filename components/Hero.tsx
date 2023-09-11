@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link";
 
-import { hero, man } from '../assets/index';
+import { hero, laptophero, man } from '../assets/index';
 
 const Hero = () => {
   return (
@@ -48,8 +48,8 @@ const Hero = () => {
 
       <div className="justify-center items-center flex flex-1">
       <Image
-            src={man}
-            alt="hero"
+            src={laptophero}
+            alt="hero image"
             width={1000}
             height={1000}
             // className="object-contain relative"
