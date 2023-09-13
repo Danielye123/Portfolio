@@ -13,6 +13,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Services />
+      <FeaturedProjects />
     </main>
   )
 }
