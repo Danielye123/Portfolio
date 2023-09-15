@@ -11,7 +11,7 @@ const FeaturedProjects = () => {
 
       {/* Project 1 */}
       <div>
-
+    
       </div>
 
       {/* Project 2 */}

@@ -18,6 +18,9 @@ import ICON1 from "./services/ICON1.png";
 import ICON2 from "./services/ICON2.png";
 import ICON3 from "./services/ICON3.png";
 import ICON4 from "./services/ICON4.png";
+import Filmpire from "./projects/Filmpire.png";
+import Hipnode from "./projects/Hipnode.png";
+import Morrent from "./projects/Morrent.png";
 
 export {
     hero,
@@ -40,4 +43,7 @@ export {
     ICON2,
     ICON3,
     ICON4,
+    Morrent,
+    Hipnode,
+    Filmpire,
 };
