@@ -1,4 +1,4 @@
-import { JavaScript, css, express, git, github, html, mongodb, motion, next, nodejs, react, tailwind, TypeScript, ICON1, ICON2, ICON3, ICON4  } from "@/assets"
+import { JavaScript, css, express, git, github, html, mongodb, motion, next, nodejs, react, tailwind, TypeScript, ICON1, ICON2, ICON3, ICON4, Filmpire, Hipnode, Morrent  } from "@/assets"
 
 export const navLinks = [
     {
@@ -78,5 +78,29 @@ export const services = [
         imgUrl: ICON4,
         title: "Web Optimization",
         description: "Web optimization focuses on improving website performance for a smoother user experience",
+    },
+]
+
+export const featuredProjects = [
+    {
+        imgUrl: Hipnode,
+        title: "Hipnode - Social Media Application",
+        tech1: "TailwindCSS",
+        tech2: "NextJs"
+
+    },
+    {
+        imgUrl: Morrent,
+        title: "Morrent - A Car Rental Application",
+        tech: "React",
+        tech2: "NextJs"
+
+    },
+    {
+        imgUrl: Filmpire,
+        title: "Filmpire - A Movie Review Application",
+        tech: "React",
+        tech2: "NextJs"
+
     },
 ]

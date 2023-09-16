@@ -1,4 +1,5 @@
 import React from 'react'
+import { featuredProjects } from "@/constants"
 
 const FeaturedProjects = () => {
   return (
@@ -9,9 +10,16 @@ const FeaturedProjects = () => {
         <span className="underline underline-offset-1 decoration-[15px] decoration-[#FFBE62]">Projects</span>
       </h1>
 
+      <div className="w-full px-[85px]">
+
       {/* Project 1 */}
-      <div>
-    
+      <div className="h-[444px] bg-[#416CEA] rounded">
+        <div>
+          Morrent - A Car Rental Application
+        </div>
+        <div>
+
+        </div>
       </div>
 
       {/* Project 2 */}
@@ -22,6 +30,7 @@ const FeaturedProjects = () => {
       {/* Project 3 */}
       <div>
 
+      </div>
       </div>
     </section>
   )

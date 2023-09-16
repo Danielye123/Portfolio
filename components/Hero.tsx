@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link";
 
-import { hero, laptophero, man } from '../assets/index';
+import { hero, laptophero, laptopherodark } from '../assets/index';
 
 const Hero = () => {
   return (

@@ -1,6 +1,7 @@
 import hero from "./hero.png";
 import man from "./man.png";
 import laptophero from "./laptophero.png";
+import laptopherodark from "./laptopherodark.png";
 import html from "./skills/html.png";
 import css from "./skills/css.png";
 import express from "./skills/express.png";
@@ -26,6 +27,7 @@ export {
     hero,
     man,
     laptophero,
+    laptopherodark,
     html,
     css,
     express,
