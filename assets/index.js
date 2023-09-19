@@ -22,6 +22,11 @@ import ICON4 from "./services/ICON4.png";
 import Filmpire from "./projects/Filmpire.png";
 import Hipnode from "./projects/Hipnode.png";
 import Morrent from "./projects/Morrent.png";
+import richard from "./richard.jpg";
+import Star from "./Star.png";
+import Stars from "./Stars.png";
+import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
+import TestimonialArrowRight from "./TestimonialArrowRight.png";
 
 export {
     hero,
@@ -48,4 +53,9 @@ export {
     Morrent,
     Hipnode,
     Filmpire,
+    richard,
+    Star,
+    Stars,
+    TestimonialArrowLeft,
+    TestimonialArrowRight,
 };

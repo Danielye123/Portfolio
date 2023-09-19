@@ -9,7 +9,7 @@ const Hero = () => {
 
       <div className="flex-1 flex flex-col items-left">
 
-      <div className="flex-none h-1/5"></div> {/* Spacer div */}
+        <div className="flex-none h-1/5"></div> {/* Spacer div */}
 
         <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
@@ -17,43 +17,48 @@ const Hero = () => {
 
         <div className="pt-[27px] pb-[10px]">
           <h1 className="leading-[83px] font-bold text-[64px] dark:text-[#FFFFFF]">
-            Professional 
+            Professional
             <br />
-            <span className="underline underline-offset-1 decoration-[28px] decoration-[#FFBE62]">Web Developer </span> <br />
+            <div className="inline-block relative">
+              <span className="relative z-10">Web Developer</span>
+              <div className="absolute left-0 bottom-[5px] h-[15px] w-full bg-[#ffbe62] z-0" />
+            </div>
+            <br />
             based in USA
           </h1>
         </div>
 
+
         <div className="font-poppins font-normal text-lg text-text-body dark:text-[#F3F8FF] pb-[36px]">
-        Transforming the web one line of code at a time: <br />
-        Crafting cutting-edge digital experiences with precision, <br /> 
-        passion, and a profound commitment to excellence 
+          Transforming the web one line of code at a time: <br />
+          Crafting cutting-edge digital experiences with precision, <br />
+          passion, and a profound commitment to excellence
         </div>
 
         <br />
-        
-        <div className="flex flex-row gap-[18px]">
-        <Link href="/contact">
-          <button>
-          Contact me
-          </button>
-        </Link>
 
-        <div>
-          Social Media
-        </div>
+        <div className="flex flex-row gap-[18px]">
+          <Link href="/contact">
+            <button>
+              Contact me
+            </button>
+          </Link>
+
+          <div>
+            Social Media
+          </div>
         </div>
 
       </div>
 
       <div className="justify-center items-center flex flex-1">
-      <Image
-            src={laptophero}
-            alt="hero image"
-            width={1000}
-            height={1000}
-            // className="object-contain relative"
-          />
+        <Image
+          src={laptophero}
+          alt="hero image"
+          width={1000}
+          height={1000}
+        // className="object-contain relative"
+        />
       </div>
     </section>
   )

@@ -5,7 +5,7 @@ import Skills from "./Skills.tsx";
 import Services from "./Services.tsx";
 import FeaturedProjects from "./FeaturedProjects.tsx";
 import Recommendations from "./Recommendations.tsx";
-import Contact from "./Contact.jsx";
+import Contact from "./Contact.tsx";
 
 export {
     NavBar,
