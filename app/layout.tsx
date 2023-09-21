@@ -21,7 +21,7 @@ export default function RootLayout({
       <Theme>
         <body>
           <NavBar />
-          <div className="flex-col mx-auto pb-5 md:pb-5">{children}</div>
+          <div className="flex-col mx-auto">{children}</div>
         </body>
       </Theme>
     </html>

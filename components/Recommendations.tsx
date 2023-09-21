@@ -4,7 +4,7 @@ import { Star, Stars, richard, TestimonialArrowLeft, TestimonialArrowRight } fro
 
 const Recommendations = () => {
   return (
-    <section className="w-full h-[589px] flex flex-col justify-start items-center px-[169px] py-[72px] bg-[#F3F8FF] dark:bg-primary-darkDefault">
+    <section className="w-full h-[589px] flex flex-col justify-start items-center px-[85px] py-[72px] bg-[#F3F8FF] dark:bg-primary-darkDefault">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         What<span className="mx-2"></span>
         <div className="relative inline-block">
@@ -14,16 +14,18 @@ const Recommendations = () => {
         <span className="ml-2">about me</span>
       </h1>
 
-      <div className="pt-[64px] flex items-start">
+      <div className="w-full px-[85px] pt-[64px] flex items-center justify-between">
         {/* Left Arrow */}
         <Image
           src={TestimonialArrowLeft}
           alt="arrow"
           width={56}
           height={56}
-          className="self-center mr-[26px]"
+          className="flex justify-between self-center mr-[26px]"
         />
 
+        {/* Center Content */}
+        <div className="flex items-start justify-center space-x-4">
         {/* Image Container */}
         <Image
           src={richard}
@@ -43,20 +45,21 @@ const Recommendations = () => {
             className="mt-4.25"
           />
 
-          <p className="font-poppins text-[24px] font-normal leading-[31px] text-left pt-[20px] text-[#6F74A7]">
+          <p className="font-poppins text-[24px] font-normal leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF]">
             Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies.
             Working alongside Daniel has been a pleasure as he is a team player and communicates efficiently.
             Under pressure, he has shown competence and dedication to the goal of delivering projects in a timely manner.
             I highly recommended Daniel to any organization looking for a passionate developer.
           </p>
 
-          <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] pt-[4px]">
+          <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] dark:text-[#F3F8FF] pt-[4px]">
             — Richard Gabriel
           </p>
 
-          <p className="font-poppins text-[18px] font-normal leading-[29px] text-left text-[#6F74A7] pt-[2px]">
+          <p className="font-poppins text-[18px] font-normal leading-[29px] text-left text-[#6F74A7] dark:text-[#F3F8FF] pt-[2px]">
             React Software Engineer
           </p>
+        </div>
         </div>
 
         {/* Right Arrow */}
@@ -65,8 +68,9 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="self-center ml-[26px]"
+          className="flex justify-between self-center ml-[60px]"
         />
+
       </div>
     </section>
 

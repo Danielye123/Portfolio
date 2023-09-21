@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
         <span className="underline underline-offset-1 decoration-[15px] decoration-[#FFBE62]">Projects</span>
       </h1>
 
-      <div className="w-full px-[85px]">
+      <div className="w-full px-[85px] text-[#FFFFFF]">
 
       {/* Project 1 */}
       <div className='bg-[#416CEA] rounded-lg flex w-full py-14 mt-8'>
