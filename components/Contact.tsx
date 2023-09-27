@@ -4,7 +4,7 @@ import {ellipse, rectangle} from "../assets/contact/index";
 
 const Contact = () => {
     return (
-        <div className="w-full px-[85px] h-[474px] bg-[#FFFFFF] relative flex items-center justify-center">
+        <div className="w-full px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
             
             <div className="bg-[#FFBE62] w-full px-[85px] h-[330px] flex items-center justify-between rounded-3xl z-0">
             <div className="absolute top-[98.88px] left-[897.96px] transform rotate-90 z-10">
