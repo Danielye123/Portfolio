@@ -27,6 +27,7 @@ import Star from "./Star.png";
 import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
 import TestimonialArrowRight from "./TestimonialArrowRight.png";
+import clipboard from "./Clipboard.png";
 
 export {
     hero,
@@ -58,4 +59,5 @@ export {
     Stars,
     TestimonialArrowLeft,
     TestimonialArrowRight,
+    clipboard,
 };

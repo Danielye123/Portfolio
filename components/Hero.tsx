@@ -1,67 +1,73 @@
-import Image from "next/image"
-import Link from "next/link";
+"use client";
 
-import { hero, laptophero, laptopherodark } from '../assets/index';
+import Image from "next/image";
+import Link from "next/link";
+import { useTheme } from "next-themes";
+
+import { hero, laptophero, laptopherodark, clipboard } from "../assets/index";
 
 const Hero = () => {
+  const { theme } = useTheme();
+
   return (
-    <section className="w-full pt-16px px-[85px] flex flex-row min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF]">
-
-      <div className="flex-1 flex flex-col items-left">
-
+    <section className="w-full pt-16px px-[85px] flex flex-row justify-between min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px]">
+      <div className="flex flex-col items-left max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
-
         <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
         </div>
-
         <div className="pt-[27px] pb-[10px]">
           <h1 className="leading-[83px] font-bold text-[64px] dark:text-[#FFFFFF]">
             Professional
             <br />
             <div className="inline-block relative">
               <span className="relative z-10">Web Developer</span>
-              <div className="absolute left-0 bottom-[5px] h-[15px] w-full bg-[#ffbe62] z-0" />
+              <div className="absolute left-0 bottom-[8px] h-[15px] w-full bg-[#ffbe62] z-0" />
             </div>
             <br />
             based in USA
           </h1>
         </div>
-
-
         <div className="font-poppins font-normal text-lg text-text-body dark:text-[#F3F8FF] pb-[36px]">
           Transforming the web one line of code at a time: <br />
           Crafting cutting-edge digital experiences with precision, <br />
           passion, and a profound commitment to excellence
         </div>
-
         <br />
-
         <div className="flex flex-row gap-[18px]">
           <Link href="/contact">
-            <button>
-              Contact me
+            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 flex justify-center">
+              <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
+                My Work
+              </p>
             </button>
           </Link>
 
-          <div>
-            Social Media
+          <div className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 flex sm:mt-0 mt-8 justify-center">
+            <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
+            daniel.jianhao.ye@gmail.com
+            </p>
+            <Image
+              src={clipboard}
+              alt="clipboard"
+              width={19}
+              height={19}
+              className="object-contain ml-2 cursor-pointer"
+            />
           </div>
         </div>
-
       </div>
 
-      <div className="justify-center items-center flex flex-1">
+      <div className="justify-center pb-[20px] items-center flex">
         <Image
-          src={laptophero}
+          src={theme === "dark" ? laptopherodark : laptophero}
           alt="hero image"
           width={1000}
           height={1000}
-        // className="object-contain relative"
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Hero;

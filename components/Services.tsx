@@ -1,6 +1,6 @@
-import { services } from "@/constants"
-import Image from "next/image"
-import React from 'react'
+import { services } from "@/constants";
+import Image from "next/image";
+import React from "react";
 
 const Services = () => {
   return (
@@ -8,7 +8,10 @@ const Services = () => {
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         What
         <span className="mr-[10px]"></span>
-        <span className="underline underline-offset-1 decoration-[15px] decoration-[#FFBE62]">service</span>
+        <div className="inline-block relative">
+          <span className="relative z-10">Service</span>
+          <div className="absolute left-0 bottom-[0px] h-[15px] w-full bg-[#ffbe62] z-0" />
+        </div>
         <span className="ml-[10px]"></span>
         do I provide
       </h1>
@@ -19,15 +22,25 @@ const Services = () => {
               key={index}
               className="w-[285px] h-[265px] border rounded shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333]"
             >
-              <Image src={service.imgUrl} alt={service.title} width={80} height={80} className="pb-[18px] pt-[15px]" />
-              <h3 className="font-semibold text-lg mb-1 dark:text-primary-light">{service.title}</h3>
-              <p className="text-sm text-[#6F74A7] dark:text-[#F3F8FF] pb-30px">{service.description}</p>
+              <Image
+                src={service.imgUrl}
+                alt={service.title}
+                width={80}
+                height={80}
+                className="pb-[18px] pt-[15px]"
+              />
+              <h3 className="font-semibold text-lg mb-1 dark:text-primary-light">
+                {service.title}
+              </h3>
+              <p className="text-sm text-[#6F74A7] dark:text-[#F3F8FF] pb-30px">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
