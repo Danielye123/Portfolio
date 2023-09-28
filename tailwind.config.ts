@@ -50,7 +50,7 @@ module.exports = {
         custom: '0px 5px 20px 0px #0000001A',
       },
       scale: {
-        '116': '1.16',
+        '200': '2',
       },
     },
   },
