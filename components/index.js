@@ -9,6 +9,7 @@ import Contact from "./Contact.tsx";
 
 import MorrentHero from "./casestudy/morrent/MorrentHero.tsx";
 import MorrentRole from "./casestudy/morrent/MorrentRole.tsx";
+import MorrentTech from "./casestudy/morrent/MorrentTech.tsx";
 
 export {
     NavBar,
@@ -21,5 +22,6 @@ export {
     Contact,
     MorrentHero,
     MorrentRole,
-    
+    MorrentTech,
+
 };

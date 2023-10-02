@@ -1,4 +1,4 @@
-import { JavaScript, css, express, git, github, html, mongodb, motion, next, nodejs, react, tailwind, TypeScript, ICON1, ICON2, ICON3, ICON4, Filmpire, Hipnode, Morrent  } from "@/assets"
+import { JavaScript, css, express, exDark, git, github, html, mongodb, motion, next, nodejs, react, tailwind, TypeScript, ICON1, ICON2, ICON3, ICON4, Filmpire, Hipnode, Morrent, ex  } from "@/assets"
 
 export const navLinks = [
     {
@@ -50,12 +50,41 @@ export const skills = [
         imgURL: nodejs,
     },
     {
-        imgURL: express,
+        imgURL: ex,
     },
     {
         imgURL: motion,
     },
+]
 
+export const morrentSkills = [
+    {
+        imgURL: JavaScript,
+    },
+    {
+        imgURL: react,
+    },
+    {
+        imgURL: next,
+    },
+    {
+        imgURL: html,
+    },
+    {
+        imgURL: css,
+    },
+    {
+        imgURL: tailwind,
+    },
+    {
+        imgURL: github,
+    },
+    {
+        imgURL: git,
+    },
+    {
+        imgURL: mongodb,
+    },
 ]
 
 export const services = [

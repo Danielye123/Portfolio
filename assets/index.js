@@ -5,6 +5,8 @@ import laptopherodark from "./laptopherodark.png";
 import html from "./skills/html.png";
 import css from "./skills/css.png";
 import express from "./skills/express.png";
+import exDark from "./skills/exDark.png";
+import ex from  "./skills/ex.svg";
 import git from "./skills/git.png";
 import github from "./skills/github.png";
 import JavaScript from "./skills/JavaScript.png";
@@ -41,7 +43,6 @@ import plan from "./morrent/plan.png";
 import problem from "./morrent/problem.png";
 import morrentGit from "./morrent/morrentGit.png";
 
-
 export {
     hero,
     man,
@@ -50,6 +51,8 @@ export {
     html,
     css,
     express,
+    exDark,
+    ex,
     git,
     github,
     JavaScript,
