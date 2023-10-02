@@ -16,11 +16,11 @@ const Services = () => {
         do I provide
       </h1>
       <div>
-        <div className="flex flex-wrap gap-[40px] pt-[40px] rounded-full text-black">
+        <div className="flex flex-wrap gap-[40px] pt-[40px] rounded-lg text-black">
           {services.map((service, index) => (
             <div
               key={index}
-              className="w-[285px] h-[265px] border rounded shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333]"
+              className="w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card"
             >
               <Image
                 src={service.imgUrl}
@@ -32,7 +32,7 @@ const Services = () => {
               <h3 className="font-semibold text-lg mb-1 dark:text-primary-light">
                 {service.title}
               </h3>
-              <p className="text-sm text-[#6F74A7] dark:text-[#F3F8FF] pb-30px">
+              <p className="text-sm text-[#6F74A7] dark:text-[#F3F8FF] pb-30px description-text">
                 {service.description}
               </p>
             </div>

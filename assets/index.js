@@ -21,14 +21,22 @@ import ICON1 from "./services/ICON1.png";
 import ICON2 from "./services/ICON2.png";
 import ICON3 from "./services/ICON3.png";
 import ICON4 from "./services/ICON4.png";
+import frontend from "./services/frontend.svg";
+import backend from "./services/backend.svg";
+import analytics from "./services/analytics.svg";
+import opt from "./services/opt.svg";
 import Filmpire from "./projects/Filmpire.png";
 import Hipnode from "./projects/Hipnode.png";
 import Morrent from "./projects/Morrent.png";
 import richard from "./richard.jpg";
+import gnar from "./gnar.jpg";
+import Malphite from "./Malphite.jpg";
 import Star from "./Star.png";
 import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
 import TestimonialArrowRight from "./TestimonialArrowRight.png";
+import TestimonialArrowLeft2 from "./TestimonialArrowLeft.svg";
+import TestimonialArrowRight2 from "./TestimonialArrowRight.svg";
 import clipboard from "./Clipboard.png";
 import arrow from "./morrent/arrow.png";
 import earth from "./morrent/earth.png";
@@ -71,10 +79,14 @@ export {
     Hipnode,
     Filmpire,
     richard,
+    gnar,
+    Malphite,
     Star,
     Stars,
     TestimonialArrowLeft,
     TestimonialArrowRight,
+    TestimonialArrowLeft2,
+    TestimonialArrowRight2,
     clipboard,
     arrow,
     earth,
@@ -88,4 +100,8 @@ export {
     plan,
     problem,
     morrentGit,
+    frontend,
+    backend,
+    opt,
+    analytics,
 };

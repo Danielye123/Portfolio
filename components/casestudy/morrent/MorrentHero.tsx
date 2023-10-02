@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="font-poppins text-[64px] font-bold leading-[83.2px] relative">
           <span className="relative inline-block z-10">
             Morrent
-            <div className="absolute left-0 bottom-[0px] h-[27px] w-full bg-[#ffbe62]  z-[-1]" />
+            <div className="absolute left-0 bottom-[0px] h-[27px] w-full bg-[#ffbe62] z-[-1]" />
           </span>
           <span className="ml-4">- A Car Rental Website</span>
         </div>

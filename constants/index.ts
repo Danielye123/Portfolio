@@ -1,135 +1,187 @@
-import { JavaScript, css, express, exDark, git, github, html, mongodb, motion, next, nodejs, react, tailwind, TypeScript, ICON1, ICON2, ICON3, ICON4, Filmpire, Hipnode, Morrent, ex  } from "@/assets"
+import {
+  JavaScript,
+  css,
+  express,
+  exDark,
+  git,
+  github,
+  html,
+  mongodb,
+  motion,
+  next,
+  nodejs,
+  react,
+  tailwind,
+  TypeScript,
+  ICON1,
+  ICON2,
+  ICON3,
+  ICON4,
+  Filmpire,
+  Hipnode,
+  Morrent,
+  ex,
+  frontend,
+  backend,
+  opt,
+  analytics,
+  gnar,
+  Malphite,
+  richard,
+} from "@/assets";
 
 export const navLinks = [
-    {
-        route: "/",
-        label: "Home",
-    },
-    {
-        route: "/",
-        label: "Case Studies",
-    },
-    {
-        route: "/",
-        label: "Contact",
-    },
-]
+  {
+    route: "/",
+    label: "Home",
+  },
+  {
+    route: "/",
+    label: "Case Studies",
+  },
+  {
+    route: "/",
+    label: "Contact",
+  },
+];
 
 export const skills = [
-    {
-        imgURL: JavaScript,
-    },
-    {
-        imgURL: react,
-    },
-    {
-        imgURL: next,
-    },
-    {
-        imgURL: TypeScript,
-    },
-    {
-        imgURL: html,
-    },
-    {
-        imgURL: css,
-    },
-    {
-        imgURL: tailwind,
-    },
-    {
-        imgURL: github,
-    },
-    {
-        imgURL: git,
-    },
-    {
-        imgURL: mongodb,
-    },
-    {
-        imgURL: nodejs,
-    },
-    {
-        imgURL: ex,
-    },
-    {
-        imgURL: motion,
-    },
-]
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: next,
+  },
+  {
+    imgURL: TypeScript,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: tailwind,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
+  },
+  {
+    imgURL: mongodb,
+  },
+  {
+    imgURL: nodejs,
+  },
+  {
+    imgURL: ex,
+  },
+  {
+    imgURL: motion,
+  },
+];
 
 export const morrentSkills = [
-    {
-        imgURL: JavaScript,
-    },
-    {
-        imgURL: react,
-    },
-    {
-        imgURL: next,
-    },
-    {
-        imgURL: html,
-    },
-    {
-        imgURL: css,
-    },
-    {
-        imgURL: tailwind,
-    },
-    {
-        imgURL: github,
-    },
-    {
-        imgURL: git,
-    },
-    {
-        imgURL: mongodb,
-    },
-]
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: next,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: tailwind,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
+  },
+  {
+    imgURL: mongodb,
+  },
+];
 
 export const services = [
-    {
-        imgUrl: ICON1,
-        title: "Analytics & SEO",
-        description: "Implement tracking & analytics tools to monitor website performance & improve SEO.",
-    },
-    {
-        imgUrl: ICON2,
-        title: "Front-End Dev",
-        description: "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
-    },
-    {
-        imgUrl: ICON3,
-        title: "Back-End Dev",
-        description: "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
-    },
-    {
-        imgUrl: ICON4,
-        title: "Web Optimization",
-        description: "Web optimization focuses on improving website performance for a smoother user experience",
-    },
-]
+  {
+    imgUrl: analytics,
+    title: "Analytics & SEO",
+    description:
+      "Implement tracking & analytics tools to monitor website performance & improve SEO.",
+  },
+  {
+    imgUrl: frontend,
+    title: "Front-End Dev",
+    description:
+      "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
+  },
+  {
+    imgUrl: backend,
+    title: "Back-End Dev",
+    description:
+      "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
+  },
+  {
+    imgUrl: opt,
+    title: "Web Optimization",
+    description:
+      "Web optimization focuses on improving website performance for a smoother user experience",
+  },
+];
 
 export const featuredProjects = [
-    {
-        imgUrl: Hipnode,
-        title: "Hipnode - Social Media Application",
-        tech1: "TailwindCSS",
-        tech2: "NextJs"
+  {
+    imgUrl: Hipnode,
+    title: "Hipnode - Social Media Application",
+    tech1: "TailwindCSS",
+    tech2: "NextJs",
+  },
+  {
+    imgUrl: Morrent,
+    title: "Morrent - A Car Rental Application",
+    tech: "React",
+    tech2: "NextJs",
+  },
+  {
+    imgUrl: Filmpire,
+    title: "Filmpire - A Movie Review Application",
+    tech: "React",
+    tech2: "NextJs",
+  },
+];
 
-    },
-    {
-        imgUrl: Morrent,
-        title: "Morrent - A Car Rental Application",
-        tech: "React",
-        tech2: "NextJs"
-
-    },
-    {
-        imgUrl: Filmpire,
-        title: "Filmpire - A Movie Review Application",
-        tech: "React",
-        tech2: "NextJs"
-
-    },
-]
+export const recommendationsData = [
+  {
+    image: richard,
+    text: "Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies. Working alongside Daniel has been a pleasure as he is a team player and communicates efficiently. Under pressure, he has shown competence and dedication to the goal of delivering projects in a timely manner. I highly recommended Daniel to any organization looking for a passionate developer.",
+    author: "Richard Gabriel",
+    position: "React Software Engineer",
+  },
+  {
+    image: gnar,
+    text: "Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies. ",
+    author: "Random guy",
+    position: "React Software Engineer",
+  },
+  {
+    image: Malphite,
+    text: "Daniel is a disciplined and problem-solving software developer. ",
+    author: "2nd Random guy",
+    position: "React Software Engineer",
+  },
+];
