@@ -1,9 +1,11 @@
-import { MorrentHero } from "@/components"
-import React from 'react'
+import { MorrentHero, MorrentRole } from "@/components"
 
 const morrent = () => {
   return (
-    <MorrentHero />
+    <main>
+        <MorrentHero />
+        <MorrentRole />
+    </main>
   )
 }
 
