@@ -23,13 +23,13 @@ const NavBar = () => {
           Home
         </Link>
         <Link
-          href="/CaseStudies"
+          href="/casestudies"
           className="hover:text-[#0252CD] hover:duration-500 transition"
         >
           Case Studies
         </Link>
         <Link
-          href="/Contact"
+          href="/contact"
           className="hover:text-[#0252CD] hover:duration-500 transition"
         >
           Contact

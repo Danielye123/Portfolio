@@ -7,6 +7,8 @@ import FeaturedProjects from "./FeaturedProjects.tsx";
 import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
 
+import MorrentHero from "./casestudy/morrent/MorrentHero.tsx";
+
 export {
     NavBar,
     Hero,
@@ -16,4 +18,5 @@ export {
     FeaturedProjects,
     Recommendations,
     Contact,
+    MorrentHero,
 };

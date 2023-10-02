@@ -28,6 +28,19 @@ import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
 import TestimonialArrowRight from "./TestimonialArrowRight.png";
 import clipboard from "./Clipboard.png";
+import arrow from "./morrent/arrow.png";
+import earth from "./morrent/earth.png";
+import def from "./morrent/def.png";
+import deploy from "./morrent/deploy.png";
+import design from "./morrent/design.png";
+import dev from "./morrent/dev.png";
+import HF from "./morrent/HF.png";
+import morrentComputer from "./morrent/morrentComputer.png";
+import morrentPhone from "./morrent/morrentPhone.png";
+import plan from "./morrent/plan.png";
+import problem from "./morrent/problem.png";
+import morrentGit from "./morrent/morrentGit.png";
+
 
 export {
     hero,
@@ -60,4 +73,16 @@ export {
     TestimonialArrowLeft,
     TestimonialArrowRight,
     clipboard,
+    arrow,
+    earth,
+    deploy,
+    design,
+    dev,
+    def,
+    HF,
+    morrentComputer,
+    morrentPhone,
+    plan,
+    problem,
+    morrentGit,
 };

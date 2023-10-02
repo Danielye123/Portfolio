@@ -2,7 +2,8 @@ import React from "react";
 import { featuredProjects } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { Filmpire, Hipnode, Morrent } from "@/assets";
+import { Filmpire, Hipnode, Morrent, arrow } from "@/assets";
+import { HiArrowLongRight } from 'react-icons/hi2'
 
 const FeaturedProjects = () => {
   return (
@@ -32,10 +33,10 @@ const FeaturedProjects = () => {
                   Node.js, MongoDB
                 </p>
               </div>
-              <Link href="/">
+              <Link href="/hipnode">
                 <div className="flex mt-6 gap-2">
                   <p className="hover:underline">See Project Details</p>
-                  {/* arrow icon */}
+                  <HiArrowLongRight size={25} />
                 </div>
               </Link>
             </div>
@@ -75,10 +76,10 @@ const FeaturedProjects = () => {
                   Node.js, MongoDB
                 </p>
               </div>
-              <Link href="/">
+              <Link href="/morrent">
                 <div className="flex mt-6 gap-2">
                   <p className="hover:underline">See Project Details</p>
-                  {/* arrow icon */}
+                  <HiArrowLongRight size={25} />
                 </div>
               </Link>
             </div>
@@ -100,10 +101,10 @@ const FeaturedProjects = () => {
                   Node.js, MongoDB
                 </p>
               </div>
-              <Link href="/">
+              <Link href="/filmpire">
                 <div className="flex mt-6 gap-2">
                   <p className="hover:underline">See Project Details</p>
-                  {/* arrow icon */}
+                  <HiArrowLongRight size={25} />
                 </div>
               </Link>
             </div>
