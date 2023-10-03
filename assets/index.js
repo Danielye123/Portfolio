@@ -45,6 +45,7 @@ import deploy from "./morrent/deploy.png";
 import design from "./morrent/design.png";
 import dev from "./morrent/dev.png";
 import HF from "./morrent/HF.png";
+import HF2 from "./morrent/HF2.svg";
 import morrentComputer from "./morrent/morrentComputer.png";
 import morrentPhone from "./morrent/morrentPhone.png";
 import plan from "./morrent/plan.png";
@@ -95,6 +96,7 @@ export {
     dev,
     def,
     HF,
+    HF2,
     morrentComputer,
     morrentPhone,
     plan,

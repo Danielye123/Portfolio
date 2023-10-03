@@ -3,11 +3,58 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { hero, laptophero, laptopherodark, clipboard } from "../assets/index";
+import { useState } from "react";
 
 const Hero = () => {
   const { theme } = useTheme();
+  const [copied, setCopied] = useState(false);
+
+  const notify = (message: string, hasError = false) => {
+    if (hasError) {
+      toast.error(message, {
+        position: "top-center",
+        autoClose: 2500,
+        //@ts-ignore
+        hideProgressBar: "false",
+        //@ts-ignore
+        closeOnClick: "true",
+        //@ts-ignore
+        pauseOnHover: "true",
+        //@ts-ignore
+        draggable: "true",
+        progress: undefined,
+        className: "border-b-2 border-primary text-primary ",
+      });
+    } else {
+      toast.success(message, {
+        position: "top-center",
+        autoClose: 2500,
+        //@ts-ignore
+        hideProgressBar: "false",
+        //@ts-ignore
+        closeOnClick: "true",
+        //@ts-ignore
+        pauseOnHover: "true",
+        //@ts-ignore
+        draggable: "true",
+        progress: undefined,
+        className: "border-b-2 border-primary text-primary ",
+      });
+    }
+  };
+
+  const copyText = () => {
+    const text = "daniel.jianhao.ye@gmail.com";
+    navigator.clipboard.writeText(text);
+
+    setCopied(true);
+
+    notify("Copied to clipboard", false);
+  };
 
   return (
     <section className="w-full pt-16px px-[85px] flex flex-row justify-between min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px]">
@@ -43,7 +90,7 @@ const Hero = () => {
             </button>
           </Link>
 
-          <div className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 flex sm:mt-0 mt-8 justify-center">
+          <button onClick={copyText} className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 flex sm:mt-0 mt-8 items-center justify-center">
             <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
             daniel.jianhao.ye@gmail.com
             </p>
@@ -54,7 +101,7 @@ const Hero = () => {
               height={19}
               className="object-contain ml-2 cursor-pointer"
             />
-          </div>
+          </button>
         </div>
       </div>
 
@@ -66,6 +113,7 @@ const Hero = () => {
           height={1000}
         />
       </div>
+      <ToastContainer />
     </section>
   );
 };

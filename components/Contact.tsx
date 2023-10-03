@@ -18,7 +18,7 @@ const Contact = () => {
                 <div className="font-poppins text-[48px] font-bold leading-[55px] tracking-[-0.01em] text-[#151E2C] w-[520px] h-[165px] ml-[75px]">
                     Have a project in mind that requires technical expertise?
                 </div>
-                <button className="w-[323px] h-auto py-[20px] px-[12px] rounded-full bg-[#0252CD] text-white">
+                <button className="w-[323px] h-auto py-[20px] px-[12px] rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white">
                     Get in touch with me
                 </button>
             </div>

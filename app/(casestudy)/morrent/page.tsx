@@ -1,4 +1,4 @@
-import { MorrentHero, MorrentRole, MorrentTech, MorrentDescription } from "@/components"
+import { MorrentHero, MorrentRole, MorrentTech, MorrentDescription, MorrentProblem } from "@/components"
 
 const morrent = () => {
   return (
@@ -7,6 +7,7 @@ const morrent = () => {
         <MorrentRole />
         <MorrentTech />
         <MorrentDescription />
+        <MorrentProblem />
     </main>
   )
 }

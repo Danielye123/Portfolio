@@ -11,6 +11,7 @@ import MorrentHero from "./casestudy/morrent/MorrentHero.tsx";
 import MorrentRole from "./casestudy/morrent/MorrentRole.tsx";
 import MorrentTech from "./casestudy/morrent/MorrentTech.tsx";
 import MorrentDescription from "./casestudy/morrent/MorrentDescription.tsx";
+import MorrentProblem from "./casestudy/morrent/MorrentProblem.tsx";
 
 export {
     NavBar,
@@ -25,5 +26,6 @@ export {
     MorrentRole,
     MorrentTech,
     MorrentDescription,
+    MorrentProblem,
     
 };
