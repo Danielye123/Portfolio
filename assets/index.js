@@ -1,3 +1,4 @@
+import LogoDY from "./DY_Logo.png";
 import hero from "./hero.png";
 import man from "./man.png";
 import laptophero from "./laptophero.png";
@@ -44,15 +45,23 @@ import def from "./morrent/def.png";
 import deploy from "./morrent/deploy.png";
 import design from "./morrent/design.png";
 import dev from "./morrent/dev.png";
+import plan from "./morrent/plan.png";
+import def2 from "./morrent/def.svg";
+import deploy2 from "./morrent/deploy.svg";
+import design2 from "./morrent/design.svg";
+import dev2 from "./morrent/dev.svg";
+import plan2 from "./morrent/plan.svg";
 import HF from "./morrent/HF.png";
 import HF2 from "./morrent/HF2.svg";
 import morrentComputer from "./morrent/morrentComputer.png";
 import morrentPhone from "./morrent/morrentPhone.png";
-import plan from "./morrent/plan.png";
 import problem from "./morrent/problem.png";
 import morrentGit from "./morrent/morrentGit.png";
+import check from "./morrent/check.svg";
+import challenge from "./morrent/challenge.svg";
 
 export {
+    LogoDY,
     hero,
     man,
     laptophero,
@@ -95,15 +104,22 @@ export {
     design,
     dev,
     def,
+    deploy2,
+    design2,
+    dev2,
+    def2,
+    plan,
+    plan2,
     HF,
     HF2,
     morrentComputer,
     morrentPhone,
-    plan,
     problem,
     morrentGit,
     frontend,
     backend,
     opt,
     analytics,
+    check,
+    challenge,
 };

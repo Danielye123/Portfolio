@@ -32,3 +32,17 @@ body {
   color: #F3F8FF;
 }
 
+.conic-gradient-bg {
+  background: conic-gradient(#0252cd, #0252cd54);
+}
+
+.logo-font {
+  font-family: Righteous;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+

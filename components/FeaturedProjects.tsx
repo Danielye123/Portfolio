@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Filmpire, Hipnode, Morrent, arrow } from "@/assets";
 import { HiArrowLongRight } from 'react-icons/hi2'
+import { BsArrowRight } from "react-icons/bs";
 
 const FeaturedProjects = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] w-full">
+    <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#192333] w-full">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         Featured
         <span className="mr-[10px]"></span>
@@ -120,6 +121,12 @@ const FeaturedProjects = () => {
           </div>
         </div>
       </div>
+
+      <Link href="/CaseStudies">
+        <button className=" flex flex-row items-center justify-between md:mt-16 mt-10 border-none bg-text-accentBlue font-bold dark:bg-primary-darkmodeblue rounded-full md:w-[286px] w-[260px] md:h-[64px] h-[55px] py-4 px-6 text-center text-white text-sm md:text-base hover:duration-500 transition">
+          See more Case Studies <BsArrowRight size={30} />
+        </button>
+      </Link>
     </section>
   );
 };

@@ -185,3 +185,4 @@ export const recommendationsData = [
     position: "React Software Engineer",
   },
 ];
+

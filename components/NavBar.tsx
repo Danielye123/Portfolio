@@ -6,17 +6,20 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { navLinks } from "@/constants";
+import { LogoDY } from "@/assets";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[85px] w-full">
-      <div className="text-[#6F74A7]">
-        image
-      </div>
-      <nav className="sm:flex hidden text-[#6F74A7] gap-9 justify-between font-bold text-base">
-      <Link
+    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[85px] w-full z-[100]">
+      <Link href="/">
+        <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain">
+          DY
+        </div>
+      </Link>
+      <nav className="sm:flex hidden text-[#6F74A7] gap-9 justify-between font-bold text-base py-4">
+        <Link
           href="/"
           className="hover:text-[#0252CD] hover:duration-500 transition"
         >
@@ -34,9 +37,7 @@ const NavBar = () => {
         >
           Contact
         </Link>
-        <div>
-          Resume
-        </div>
+        <div>Resume</div>
         <button
           type="button"
           onClick={() => {
@@ -57,7 +58,7 @@ const NavBar = () => {
         </button>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default NavBar;

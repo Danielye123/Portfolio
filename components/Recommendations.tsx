@@ -4,11 +4,16 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Stars, TestimonialArrowLeft, TestimonialArrowRight, TestimonialArrowLeft2, TestimonialArrowRight2} from '@/assets';
 import { recommendationsData } from "@/constants";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import { useTheme } from "next-themes";
+import { HiArrowRight } from "react-icons/hi2";
 
 const Recommendations = () => {
+
   const [currentRecommendation, setCurrentRecommendation] = useState(0);
 
   const handleNextRecommendation = () => {
+    
     setCurrentRecommendation((prevIndex) =>
       prevIndex === recommendationsData.length - 1 ? 0 : prevIndex + 1
     );
@@ -54,11 +59,12 @@ const Recommendations = () => {
             <Image
               src={currentRecommendationData.image} // Use the current recommendation's image
               alt="Person's Image"
+              className="rounded-lg"
             />
           </div>
 
           {/* Quote and Attribution Container */}
-          <div className="flex flex-col w-[749px] pt-[10px]">
+          <div className="flex flex-col w-[749px] pb-[10px]">
             <Image src={Stars} alt="Star" width={116} height={20} className="mt-4.25" />
 
             <p className="font-poppins text-[24px] font-normal leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF]">

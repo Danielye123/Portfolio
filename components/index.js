@@ -13,6 +13,8 @@ import MorrentTech from "./casestudy/morrent/MorrentTech.tsx";
 import MorrentDescription from "./casestudy/morrent/MorrentDescription.tsx";
 import MorrentProblem from "./casestudy/morrent/MorrentProblem.tsx";
 import MorrentFigmaDesign from "./casestudy/morrent/MorrentFigmaDesign.tsx";
+import MorrentProcess from "./casestudy/morrent/MorrentProcess.tsx";
+import MorrentChallenges from "./casestudy/morrent/MorrentChallenges.tsx";
 
 export {
     NavBar,
@@ -29,5 +31,7 @@ export {
     MorrentDescription,
     MorrentProblem,
     MorrentFigmaDesign,
-    
+    MorrentProcess,
+    MorrentChallenges,
+
 };
