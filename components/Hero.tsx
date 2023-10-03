@@ -57,7 +57,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full pt-16px px-[85px] flex flex-row justify-between min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px]">
+    <section className="w-full pt-16px px-[85px] flex min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px]">
       <div className="flex flex-col items-left max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
@@ -105,7 +105,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="justify-center pb-[20px] items-center flex">
+      <div className="pb-[20px] justify-end items-center flex">
         <Image
           src={theme === "dark" ? laptopherodark : laptophero}
           alt="hero image"

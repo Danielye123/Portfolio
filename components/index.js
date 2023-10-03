@@ -7,6 +7,8 @@ import FeaturedProjects from "./FeaturedProjects.tsx";
 import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
 
+import CaseStudiesHero from "./casestudy/casestudies/CaseStudiesHero.tsx";
+
 import MorrentHero from "./casestudy/morrent/MorrentHero.tsx";
 import MorrentRole from "./casestudy/morrent/MorrentRole.tsx";
 import MorrentTech from "./casestudy/morrent/MorrentTech.tsx";
@@ -25,6 +27,9 @@ export {
     FeaturedProjects,
     Recommendations,
     Contact,
+    CaseStudiesHero,
+
+
     MorrentHero,
     MorrentRole,
     MorrentTech,

@@ -13,7 +13,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="pt-[180px] px-[85px] w-full min-h-screen bg-[#F3F8FF] dark:bg-[#192333] text-black">
+    <section className="pt-[180px] px-[85px] w-full min-h-screen bg-[#F3F8FF] dark:bg-[#192333]">
       <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins text-xl font-semibold leading-[26px] tracking-[.3em] text-center items-center justify-center">
         WEB DEV PROJECT
       </div>
