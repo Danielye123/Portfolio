@@ -60,6 +60,10 @@ import morrentGit from "./morrent/morrentGit.png";
 import check from "./morrent/check.svg";
 import challenge from "./morrent/challenge.svg";
 
+import FilmpireCaseStudies from "./caseStudiesPage/FilmpireCaseStudies.png";
+import HipNodeCaseStudies from "./caseStudiesPage/HipNodeCaseStudies.png";
+import MorrentCaseStudies from "./caseStudiesPage/MorrentCaseStudies.png";
+
 export {
     LogoDY,
     hero,
@@ -122,4 +126,7 @@ export {
     analytics,
     check,
     challenge,
+    FilmpireCaseStudies,
+    HipNodeCaseStudies,
+    MorrentCaseStudies,
 };

@@ -1,8 +1,9 @@
-import { CaseStudiesHero, Footer, Contact } from "@/components";
+import { CaseStudiesHero, Footer, Contact, CaseStudiesProjects } from "@/components";
 const page = () => {
   return (
     <main>
       <CaseStudiesHero />
+      <CaseStudiesProjects />
       <Contact />
       <Footer />
     </main>

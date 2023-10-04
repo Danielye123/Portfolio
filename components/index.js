@@ -8,6 +8,7 @@ import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
 
 import CaseStudiesHero from "./casestudy/casestudies/CaseStudiesHero.tsx";
+import CaseStudiesProjects from "./casestudy/casestudies/CaseStudiesProjects.tsx";
 
 import MorrentHero from "./casestudy/morrent/MorrentHero.tsx";
 import MorrentRole from "./casestudy/morrent/MorrentRole.tsx";
@@ -28,6 +29,7 @@ export {
     Recommendations,
     Contact,
     CaseStudiesHero,
+    CaseStudiesProjects,
 
 
     MorrentHero,

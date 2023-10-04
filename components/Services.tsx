@@ -20,13 +20,13 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card"
+              className="w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card transition-transform transform hover:scale-105"
             >
               <Image
                 src={service.imgUrl}
                 alt={service.title}
-                width={80}
-                height={80}
+                width={85}
+                height={85}
                 className="pb-[18px] pt-[15px]"
               />
               <h3 className="font-semibold text-lg mb-1 dark:text-primary-light">

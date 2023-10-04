@@ -83,7 +83,7 @@ const Hero = () => {
         <br />
         <div className="flex flex-row gap-[18px]">
           <Link href="/contact">
-            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 flex justify-center">
+            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 w-[186px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
               </p>
