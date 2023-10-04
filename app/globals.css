@@ -45,3 +45,6 @@ body {
   text-align: center;
 }
 
+.custom-box-shadow {
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28); /* Replace with your desired color */
+}
