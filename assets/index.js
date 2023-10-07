@@ -63,6 +63,7 @@ import challenge from "./morrent/challenge.svg";
 import FilmpireCaseStudies from "./caseStudiesPage/FilmpireCaseStudies.png";
 import HipNodeCaseStudies from "./caseStudiesPage/HipNodeCaseStudies.png";
 import MorrentCaseStudies from "./caseStudiesPage/MorrentCaseStudies.png";
+import CSbanner from "./caseStudiesPage/CSbanner.png";
 
 export {
     LogoDY,
@@ -129,4 +130,5 @@ export {
     FilmpireCaseStudies,
     HipNodeCaseStudies,
     MorrentCaseStudies,
+    CSbanner,
 };

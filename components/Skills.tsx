@@ -14,12 +14,13 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[100px] h-[100px] rounded-full flex items-center justify-center`}
+            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[100px] h-[100px] rounded-full flex items-center justify-center
+            grayscale hover:grayscale-0 opacity-50 hover:opacity-100
+            `}
           >
             <Image
               src={skill.imgURL}
               alt={`Skill ${index}`}
-              className="grayscale hover:grayscale-0 opacity-50 hover:opacity-100"
             />
           </div>
         ))}

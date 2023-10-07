@@ -71,11 +71,11 @@ const Recommendations = () => {
               {currentRecommendationData.text}
             </p>
 
-            <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] dark:text-[#F3F8FF] pt-[4px]">
+            <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] dark:text-[#F3F8FF] pt-[8px]">
               — {currentRecommendationData.author}
             </p>
 
-            <p className="font-poppins text-[18px] font-normal leading-[29px] text-left text-[#6F74A7] dark:text-[#F3F8FF] pt-[2px]">
+            <p className="font-poppins text-[18px] font-normal leading-[29px] text-left text-[#6F74A7] dark:text-[#F3F8FF] pt-[4px]">
               {currentRecommendationData.position}
             </p>
           </div>

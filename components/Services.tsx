@@ -20,9 +20,8 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card transition-transform transform hover:scale-105 ${
-                index % 2 === 0 ? "" : "mt-[20px]" // Apply margin to odd cards
-              }`}
+              className={`w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card transition-transform transform 
+              hover:scale-105 hover:mt-[20px]`}
             >
               <Image
                 src={service.imgUrl}
