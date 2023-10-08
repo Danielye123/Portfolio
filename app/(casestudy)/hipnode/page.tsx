@@ -1,9 +1,18 @@
-import React from 'react'
+import { HipnodeHero, HipnodeRole, HipnodeTech, HipnodeDescription, HipnodeProblem, HipnodeFigmaDesign, HipnodeProcess, HipnodeChallenges } from "@/components"
 
-const page = () => {
+const hipnode = () => {
   return (
-    <div>page</div>
+    <main>
+        <HipnodeHero />
+        <HipnodeRole />
+        <HipnodeTech />
+        <HipnodeDescription />
+        <HipnodeProblem />
+        <HipnodeFigmaDesign />
+        <HipnodeProcess />
+        <HipnodeChallenges />
+    </main>
   )
 }
 
-export default page
+export default hipnode

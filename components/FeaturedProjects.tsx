@@ -88,7 +88,7 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="bg-[#FF6934] rounded-lg flex w-full py-14 justify-between mt-8">
+        <div className="bg-[#DB202C] rounded-lg flex w-full py-14 justify-between mt-8">
           <div className="flex flex-1 flex-col items-center justify-left">
             <div className="p-4">
               <div className="flex lg:text-[3rem] text-[2rem] font-bold w-[480px]">

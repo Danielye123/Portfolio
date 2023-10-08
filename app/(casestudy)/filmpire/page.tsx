@@ -1,9 +1,18 @@
-import React from 'react'
+import { FilmpireHero, FilmpireRole, FilmpireTech, FilmpireDescription, FilmpireProblem, FilmpireFigmaDesign, FilmpireProcess, FilmpireChallenges } from "@/components"
 
-const page = () => {
+const filmpire = () => {
   return (
-    <div>page</div>
+    <main>
+        <FilmpireHero />
+        <FilmpireRole />
+        <FilmpireTech />
+        <FilmpireDescription />
+        <FilmpireProblem />
+        <FilmpireFigmaDesign />
+        <FilmpireProcess />
+        <FilmpireChallenges />
+    </main>
   )
 }
 
-export default page
+export default filmpire

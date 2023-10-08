@@ -65,6 +65,13 @@ import HipNodeCaseStudies from "./caseStudiesPage/HipNodeCaseStudies.png";
 import MorrentCaseStudies from "./caseStudiesPage/MorrentCaseStudies.png";
 import CSbanner from "./caseStudiesPage/CSbanner.png";
 
+import filmpireComputer from "./filmpire/Filmpire-Laptop.svg";
+import filmpirePhone from "./filmpire/Filmpire-Mobile.svg";
+import hipnodeComputer from "./hipnode/Hipnode-Laptop.svg";
+import hipnodePhone from "./hipnode/Hipnode-Mobile.svg";
+import hipnodeLink from "./hipnode/hipnode-link.svg";
+import morrentLink from "./morrent/morrent-link.svg";
+
 export {
     LogoDY,
     hero,
@@ -131,4 +138,10 @@ export {
     HipNodeCaseStudies,
     MorrentCaseStudies,
     CSbanner,
+    filmpireComputer,
+    hipnodeComputer,
+    hipnodePhone,
+    hipnodeLink,
+    morrentLink,
+    filmpirePhone,
 };
