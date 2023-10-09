@@ -28,12 +28,12 @@ import {
   gnar,
   Malphite,
   richard,
-  frontend3,
-  backend3,
-  analytics3,
-  opt3,
-  test3,
 } from "@/assets";
+
+import Analytics from "../components/svgComponents/Analytics";
+import Frontend from "../components/svgComponents/frontend";
+import Backend from "../components/svgComponents/backend";
+import Opt from "../components/svgComponents/Opt";
 
 export const navLinks = [
   {
@@ -124,25 +124,29 @@ export const morrentSkills = [
 
 export const services = [
   {
-    imgUrl: analytics,
+    // Component: Analytics,
+    imgURL: analytics,
     title: "Analytics & SEO",
     description:
       "Implement tracking & analytics tools to monitor website performance & improve SEO.",
   },
   {
-    imgUrl: frontend,
+    // Component: Frontend,
+    imgURL: frontend,
     title: "Front-End Dev",
     description:
       "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
   },
   {
-    imgUrl: backend,
+    // Component: Backend,
+    imgURL: backend,
     title: "Back-End Dev",
     description:
       "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
   },
   {
-    imgUrl: opt,
+    // Component: Opt,
+    imgURL: opt,
     title: "Web Optimization",
     description:
       "Web optimization focuses on improving website performance for a smoother user experience",

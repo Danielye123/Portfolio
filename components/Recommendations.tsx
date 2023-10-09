@@ -2,14 +2,14 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Stars, TestimonialArrowLeft, TestimonialArrowRight, TestimonialArrowLeft2, TestimonialArrowRight2, LeftArrow, RightArrow} from '@/assets';
+import { Stars, TestimonialArrowLeft, TestimonialArrowRight, TestimonialArrowLeft2, TestimonialArrowRight2} from '@/assets';
 import { recommendationsData } from "@/constants";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import { HiArrowRight } from "react-icons/hi2";
 
 const Recommendations = () => {
-
+  const { theme } = useTheme(); 
   const [currentRecommendation, setCurrentRecommendation] = useState(0);
 
   const handleNextRecommendation = () => {
@@ -28,7 +28,7 @@ const Recommendations = () => {
   const currentRecommendationData = recommendationsData[currentRecommendation];
 
   return (
-    <section className="w-full h-[589px] flex flex-col justify-start items-center px-[85px] py-[72px] bg-[#F3F8FF] dark:bg-primary-darkDefault">
+    <section className="w-full h-[589px] flex flex-col justify-start items-center px-[85px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         What<span className="mx-2"></span>
         <div className="relative inline-block">
@@ -38,15 +38,16 @@ const Recommendations = () => {
         <span className="ml-2">about me</span>
       </h1>
 
-      <div className="w-full px-[85px] pt-[64px] flex items-center justify-between bg-[#F3F8FF] dark:bg-primary-darkDefault">
+      <div className="w-full px-[85px] pt-[64px] flex items-center justify-between">
         {/* Left Arrow */}
-        <LeftArrow
-          // src={TestimonialArrowLeft2}
-          // alt="arrow"
-          // width={56}
-          // height={56}
-          className="flex justify-between self-center mr-[26px] cursor-pointer"
-          onClick={handlePreviousRecommendation}
+        <Image
+          // src={theme === 'dark' ? TestimonialArrowLeftDark : TestimonialArrowLeft2}
+          src={TestimonialArrowLeft2}
+          alt="arrow"
+          width={56}
+          height={56}
+          className="flex justify-between self-center ml-[60px] cursor-pointer transition-opacity duration-500 ease-in-out"
+          onClick={handleNextRecommendation}
         />
 
         {/* Center Content */}
@@ -83,6 +84,7 @@ const Recommendations = () => {
 
         {/* Right Arrow */}
         <Image
+          // src={theme === 'dark' ? TestimonialArrowRightDark : TestimonialArrowRight2}
           src={TestimonialArrowRight2}
           alt="arrow"
           width={56}

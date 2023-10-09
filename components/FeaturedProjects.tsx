@@ -8,7 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const FeaturedProjects = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#192333] w-full">
+    <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] w-full">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         Featured
         <span className="mr-[10px]"></span>

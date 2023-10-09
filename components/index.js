@@ -37,6 +37,11 @@ import HipnodeFigmaDesign from "./casestudy/hipnode/HipnodeFigmaDesign.tsx";
 import HipnodeProcess from "./casestudy/hipnode/HipnodeProcess.tsx";
 import HipnodeChallenges from "./casestudy/hipnode/HipnodeChallenges.tsx";
 
+import Frontend from "./svgComponents/frontend.tsx";
+import Backend from "./svgComponents/backend.tsx";
+import Analytics from "./svgComponents/Analytics.tsx";
+import Opt from "./svgComponents/Opt.tsx";
+
 export {
     NavBar,
     Hero,
@@ -77,4 +82,8 @@ export {
     HipnodeProcess,
     HipnodeChallenges,
 
+    Frontend,
+    Backend,
+    Analytics,
+    Opt,
 };

@@ -86,6 +86,7 @@ import FilmpireHF from "./filmpire/Filmpire-HF.svg";
 import LeftArrow from "./LeftArrow.tsx";
 import RightArrow from "./RightArrow.tsx";
 
+
 export {
     LogoDY,
     hero,
