@@ -9,7 +9,6 @@ import { useTheme } from "next-themes";
 import { HiArrowRight } from "react-icons/hi2";
 
 const Recommendations = () => {
-  const { theme } = useTheme(); 
   const [currentRecommendation, setCurrentRecommendation] = useState(0);
 
   const handleNextRecommendation = () => {
