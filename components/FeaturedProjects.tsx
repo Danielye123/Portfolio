@@ -18,7 +18,8 @@ const FeaturedProjects = () => {
         </div>
       </h1>
 
-      <div className="w-full px-[85px] text-[#FFFFFF]">
+      {/* <div className="w-full px-[85px] text-[#FFFFFF]"> */}
+      <div className="w-[1280px] text-[#FFFFFF]">
         {/* Project 1 */}
         <div className="bg-[#416CEA] rounded-lg flex w-full py-14 mt-8">
           <div className="flex flex-1 flex-col items-center justify-center">
@@ -122,9 +123,12 @@ const FeaturedProjects = () => {
         </div>
       </div>
 
-      <Link href="/CaseStudies">
-        <button className=" flex flex-row items-center justify-between md:mt-16 mt-10 border-none bg-text-accentBlue font-bold dark:bg-primary-darkmodeblue rounded-full md:w-[286px] w-[260px] md:h-[64px] h-[55px] py-4 px-6 text-center text-white text-sm md:text-base hover:duration-500 transition">
-          See more Case Studies <BsArrowRight size={30} />
+      <Link href="/casestudies">
+        <button className=" flex flex-row items-center justify-center mt-[48px] bg-text-accentBlue font-bold dark:bg-primary-darkmodeblue rounded-full w-[323px] h-[69px] md:text-base hover:duration-500 transition">
+          <span className="py-5 pr-[10px] pl-[45px] text-center text-white font-poppins font-semibold text-[18px] leading-[29px]">
+            See more case studies 
+            </span>
+            <BsArrowRight size={65} className="pr-[34px] items-center justify-center" />
         </button>
       </Link>
     </section>

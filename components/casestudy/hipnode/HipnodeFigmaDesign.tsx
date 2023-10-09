@@ -1,5 +1,5 @@
 import React from 'react'
-import { HF2 } from "@/assets"
+import { HFHipnode } from "@/assets"
 import Image from "next/image"
 
 const HipnodeFigmaDesign = () => {
@@ -11,7 +11,7 @@ const HipnodeFigmaDesign = () => {
 
         <div>
             <Image 
-                src={HF2}
+                src={HFHipnode}
                 alt="Figma design"
                 height={767}
                 width={1440}

@@ -28,6 +28,11 @@ import {
   gnar,
   Malphite,
   richard,
+  frontend3,
+  backend3,
+  analytics3,
+  opt3,
+  test3,
 } from "@/assets";
 
 export const navLinks = [

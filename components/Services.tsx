@@ -23,6 +23,14 @@ const Services = () => {
               className={`w-[285px] h-[265px] border rounded-lg shadow-md dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light service-card transition-transform transform 
               hover:scale-105 hover:mt-[20px]`}
             >
+              {/* <div className="pb-[18px] pt-[15px] w-[62px] h-[62px] bg-[#0252CD] dark:bg-[#428DFF] rounded-lg">
+                <Image
+                  src={service.imgUrl}
+                  alt={service.title}
+                  width={35}
+                  height={35}
+                />
+              </div> */}
               <Image
                 src={service.imgUrl}
                 alt={service.title}

@@ -3,6 +3,8 @@ import hero from "./hero.png";
 import man from "./man.png";
 import laptophero from "./laptophero.png";
 import laptopherodark from "./laptopherodark.png";
+import HeroLightSVG from "./HeroLightSVG.svg";
+import HeroDarkSVG from "./HeroDarkSVG.svg";
 import html from "./skills/html.png";
 import css from "./skills/css.png";
 import express from "./skills/express.png";
@@ -26,6 +28,10 @@ import frontend from "./services/frontend.svg";
 import backend from "./services/backend.svg";
 import analytics from "./services/analytics.svg";
 import opt from "./services/opt.svg";
+import FrontEnd from "./services/Frontend.tsx";
+import backend2 from "./services/backend.tsx";
+import analytics2 from "./services/analytics.tsx";
+import opt2 from "./services/opt.tsx";
 import Filmpire from "./projects/Filmpire.png";
 import Hipnode from "./projects/Hipnode.png";
 import Morrent from "./projects/Morrent.png";
@@ -72,12 +78,22 @@ import hipnodePhone from "./hipnode/Hipnode-Mobile.svg";
 import hipnodeLink from "./hipnode/hipnode-link.svg";
 import morrentLink from "./morrent/morrent-link.svg";
 
+import HFHipnode from "./hipnode/highfedhipnode.png";
+import carrent from "./morrent/Carrent.svg";
+import FilmpireShow from "./filmpire/FilmpireShow.svg";
+import FilmpireHF from "./filmpire/Filmpire-HF.svg";
+
+import LeftArrow from "./LeftArrow.tsx";
+import RightArrow from "./RightArrow.tsx";
+
 export {
     LogoDY,
     hero,
     man,
     laptophero,
     laptopherodark,
+    HeroLightSVG,
+    HeroDarkSVG,
     html,
     css,
     express,
@@ -144,4 +160,14 @@ export {
     hipnodeLink,
     morrentLink,
     filmpirePhone,
+    FilmpireHF,
+    HFHipnode,
+    carrent,
+    FilmpireShow,
+    LeftArrow,
+    RightArrow,
+    FrontEnd,
+    backend2,
+    analytics2,
+    opt2,
 };

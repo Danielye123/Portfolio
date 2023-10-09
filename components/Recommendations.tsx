@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Stars, TestimonialArrowLeft, TestimonialArrowRight, TestimonialArrowLeft2, TestimonialArrowRight2} from '@/assets';
+import { Stars, TestimonialArrowLeft, TestimonialArrowRight, TestimonialArrowLeft2, TestimonialArrowRight2, LeftArrow, RightArrow} from '@/assets';
 import { recommendationsData } from "@/constants";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
@@ -38,13 +38,13 @@ const Recommendations = () => {
         <span className="ml-2">about me</span>
       </h1>
 
-      <div className="w-full px-[85px] pt-[64px] flex items-center justify-between">
+      <div className="w-full px-[85px] pt-[64px] flex items-center justify-between bg-[#F3F8FF] dark:bg-primary-darkDefault">
         {/* Left Arrow */}
-        <Image
-          src={TestimonialArrowLeft2}
-          alt="arrow"
-          width={56}
-          height={56}
+        <LeftArrow
+          // src={TestimonialArrowLeft2}
+          // alt="arrow"
+          // width={56}
+          // height={56}
           className="flex justify-between self-center mr-[26px] cursor-pointer"
           onClick={handlePreviousRecommendation}
         />
@@ -71,7 +71,7 @@ const Recommendations = () => {
               {currentRecommendationData.text}
             </p>
 
-            <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] dark:text-[#F3F8FF] pt-[8px]">
+            <p className="font-poppins text-[18px] font-semibold leading-[29px] text-left text-[#192333] dark:text-[#F3F8FF] pt-[20px]">
               — {currentRecommendationData.author}
             </p>
 

@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { hero, laptophero, laptopherodark, clipboard } from "../assets/index";
+import { hero, laptophero, laptopherodark, clipboard, HeroLightSVG, HeroDarkSVG } from "../assets/index";
 import { useState } from "react";
 
 const Hero = () => {
@@ -57,8 +57,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full pt-16px px-[85px] flex min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px]">
-      <div className="flex flex-col items-left max-w-[900px]">
+    <section className="w-full pt-16px flex min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px] justify-between">
+      <div className="flex flex-col items-left max-w-[900px] px-[85px] pt-[40px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
@@ -105,9 +105,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="pb-[20px] justify-end items-center flex">
+      <div className="pl-[60px] pb-[60px] justify-end items-center flex">
         <Image
-          src={theme === "dark" ? laptopherodark : laptophero}
+          src={theme === "dark" ? HeroDarkSVG : HeroLightSVG}
           alt="hero image"
           width={1000}
           height={1000}

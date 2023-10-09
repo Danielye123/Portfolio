@@ -1,5 +1,5 @@
 import React from 'react'
-import { HF2 } from "@/assets"
+import { FilmpireHF } from "@/assets"
 import Image from "next/image"
 
 const FilmpireFigmaDesign = () => {
@@ -11,7 +11,7 @@ const FilmpireFigmaDesign = () => {
 
         <div>
             <Image 
-                src={HF2}
+                src={FilmpireHF}
                 alt="Figma design"
                 height={767}
                 width={1440}

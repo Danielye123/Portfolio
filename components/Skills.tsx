@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col justify-start items-center py-[72px] bg-primary-light dark:bg-primary-darkDefault w-full">
+    <section className="flex flex-col justify-start items-center py-[72px] px-[85px] bg-primary-light dark:bg-primary-darkDefault w-full">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         <div className="inline-block relative">
           <span className="relative z-10">My Skills</span>
@@ -18,10 +18,7 @@ const Skills = () => {
             grayscale hover:grayscale-0 opacity-50 hover:opacity-100
             `}
           >
-            <Image
-              src={skill.imgURL}
-              alt={`Skill ${index}`}
-            />
+            <Image src={skill.imgURL} alt={`Skill ${index}`} />
           </div>
         ))}
       </div>
