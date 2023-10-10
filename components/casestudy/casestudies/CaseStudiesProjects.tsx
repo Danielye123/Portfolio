@@ -77,7 +77,7 @@ const CaseStudiesProjects = () => {
         </div>
       </div>
       {/* Box 4 */}
-      <div className="flex flex-col pb-[36px]">
+      {/* <div className="flex flex-col pb-[36px]">
         <div className="w-[550px] h-[328px] bg-[#0BAB7C] flex flex-col justify-end items-center rounded-lg mx-6 mb-6">
           <div className="mb-[-10px]">
             <Image
@@ -96,7 +96,7 @@ const CaseStudiesProjects = () => {
             Social Platform for Developers
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { FilmpireHero, FilmpireRole, FilmpireTech, FilmpireDescription, FilmpireProblem, FilmpireFigmaDesign, FilmpireProcess, FilmpireChallenges } from "@/components"
+import { FilmpireHero, FilmpireRole, FilmpireTech, FilmpireDescription, FilmpireProblem, FilmpireFigmaDesign, FilmpireProcess, FilmpireChallenges, FilmpireCaseStudiesOther, Contact, Footer } from "@/components"
 
 const filmpire = () => {
   return (
@@ -11,6 +11,9 @@ const filmpire = () => {
         <FilmpireFigmaDesign />
         <FilmpireProcess />
         <FilmpireChallenges />
+        <FilmpireCaseStudiesOther />
+        <Contact />
+        <Footer />
     </main>
   )
 }

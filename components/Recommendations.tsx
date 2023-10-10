@@ -46,7 +46,7 @@ const Recommendations = () => {
           width={56}
           height={56}
           className="flex justify-between self-center ml-[60px] cursor-pointer transition-opacity duration-500 ease-in-out"
-          onClick={handleNextRecommendation}
+          onClick={handlePreviousRecommendation}
         />
 
         {/* Center Content */}

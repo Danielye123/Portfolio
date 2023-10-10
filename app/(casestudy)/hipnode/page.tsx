@@ -1,4 +1,4 @@
-import { HipnodeHero, HipnodeRole, HipnodeTech, HipnodeDescription, HipnodeProblem, HipnodeFigmaDesign, HipnodeProcess, HipnodeChallenges } from "@/components"
+import { HipnodeHero, HipnodeRole, HipnodeTech, HipnodeDescription, HipnodeProblem, HipnodeFigmaDesign, HipnodeProcess, HipnodeChallenges, HipnodeCaseStudiesOther, Contact, Footer } from "@/components"
 
 const hipnode = () => {
   return (
@@ -11,6 +11,9 @@ const hipnode = () => {
         <HipnodeFigmaDesign />
         <HipnodeProcess />
         <HipnodeChallenges />
+        <HipnodeCaseStudiesOther />
+        <Contact />
+        <Footer />
     </main>
   )
 }
