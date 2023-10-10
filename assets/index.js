@@ -86,6 +86,11 @@ import FilmpireHF from "./filmpire/Filmpire-HF.svg";
 import LeftArrow from "./LeftArrow.tsx";
 import RightArrow from "./RightArrow.tsx";
 
+import AnalyticsIcon from "./services/AnalyticsIcon.svg"
+import BackEndIcon from "./services/BackEndIcon.svg"
+import FrontEndIcon from "./services/FrontEndIcon.svg"
+import WebOptIcon from "./services/WebOptIcon.svg"
+
 
 export {
     LogoDY,
@@ -171,4 +176,8 @@ export {
     backend2,
     analytics2,
     opt2,
+    AnalyticsIcon,
+    BackEndIcon,
+    FrontEndIcon,
+    WebOptIcon,
 };

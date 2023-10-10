@@ -28,6 +28,10 @@ import {
   gnar,
   Malphite,
   richard,
+  FrontEndIcon,
+  BackEndIcon,
+  WebOptIcon,
+  AnalyticsIcon
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -152,6 +156,45 @@ export const services = [
       "Web optimization focuses on improving website performance for a smoother user experience",
   },
 ];
+
+// export const services = [
+//   {
+//     // Component: Analytics,
+//     imgURL: AnalyticsIcon,
+//     title: "Analytics & SEO",
+//     description:
+//       "Implement tracking & analytics tools to monitor website performance & improve SEO.",
+//     width: 21, 
+//     height: 20, 
+//   },
+//   {
+//     // Component: Frontend,
+//     imgURL: FrontEndIcon,
+//     title: "Front-End Dev",
+//     description:
+//       "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
+//           width: 24, 
+//     height: 20, 
+//   },
+//   {
+//     // Component: Backend,
+//     imgURL: BackEndIcon,
+//     title: "Back-End Dev",
+//     description:
+//       "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
+//       width: 24, 
+//       height: 20, 
+//   },
+//   {
+//     // Component: Opt,
+//     imgURL: WebOptIcon,
+//     title: "Web Optimization",
+//     description:
+//       "Web optimization focuses on improving website performance for a smoother user experience",
+//       width: 30, 
+//       height: 24, 
+//   },
+// ];
 
 export const featuredProjects = [
   {
