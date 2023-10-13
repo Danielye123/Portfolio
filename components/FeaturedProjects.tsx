@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
       </h1>
 
       {/* <div className="w-full px-[85px] text-[#FFFFFF]"> */}
-      <div className="w-[1280px] text-[#FFFFFF]">
+      <div className="w-[1440px] text-[#FFFFFF]">
         {/* Project 1 */}
         <div className="bg-[#416CEA] rounded-lg flex w-full py-14 mt-8">
           <div className="flex flex-1 flex-col items-center justify-center">
@@ -128,7 +128,7 @@ const FeaturedProjects = () => {
           <span className="py-5 pr-[10px] pl-[45px] text-center text-white font-poppins font-semibold text-[18px] leading-[29px]">
             See more case studies 
             </span>
-            <BsArrowRight size={65} className="pr-[34px] items-center justify-center" />
+            <BsArrowRight size={65} color="white" className="pr-[34px] items-center justify-center" />
         </button>
       </Link>
     </section>

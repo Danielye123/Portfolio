@@ -46,7 +46,10 @@ import Backend from "./svgComponents/backend.tsx";
 import Analytics from "./svgComponents/Analytics.tsx";
 import Opt from "./svgComponents/Opt.tsx";
 
+import Cursor from "./svgComponents/Cursor.tsx";
+
 export {
+    Cursor,
     NavBar,
     Hero,
     Footer,

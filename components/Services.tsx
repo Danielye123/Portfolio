@@ -51,6 +51,7 @@
 import { services } from "@/constants";
 import React from "react";
 import Image from "next/image";
+import { Cursor } from "@/components";
 
 const Services = () => {
   return (
@@ -70,7 +71,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`w-[285px] h-[265px] border rounded-lg shadow-md shadow-[#E0ECFF] dark:shadow-[#1F2E48] dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light text-black service-card transition-transform transform 
+              className={`w-[285px] h-[265px] border rounded-lg shadow-lg shadow-[#E0ECFF] dark:shadow-[#1F2E48] dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] hover:bg-[#0252CD] dark:hover:bg-[#428DFF] hover:text-primary-light text-black service-card transition-transform transform 
               hover:scale-105 hover:mt-[20px] hover:shadow-lg hover:shadow-[#0252CD] dark:hover:shadow-lg dark:hover:shadow-[#428DFF] `}
             >
               {/* <div className="pb-[18px] pt-[15px]">
@@ -86,13 +87,7 @@ const Services = () => {
                 />
               </div>
               </div> */}
-              <Image
-                src={service.imgURL}
-                alt={service.title}
-                width={85}
-                height={85}
-                className="pb-[18px] pt-[15px]"
-              />
+              <Cursor />
               <h3 className="font-semibold text-lg mb-1 dark:text-primary-light">
                 {service.title}
               </h3>
