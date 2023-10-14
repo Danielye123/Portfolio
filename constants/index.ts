@@ -31,13 +31,14 @@ import {
   FrontEndIcon,
   BackEndIcon,
   WebOptIcon,
-  AnalyticsIcon
+  AnalyticsIcon,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
 import Frontend from "../components/svgComponents/frontend";
 import Backend from "../components/svgComponents/backend";
 import Opt from "../components/svgComponents/Opt";
+import Cursor from "../components/svgComponents/Cursor";
 
 export const navLinks = [
   {
@@ -129,28 +130,28 @@ export const morrentSkills = [
 export const services = [
   {
     // Component: Analytics,
-    imgURL: analytics,
+    Component: Analytics,
     title: "Analytics & SEO",
     description:
       "Implement tracking & analytics tools to monitor website performance & improve SEO.",
   },
   {
     // Component: Frontend,
-    imgURL: frontend,
+    Component: Cursor,
     title: "Front-End Dev",
     description:
       "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
   },
   {
     // Component: Backend,
-    imgURL: backend,
+    Component: Backend,
     title: "Back-End Dev",
     description:
       "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
   },
   {
     // Component: Opt,
-    imgURL: opt,
+    Component: Opt,
     title: "Web Optimization",
     description:
       "Web optimization focuses on improving website performance for a smoother user experience",

@@ -52,6 +52,7 @@ module.exports = {
       scale: {
         '200': '2',
       },
+      
     },
   },
 },

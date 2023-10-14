@@ -58,3 +58,7 @@ body {
     color: white !important; /* Override with !important */
   }
 }
+
+.serviceCard:hover .hoverBgChange {
+  background-color: #F3F8FF; 
+}
