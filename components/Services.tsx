@@ -86,10 +86,10 @@ const Services = () => {
     hover:scale-105 hover:mt-[20px] hover:bg-[#0252CD] hover:text-[#F3F8FF] hover:shadow-lg hover:shadow-[#0252CD] dark:hover:shadow-lg dark:hover:shadow-[#428DFF] serviceCard`}
             >
               <div
-                className={`pb-[18px] pt-[15px] w-[62px] h-[62px] bg-[#0252CD] dark:bg-[#428DFF] rounded-lg hoverBgChange`}
+                className={`mt-[10px] mb-[15px] w-[62px] h-[62px] bg-[#0252CD] dark:bg-[#428DFF] rounded-lg hoverBgChange flex justify-center items-center`}
               >
                 <service.Component
-                  className="text-white group-hover:text-[#0252CD] dark:text-white dark:group-hover:text-[#0252CD]"
+                  className="text-white group-hover:text-[#0252CD] dark:text-white dark:group-hover:text-[#0252CD] my-auto transform translate-x-4 translate-y-4"
                   width="85"
                   height="85"
                 />
