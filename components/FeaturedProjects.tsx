@@ -9,7 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 const FeaturedProjects = () => {
   return (
     <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] w-full">
-      <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
+      <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em] text-center md:text-left">
         Featured
         <span className="mr-[10px]"></span>
         <div className="inline-block relative">
@@ -19,9 +19,9 @@ const FeaturedProjects = () => {
       </h1>
 
       {/* <div className="w-full px-[85px] text-[#FFFFFF]"> */}
-      <div className="w-[1440px] text-[#FFFFFF]">
+      <div className="md:w-[1440px] text-[#FFFFFF]">
         {/* Project 1 */}
-        <div className="bg-[#416CEA] rounded-lg flex w-full py-14 mt-8">
+        <div className="project-container bg-[#416CEA] rounded-lg flex md:w-full py-14 mt-8 sm:w-[345px] sm:h-[514px]">
           <div className="flex flex-1 flex-col items-center justify-center">
             <div className="p-4">
               <div className="flex lg:text-[3rem] text-[2rem] font-bold w-[480px]">
@@ -55,7 +55,7 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="bg-[#0BAB7C] rounded-lg flex w-full py-14 justify-between mt-8">
+        <div className="bg-[#0BAB7C] rounded-lg flex w-full py-14 justify-between mt-8 project-container">
           <div className="flex justify-center items-center py-4">
             <Image
               src={Morrent}
@@ -89,7 +89,7 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="bg-[#DB202C] rounded-lg flex w-full py-14 justify-between mt-8">
+        <div className="bg-[#DB202C] rounded-lg flex w-full py-14 justify-between mt-8 project-container">
           <div className="flex flex-1 flex-col items-center justify-left">
             <div className="p-4">
               <div className="flex lg:text-[3rem] text-[2rem] font-bold w-[480px]">

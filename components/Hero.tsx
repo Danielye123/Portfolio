@@ -57,8 +57,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full pt-16px flex min-h-screen text-black dark:bg-[#192333] bg-[#F3F8FF] gap-[100px] justify-between">
-      <div className="flex flex-col items-left max-w-[900px] px-[85px] pt-[40px]">
+<section className="flex flex-col md:flex-row w-screen py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] justify-between">
+    <div className="flex flex-col items-start px-6 py-6 md:px-[85px] md:pb-[300px] md:max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
@@ -105,7 +105,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="pl-[60px] pb-[60px] justify-end items-center flex">
+      <div className="flex justify-end items-center w-full sm:w-[393px] sm:h-[262px] md:pl-[60px] md:pb-[100px] md:w-[1000px] md:h-[1000px]">
         <Image
           src={theme === "dark" ? HeroDarkSVG : HeroLightSVG}
           alt="hero image"

@@ -27,7 +27,7 @@ const Recommendations = () => {
   const currentRecommendationData = recommendationsData[currentRecommendation];
 
   return (
-    <section className="w-full h-[589px] flex flex-col justify-start items-center px-[85px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full md:h-[589px] flex flex-col justify-start items-center px-[85px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em]">
         What<span className="mx-2"></span>
         <div className="relative inline-block">

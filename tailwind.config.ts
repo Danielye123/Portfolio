@@ -52,6 +52,9 @@ module.exports = {
       scale: {
         '200': '2',
       },
+      screens: {
+        xs: "350px",
+      },
       
     },
   },

@@ -62,3 +62,11 @@ body {
 .serviceCard:hover .hoverBgChange {
   background-color: #F3F8FF; 
 }
+
+@media (max-width: 767px) {
+  .project-container {
+    width: 345px;
+    height: 514px;
+    border-radius: 16px;
+  }
+}

@@ -12,7 +12,7 @@ const NavBar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[85px] w-full z-[100]">
+    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] md:py-4 md:px-[85px] md:w-full z-[100]">
       <Link href="/">
         <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
           DY
