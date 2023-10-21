@@ -81,16 +81,16 @@ const Hero = () => {
           passion, and a profound commitment to excellence
         </div>
         <br />
-        <div className="flex flex-row gap-[18px]">
+        <div className="flex md:flex-row flex-col md:gap-[18px] gap-2">
           <Link href="/contact">
-            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 w-[186px] flex justify-center">
+            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] w-[350px] h-[55px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
               </p>
             </button>
           </Link>
 
-          <button onClick={copyText} className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 flex sm:mt-0 mt-8 items-center justify-center">
+          <button onClick={copyText} className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] w-[350px] h-[55px] flex sm:mt-0 mt-8 items-center justify-center">
             <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
             daniel.jianhao.ye@gmail.com
             </p>
