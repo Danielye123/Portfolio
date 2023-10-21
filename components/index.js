@@ -5,6 +5,7 @@ import Skills from "./Skills.tsx";
 import Services from "./Services.tsx";
 import ServiceCard from "./ServiceCard.tsx";
 import FeaturedProjects from "./FeaturedProjects.tsx";
+import ProjectCard from "./ProjectCard.tsx";
 import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
 
@@ -58,6 +59,7 @@ export {
     Services,
     ServiceCard,
     FeaturedProjects,
+    ProjectCard,
     Recommendations,
     Contact,
     CaseStudiesHero,

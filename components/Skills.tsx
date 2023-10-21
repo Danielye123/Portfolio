@@ -10,11 +10,11 @@ const Skills = () => {
           <div className="absolute left-0 bottom-0 h-[15px] w-full bg-[#ffbe62] z-0" />
         </div>
       </h1>
-      <div className="flex flex-wrap justify-center  md:pt-[48px] md:gap-[41px] md:px-[85px]">
+      <div className="flex flex-row flex-wrap justify-center py-10 px-[24px] md:px-[150px] gap-8">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[100px] h-[100px] rounded-full flex items-center justify-center
+            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[54px] h-[52px] md:w-[100px] md:h-[100px] rounded-full flex items-center justify-center
             grayscale hover:grayscale-0 opacity-50 hover:opacity-100
             ${index === 0 && 'md:order-1'}`}
           >
