@@ -24,7 +24,7 @@
 //           {services.map((service, index) => (
 //             <div
 //               key={index}
-//               className={`group w-[285px] h-[265px] rounded-lg shadow-lg border shadow-[#E0ECFF] dark:shadow-[#1F2E48] dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] text-black service-card transition-transform transform 
+//               className={`group w-[285px] h-[265px] rounded-lg shadow-lg border shadow-[#E0ECFF] dark:shadow-[#1F2E48] dark:border-[#1F2E48] dark:shadow-md p-4 flex flex-col items-start bg-[#F3F8FF] dark:bg-[#192333] text-black service-card transition-transform transform
 //     hover:scale-105 hover:mt-[20px] hover:bg-[#0252CD] hover:text-[#F3F8FF] hover:shadow-lg hover:shadow-[#0252CD] dark:hover:shadow-lg dark:hover:shadow-[#428DFF] serviceCard`}
 //             >
 //               <div
@@ -56,7 +56,6 @@
 import { services } from "@/constants";
 
 const Services = () => {
-
   return (
     <section className="flex flex-col justify-start items-center py-[72px] bg-[#F3F8FF] dark:bg-[#192333] w-full md:h-[513px]">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em] text-center md:text-left">
@@ -81,12 +80,12 @@ const Services = () => {
               className={`mt-2 md:mt-0 mb-4 md:mb-8 sm:w-[287.36px] sm:h-[265px] md:w-[62px] md:h-[62px] bg-[#0252CD] dark:bg-[#428DFF] rounded-lg hoverBgChange flex justify-center items-center`}
             >
               <service.Component
-                className="text-white group-hover:text-[#0252CD] dark:text-white dark:group-hover:text-[#0252CD] my-auto transform translate-x-4 translate-y-4"
+                className="text-white group-hover:text-[#0252CD] dark:text-white dark:group-hover:text-[#428DFF] my-auto transform translate-x-[18px] translate-y-5"
                 width="85"
                 height="85"
               />
             </div>
-
+            
             <h3 className="font-semibold text-lg md:text-xl mb-2 md:mb-4 dark:text-primary-light">
               {service.title}
             </h3>
