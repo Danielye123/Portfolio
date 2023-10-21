@@ -247,6 +247,7 @@ export const projects = [
     link: "/hipnode",
     image: Hipnode,
     bgColor: "bg-[#416CEA]",
+    isReversed: false, 
   },
   {
     title: "Morrent",
@@ -255,6 +256,7 @@ export const projects = [
     link: "/morrent",
     image: Morrent,
     bgColor: "bg-[#0BAB7C]",
+    isReversed: true, 
   },
   {
     title: "Filmpire",
@@ -263,5 +265,6 @@ export const projects = [
     link: "/filmpire",
     image: Filmpire,
     bgColor: "bg-[#DB202C]",
+    isReversed: false, 
   }
 ]
