@@ -241,22 +241,25 @@ export const recommendationsData = [
 
 export const projects = [
   {
-    title: "Hipnode - Social Media Application",
-    tech: ["ReactJS, Next.js", "Node.js, MongoDB"],
+    title: "Hipnode",
+    description: "Social Media Application",
+    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
     link: "/hipnode",
     image: Hipnode,
     bgColor: "bg-[#416CEA]",
   },
   {
-    title: "Morrent - A Car Rental Application",
-    tech: ["ReactJS, Next.js", "Node.js, MongoDB"],
+    title: "Morrent",
+    description: "A Car Rental Application",
+    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
     link: "/morrent",
     image: Morrent,
     bgColor: "bg-[#0BAB7C]",
   },
   {
-    title: "Filmpire - A Movie Review Application",
-    tech: ["ReactJS, Next.js", "Node.js, MongoDB"],
+    title: "Filmpire",
+    description: "A Movie Review Application",
+    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
     link: "/filmpire",
     image: Filmpire,
     bgColor: "bg-[#DB202C]",
