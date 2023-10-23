@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
   const colors = ["#416CEA", "#0BAB7C", "#DB202C"];
   return (
     <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] w-full">
-      <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[48px] leading-[55px] tracking-[-0.01em] text-center md:text-left">
+      <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em] text-center md:text-left">
         Featured
         <span className="mr-[10px]"></span>
         <div className="inline-block relative">

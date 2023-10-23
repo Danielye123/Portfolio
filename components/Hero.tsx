@@ -3,10 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import { hero, laptophero, laptopherodark, clipboard, HeroLightSVG, HeroDarkSVG } from "../assets/index";
+import {
+  hero,
+  laptophero,
+  laptopherodark,
+  clipboard,
+  HeroLightSVG,
+  HeroDarkSVG,
+} from "../assets/index";
 import { useState } from "react";
 
 const Hero = () => {
@@ -57,25 +64,26 @@ const Hero = () => {
   };
 
   return (
-<section className="flex flex-col md:flex-row w-screen py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] justify-between">
-    <div className="flex flex-col items-start px-6 py-6 md:px-[85px] md:pb-[300px] md:max-w-[900px]">
+    <section className="flex flex-col md:flex-row w-screen py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] pt-[48px] md:pt-[0px] justify-between">
+      <div className="flex flex-col items-start px-6 py-6 md:px-[85px] md:pb-[100px] md:max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
-        <div className="font-semibold text-[20px] leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
+        <div className="font-semibold text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
         </div>
         <div className="pt-[27px] pb-[10px]">
-          <h1 className="leading-[83px] font-bold text-[64px] dark:text-[#FFFFFF]">
+          <h1 className="mobile-header-font md:leading-[83px] md:font-bold md:text-[64px] dark:text-[#FFFFFF]">
             Professional
-            <br />
+            <br className="sm:hidden md:block" />
             <div className="inline-block relative">
               <span className="relative z-10">Web Developer</span>
-              <div className="absolute left-0 bottom-[8px] h-[15px] w-full bg-[#ffbe62] z-0" />
+              <div className="underline-divider" />
             </div>
-            <br />
+            <br className="sm:hidden md:block" />
             based in USA
           </h1>
         </div>
-        <div className="font-poppins font-normal text-lg text-text-body dark:text-[#F3F8FF] pb-[36px]">
+
+        <div className="font-poppins font-normal text-[12px] leading-[18px] md:text-lg text-text-body dark:text-[#F3F8FF] pt-[14px] md:pt-[0px] md:pb-[36px]">
           Transforming the web one line of code at a time: <br />
           Crafting cutting-edge digital experiences with precision, <br />
           passion, and a profound commitment to excellence
@@ -90,9 +98,12 @@ const Hero = () => {
             </button>
           </Link>
 
-          <button onClick={copyText} className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] w-[350px] h-[55px] flex sm:mt-0 mt-8 items-center justify-center">
+          <button
+            onClick={copyText}
+            className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] w-[350px] h-[55px] flex sm:mt-0 mt-8 items-center justify-center"
+          >
             <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
-            daniel.jianhao.ye@gmail.com
+              daniel.jianhao.ye@gmail.com
             </p>
             <Image
               src={clipboard}

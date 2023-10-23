@@ -70,3 +70,42 @@ body {
     border-radius: 16px;
   }
 }
+
+.md-screen-font {
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 83px;
+  letter-spacing: -0.01em;
+}
+
+.mobile-header-font {
+  font-family: 'Poppins', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.underline-divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 19px; /* Adjust this value if you want the underline thicker or thinner */
+  width: 100%;
+  background-color: #ffbe62;
+  z-index: 5;
+}
+
+/* By default, hide the arrows */
+.left-arrow, .right-arrow {
+  display: none;
+}
+
+/* Show the arrows on larger screens (e.g., tablet and desktop) */
+@media (min-width: 768px) {
+  .left-arrow, .right-arrow {
+      display: block; /* or 'inline-block' or 'flex', depending on your design */
+  }
+}
