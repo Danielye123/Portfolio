@@ -31,7 +31,7 @@ const Contact = () => {
             height={180.86}
           />
         </div>
-        <div className="absolute top-[-124.23px] left-[-2px] transform z-8 hidden md:block">
+        <div className="absolute top-[-124.23px] left-[-2px] transform rotate-[270deg] md:rotate-[0deg] z-8">
           <Image
             src={ellipse118}
             alt="Pattern ellipse118"
@@ -47,7 +47,6 @@ const Contact = () => {
             height={180.86}
           />
         </div>
-
         <div className="absolute top-[5.439999999999998px] left-[1463.11px] z-8 overflow-hidden">
           <Image
             src={rectangle}

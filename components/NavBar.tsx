@@ -7,13 +7,16 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { navLinks } from "@/constants";
 import { LogoDY, DYLogo } from "@/assets";
+import { AiOutlineMenu } from "react-icons/ai";
+import HeaderMobileModule from "./HeaderMobileModule";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] md:py-4 md:px-[85px] md:w-full z-[100]">
-      <Link href="/">
+    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 md:px-[85px] w-full z-[100]">
+      <Link href="/" className="pl-[24px] md:pl-0 md:pt-2">
         <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
           DY
         </div>
@@ -64,6 +67,14 @@ const NavBar = () => {
           )}
         </button>
       </nav>
+      <div className="appBarMenu flex md:hidden pr-[24px] justify-center items-center relative rounded-full bg-primary">
+        <AiOutlineMenu
+          size={30}
+          className="text-primary-accentBlue dark:text-primary-darkmodeblue"
+          onClick={() => setToggle(prevToggle => !prevToggle)} 
+        />
+        <HeaderMobileModule setToggle={setToggle} toggle={toggle} />
+      </div>
     </header>
   );
 };

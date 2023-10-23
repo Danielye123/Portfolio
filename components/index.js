@@ -9,6 +9,8 @@ import ProjectCard from "./ProjectCard.tsx";
 import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
 
+import HeaderMobileModule from "./HeaderMobileModule.tsx";
+
 import CaseStudiesHero from "./casestudy/casestudies/CaseStudiesHero.tsx";
 import CaseStudiesProjects from "./casestudy/casestudies/CaseStudiesProjects.tsx";
 import CaseStudiesOther from "./casestudy/casestudies/CaseStudiesOther.tsx";
@@ -65,6 +67,7 @@ export {
     CaseStudiesHero,
     CaseStudiesProjects,
     CaseStudiesOther,
+    HeaderMobileModule,
 
 
     MorrentHero,
