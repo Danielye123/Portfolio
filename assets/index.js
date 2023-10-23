@@ -1,4 +1,5 @@
 import LogoDY from "./DY_Logo.png";
+import DYLogo from "./DY_Logo.svg";
 import hero from "./hero.png";
 import man from "./man.png";
 import laptophero from "./laptophero.png";
@@ -94,6 +95,7 @@ import WebOptIcon from "./services/WebOptIcon.svg"
 
 export {
     LogoDY,
+    DYLogo,
     hero,
     man,
     laptophero,

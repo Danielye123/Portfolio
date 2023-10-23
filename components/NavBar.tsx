@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { navLinks } from "@/constants";
-import { LogoDY } from "@/assets";
+import { LogoDY, DYLogo } from "@/assets";
 
 const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -17,6 +17,13 @@ const NavBar = () => {
         <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
           DY
         </div>
+        {/* <Image
+          src={DYLogo}
+          alt="logo"
+          width={100}
+          height={100}
+          className="w-10 h-10"
+        /> */}
       </Link>
       <nav className="sm:flex hidden text-[#6F74A7] gap-9 justify-between font-bold text-base py-4">
         <Link

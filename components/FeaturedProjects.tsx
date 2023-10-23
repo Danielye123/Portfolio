@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`project-container rounded-lg flex md:w-full py-14 mt-8 sm:w-[345px] sm:h-[514px] ${
+              className={`project-container rounded-lg flex py-14 mt-8 sm:h-[514px] ${
                 project.isReversed ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"
               }`}
               style={{ backgroundColor: colors[index % colors.length] }}
