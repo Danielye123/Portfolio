@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="flex w-full px-[150px] py-[72px] items-center justify-between bg-[#FFFFFF] dark:bg-[#151E2C]">
+    <div className="flex flex-col md:flex-row w-full md:px-[150px] py-[72px] items-center justify-between bg-[#FFFFFF] dark:bg-[#151E2C]">
       <div className="text-[#778295] dark:text-[#F3F8FF]">
         © 2023 Daniel. All rights reserved.
       </div>
