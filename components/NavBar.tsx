@@ -67,7 +67,7 @@ const NavBar = () => {
           )}
         </button>
       </nav>
-      <div className="appBarMenu flex md:hidden pr-[24px] justify-center items-center relative rounded-full bg-primary">
+      <div className="flex md:hidden pr-[24px] justify-center items-center relative rounded-full bg-primary">
         <AiOutlineMenu
           size={30}
           className="text-primary-accentBlue dark:text-primary-darkmodeblue"

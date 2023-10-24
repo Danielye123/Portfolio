@@ -64,7 +64,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row w-screen py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] pt-[48px] md:pt-[0px] justify-between mt-[48px] md:mt-0">
+    <section className="flex flex-col w-full md:flex-row py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] pt-[48px] md:pt-[0px] justify-between mt-[48px] md:mt-0">
       <div className="flex flex-col items-start px-6 py-6 md:px-[85px] md:pb-[100px] md:max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
