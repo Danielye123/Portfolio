@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const MorrentTech = () => {
   return (
-    <section className="px-[280px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
-      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold text-[14px] leading-[20px] pb-[10px]">Techologies used</div>
-      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold text-[32px] leading-[34px]">Tech Stack</div>
+    <section className="md:px-[280px] pl-[24px] md:pl-0 py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
+      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">Techologies used</div>
+      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[28px] md:leading-[34px] leading-[29px]">Tech Stack</div>
 
-      <div className="flex flex-wrap justify-center pt-[48px] gap-[30px]">
+      <div className="flex flex-wrap justify-center pt-[48px] md:gap-[30px] gap-[20px]">
         {morrentSkills.map((skill, index) => (
           <div
             key={index}
