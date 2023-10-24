@@ -11,7 +11,7 @@ const MorrentProcess = () => {
         My Process
       </div>
 
-      <div className="flex flex-row justify-between gap-[50px]">
+      <div className="flex flex-row flex-wrap justify-center md:justify-between gap-[50px]">
         <div className="flex flex-col items-center text-center">
           <div className="rounded-full bg-[#F3F8FF] dark:bg-[#192333] w-[100px] h-[100px] flex items-center justify-center">
             <Image
