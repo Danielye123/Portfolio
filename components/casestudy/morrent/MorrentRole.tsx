@@ -2,7 +2,7 @@ import React from 'react'
 
 const MorrentRole = () => {
   return (
-    <div className="w-full px-[280px] py-16 bg-[#FFFFFF] dark:bg-[#151E2C] flex flex-row gap-[191px] justify-between">
+    <div className="w-full md:px-[280px] pl-[24px] md:pl-0 py-16 bg-[#FFFFFF] dark:bg-[#151E2C] flex flex-col md:flex-row md:gap-[191px] gap-[36px] justify-between">
         <div className="font-poppins">
             <p className="pb-[10px] font-semibold text-[18px] leading-[29px] text-[#778295]">
                 My Role
