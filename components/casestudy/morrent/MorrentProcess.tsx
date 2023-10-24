@@ -3,7 +3,7 @@ import { def, design, plan, dev, deploy, def2, design2, plan2, dev2, deploy2 } f
 
 const MorrentProcess = () => {
   return (
-    <section className="px-[280px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
+    <section className="md:px-[280px] px-[24px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
       <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold text-[14px] leading-[20px] pb-[10px]">
         Way of work
       </div>
@@ -11,7 +11,7 @@ const MorrentProcess = () => {
         My Process
       </div>
 
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between gap-[50px]">
         <div className="flex flex-col items-center text-center">
           <div className="rounded-full bg-[#F3F8FF] dark:bg-[#192333] w-[100px] h-[100px] flex items-center justify-center">
             <Image
