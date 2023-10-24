@@ -29,8 +29,8 @@ const Hero = () => {
       </div>
 
       <div className="flex items-center justify-center pt-[56px]">
-        <Image src={morrentComputer} alt="computer" />
-        <Image src={morrentPhone} alt="phone" className="md:mt-11 mt-7" />
+        <Image width={598} height={349} src={morrentComputer} alt="computer" className="md:w-[598px] md:h-[349px] w-[278px] h-[162px]" />
+        <Image src={morrentPhone} alt="phone" className="md:mt-11 mt-7 md:w-[148px] md:h-[295px] w-[69px] h-[138px]" />
       </div>
 
       <div className="flex items-center justify-center md:gap-[109px] gap-[40px] pt-[72px]">

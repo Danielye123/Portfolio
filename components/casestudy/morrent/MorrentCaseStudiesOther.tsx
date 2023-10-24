@@ -5,16 +5,16 @@ import Link from "next/link";
 
 const MorrentCaseStudiesOther = () => {
   return (
-    <section className="px-[280px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
-      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold text-[14px] leading-[20px] pb-[10px]">
+    <section className="md:px-[280px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">
         Projects
       </div>
-      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold text-[32px] leading-[34px] pb-[40px]">
+      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[28px] md:leading-[34px] leading-[29px] pb-[40px]">
         Other Case Studies
       </div>
 
-      <div className="flex flex-row gap-[50px]">
-        <div className="w-[430px] h-[481px] bg-[#FFFFFF] dark:bg-[#192333] rounded-lg flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
+      <div className="flex flex-col md:flex-row gap-[50px]">
+        <div className="md:w-[430px] md:h-[481px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-lg flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
           <Image
             src={FilmpireShow}
             alt="other studies"
@@ -28,7 +28,7 @@ const MorrentCaseStudiesOther = () => {
           </p>
           <Link
             href="/filmpire"
-            className="w-96 h-[48px] mx-auto py-[14px] px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
+            className="md:w-96 md:h-[48px] w-[307px] h-[41px] mx-auto py-[14px] md:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
           >
             <p className="text-[#FFFFFF] font-poppins font-semibold text-[14px] leading-[20px] text-center">
               See Case Study
@@ -36,7 +36,7 @@ const MorrentCaseStudiesOther = () => {
           </Link>
         </div>
 
-        <div className="w-[430px] h-[481px] bg-[#FFFFFF] dark:bg-[#192333] rounded-[20px] flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
+        <div className="md:w-[430px] md:h-[481px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-[20px] flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
           <Image
             src={hipnodeLink}
             alt="other studies"
@@ -50,7 +50,7 @@ const MorrentCaseStudiesOther = () => {
           </p>
           <Link
             href="/hipnode"
-            className="w-96 h-[48px] mx-auto py-[14px] px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
+            className="md:w-96 md:h-[48px] w-[307px] h-[41px] mx-auto py-[14px] md:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
           >
             <p className="text-[#FFFFFF] font-poppins font-semibold text-[14px] leading-[20px] text-center">
               See Case Study
