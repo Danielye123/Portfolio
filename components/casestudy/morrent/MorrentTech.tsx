@@ -11,7 +11,7 @@ const MorrentTech = () => {
         {morrentSkills.map((skill, index) => (
           <div
             key={index}
-            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[93px] h-[93px] rounded-full flex items-center justify-center`}
+            className={`md:m-4 m-1 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[93px] h-[93px] rounded-full flex items-center justify-center`}
           >
             <Image
               src={skill.imgURL}
