@@ -3,15 +3,15 @@ import { def, design, plan, dev, deploy, def2, design2, plan2, dev2, deploy2 } f
 
 const HipnodeProcess = () => {
   return (
-    <section className="px-[280px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
-      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold text-[14px] leading-[20px] pb-[10px]">
+    <section className="md:px-[280px] px-[24px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
+      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">
         Way of work
       </div>
-      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold text-[32px] leading-[34px] pb-[40px]">
+      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[28px] md:leading-[34px] leading-[29px] pb-[40px]">
         My Process
       </div>
 
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row flex-wrap justify-center md:justify-between gap-[50px]">
         <div className="flex flex-col items-center text-center">
           <div className="rounded-full bg-[#F3F8FF] dark:bg-[#192333] w-[100px] h-[100px] flex items-center justify-center">
             <Image

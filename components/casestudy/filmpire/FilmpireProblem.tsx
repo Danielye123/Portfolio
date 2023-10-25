@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const FilmpireProblem = () => {
   return (
-    <section className="px-[280px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
-      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold text-[14px] leading-[20px] pb-[10px]">
+    <section className="md:px-[280px] px-[24px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
+      <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">
         Problem
       </div>
-      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold text-[32px] leading-[34px]">
+      <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[28px] md:leading-[34px] leading-[29px]">
         Problem Statement
       </div>
 
-      <div className="w-full py-[29px] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[20px] leading-[30px]">
+      <div className="w-full py-[29px] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px]">
         One of the main problems that people face when looking to rent a car is
         the hassle of finding a reliable and user-friendly platform to search
         for and book rental cars. In addition, car owners who want to rent out

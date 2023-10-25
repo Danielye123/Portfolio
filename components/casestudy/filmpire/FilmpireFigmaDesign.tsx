@@ -5,7 +5,7 @@ import Image from "next/image"
 const FilmpireFigmaDesign = () => {
   return (
     <div className="w-full text-center bg-[#0252CD] dark:bg-[#428DFF]">
-        <div className="text-[#FFFFFF] font-poppins font-semibold text-[32px] leading-[34px] text-center items-center justify-center py-[36px]">
+        <div className="text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[14px] md:leading-[34px] leading-[20px] text-center items-center justify-center md:py-[36px] py-[9px]">
             HIGH-FIDELITY FIGMA DESIGN
         </div>
 
