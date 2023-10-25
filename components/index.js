@@ -8,6 +8,7 @@ import FeaturedProjects from "./FeaturedProjects.tsx";
 import ProjectCard from "./ProjectCard.tsx";
 import Recommendations from "./Recommendations.tsx";
 import Contact from "./Contact.tsx";
+import ContactPage from "./ContactPage.tsx";
 
 import HeaderMobileModule from "./HeaderMobileModule.tsx";
 
@@ -64,6 +65,7 @@ export {
     ProjectCard,
     Recommendations,
     Contact,
+    ContactPage,
     CaseStudiesHero,
     CaseStudiesProjects,
     CaseStudiesOther,

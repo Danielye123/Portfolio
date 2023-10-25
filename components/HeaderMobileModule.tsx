@@ -22,7 +22,7 @@ const HeaderMobileModule = ({ toggle, setToggle }) => {
         >
           <AiOutlineClose
             onClick={() => setToggle(false)}
-            className="text-black dark:text-white p-4"
+            className="text-black dark:text-white p-4 z-100"
           />
           <nav className="flex flex-col items-start justify-start p-4 space-y-4 text-black">
             <Link href="/" onClick={() => setToggle(false)}>

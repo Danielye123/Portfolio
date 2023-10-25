@@ -3,6 +3,8 @@ import React from "react";
 import { FilmpireShow, hipnodeLink } from "@/assets";
 import Link from "next/link";
 
+// need to adjust the other projects so that it is not fixed width and height
+
 const MorrentCaseStudiesOther = () => {
   return (
     <section className="md:px-[280px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
