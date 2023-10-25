@@ -10,6 +10,7 @@ import {
   ellipse118,
   ellispe119,
 } from "../assets/contact/index";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -90,9 +91,9 @@ const Contact = () => {
         >
           Have a project in mind that requires technical expertise?
         </div>
-        <button className="md:w-[323px] w-[310px] md:h-auto py-[20px] px-[12px] rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
+        <Link href="/contact" className="md:w-[323px] w-[310px] md:h-auto py-[20px] px-[12px] justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
           Get in touch with me
-        </button>
+        </Link>
       </div>
     </div>
   );
