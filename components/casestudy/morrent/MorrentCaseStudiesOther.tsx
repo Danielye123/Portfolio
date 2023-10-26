@@ -16,7 +16,7 @@ const MorrentCaseStudiesOther = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-[50px]">
-        <div className="md:w-[430px] md:h-[481px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-lg flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
+        <div className="md:w-[430px] md:h-[460px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-[20px] flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
           <Image
             src={FilmpireShow}
             alt="other studies"
@@ -38,7 +38,7 @@ const MorrentCaseStudiesOther = () => {
           </Link>
         </div>
 
-        <div className="md:w-[430px] md:h-[481px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-[20px] flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
+        <div className="md:w-[430px] md:h-[460px] w-[345px] h-[385px] bg-[#FFFFFF] dark:bg-[#192333] rounded-[20px] flex flex-col shadow-md shadow-[#E0ECFF] dark:shadow-xl dark:shadow-[#1F2C41]">
           <Image
             src={hipnodeLink}
             alt="other studies"
