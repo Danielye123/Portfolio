@@ -2,7 +2,7 @@ import React from "react";
 
 const FilmpireDescription = () => {
   return (
-    <div className="w-full md:px-[280px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[20px] md:leading-[30px] leading-[21px]">
+    <div className="w-full md:px-[280px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[16px] md:leading-[30px] leading-[23px]">
       Morent, a cutting-edge car rental application that was developed using the
       MERN stack. The app boasts a dynamic homepage that showcases featured
       vehicles, along with convenient pickup & drop-off location options & a
