@@ -63,7 +63,7 @@ const Services = () => {
         What
         <span className="mr-[10px]"></span>
         <div className="inline-block relative">
-          <span className="relative z-10">Service</span>
+          <span className="relative z-10">Services</span>
           <div className="absolute left-0 bottom-[0px] h-[15px] w-full bg-[#ffbe62] z-0" />
         </div>
         <span className="ml-[10px]"></span>
