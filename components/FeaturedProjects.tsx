@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`project-container rounded-lg flex py-14 mt-8 sm:h-[514px] ${
+              className={`project-container rounded-lg flex py-4 mt-8 h-[514px] md:h-[410px] ${
                 project.isReversed ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"
               }`}
               style={{ backgroundColor: colors[index % colors.length] }}
@@ -56,13 +56,15 @@ const FeaturedProjects = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex sm:flex-col justify-center items-center py-4">
+              {/* <div className="flex sm:flex-col justify-center items-center py-4 overflow-hidden relative"> */}
+              <div className="flex sm:flex-col justify-center items-center py-4 overflow-hidden relative w-full md:w-1/2">
                 <Image
                   src={project.image}
                   width={575}
                   height={330}
                   alt={project.title}
-                  className="object-contain sm:mt-4"
+                  className={`object-contain sm:mt-4 px-[10px] md:px-0 md:absolute md:inset-y-7 ${
+                    project.isReversed ? "md:left-[-50px]" : "md:right-[-20px]"}`}
                 />
               </div>
             </div>
