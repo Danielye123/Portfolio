@@ -48,10 +48,16 @@ const NavBar = () => {
           Contact
         </Link>
 
-        <div className="flex items-center pb-1 gap-1">
-        <AiOutlineDownload className="w-[20px] h-[20px] inline-block" />
-          Resume
-        </div>
+        <Link
+          href="https://drive.google.com/file/d/1Znd56RVkC73f09WszQU0_sgCJy2XCAPx/view?usp=sharing"
+          target="_blank"
+          className="hover:text-[#0252CD] hover:duration-500 transition"
+        >
+          <div className="flex items-center pb-1 gap-1">
+            <AiOutlineDownload className="w-[20px] h-[20px] inline-block" />
+            Resume
+          </div>
+        </Link>
 
         <div className="h-[28px] w-[2px] bg-[#6F74A7] self-center" />
 
@@ -79,7 +85,7 @@ const NavBar = () => {
         <AiOutlineMenu
           size={30}
           className="text-primary-accentBlue dark:text-primary-darkmodeblue"
-          onClick={() => setToggle(prevToggle => !prevToggle)} 
+          onClick={() => setToggle((prevToggle) => !prevToggle)}
         />
         <HeaderMobileModule setToggle={setToggle} toggle={toggle} />
       </div>
