@@ -27,6 +27,7 @@ import {
   analytics,
   gnar,
   Malphite,
+  Yasuo,
   richard,
   FrontEndIcon,
   BackEndIcon,

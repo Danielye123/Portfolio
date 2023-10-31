@@ -56,13 +56,13 @@ const Recommendations = () => {
 
         {/* Center Content */}
         <div className="flex md:flex-row flex-col items-start justify-center">
-        <div className="flex items-start space-x-5"> {/* Flex container to wrap image and arrows */}
+        <div className="flex items-start"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
-            <div className="flex-shrink-0 rounded-[16px] md:mx-[26px] md:max-w-[328px] md:h-[350px] md:w-[100%] w-[200px] h-[200px] overflow-hidden">
+            <div className="flex-shrink-0 rounded-[16px] md:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] overflow-hidden">
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
-                  className="rounded-lg"
+                  className="md:w-[323px] md:h-[350px] w-[200px] h-[200px] rounded-[16px]"
                 />
             </div>
             {/* Mobile Left Arrow */}
@@ -96,7 +96,7 @@ const Recommendations = () => {
               className="mt-4.25 flex flex-col"
             />
 
-            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF]">
+            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
               {currentRecommendationData.text}
             </p>
 
