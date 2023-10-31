@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { navLinks } from "@/constants";
 import { LogoDY, DYLogo } from "@/assets";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineDownload } from "react-icons/ai";
 import HeaderMobileModule from "./HeaderMobileModule";
 
 const NavBar = () => {
@@ -47,12 +47,20 @@ const NavBar = () => {
         >
           Contact
         </Link>
-        <div>Resume</div>
+
+        <div className="flex items-center pb-1 gap-1">
+        <AiOutlineDownload className="w-[20px] h-[20px] inline-block" />
+          Resume
+        </div>
+
+        <div className="h-[28px] w-[2px] bg-[#6F74A7] self-center" />
+
         <button
           type="button"
           onClick={() => {
             setTheme(theme === "dark" ? "light" : "dark");
           }}
+          className="flex"
         >
           {theme === "dark" ? (
             <FiSun
