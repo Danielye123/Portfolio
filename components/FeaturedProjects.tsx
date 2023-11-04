@@ -21,19 +21,22 @@ const FeaturedProjects = () => {
         </div>
       </h1>
 
-      <div className="flex flex-row flex-wrap justify-center py-10 px-[24px] md:px-[85px] gap-8">
-        <div className="md:w-[1440px] text-[#FFFFFF]">
+      <div className="flex flex-row flex-wrap justify-center px-[24px] md:px-[85px] gap-8 max-w-[1440px] mx-auto">
+        <div className="w-screen text-[#FFFFFF]">
+          {/*<div className="w-full text-[#FFFFFF]"> */}
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`project-container rounded-lg flex py-4 mt-8 h-[514px] md:h-[410px] ${
-                project.isReversed ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"
+              className={`project-container rounded-lg flex mt-10 md:pt-4 md:pb-4 py-4 ${
+                project.isReversed
+                  ? "md:flex-row-reverse flex-col"
+                  : "md:flex-row flex-col"
               }`}
               style={{ backgroundColor: colors[index % colors.length] }}
             >
-              <div className="flex flex-1 items-start justify-start md:items-center md:justify-center">
+              <div className="flex flex-1 items-start justify-start md:items-center md:justify-center pl-9">
                 <div className="p-4">
-                  <h2 className="md:text-[48px] text-[32px] font-bold md:leading-[55px] leading-[41px] w-full sm:w-[480px] md:break-words">
+                  <h2 className="md:text-[48px] text-[32px] font-bold md:leading-[55px] leading-[41px] w-full md:break-words">
                     {project.title} {" - "}
                     <br className="block md:hidden" />
                     {project.description}
@@ -57,14 +60,15 @@ const FeaturedProjects = () => {
                 </div>
               </div>
               {/* <div className="flex sm:flex-col justify-center items-center py-4 overflow-hidden relative"> */}
-              <div className="flex sm:flex-col justify-center items-center py-4 overflow-hidden relative w-full md:w-1/2">
+              <div className="flex sm:flex-col justify-center items-center py-4 overflow-hidden relative w-full md:w-1/2 md:min-h-[378px]">
                 <Image
                   src={project.image}
                   width={575}
                   height={330}
                   alt={project.title}
-                  className={`object-contain sm:mt-4 px-[10px] md:px-0 md:absolute md:inset-y-7 ${
-                    project.isReversed ? "md:left-[-50px]" : "md:right-[-20px]"}`}
+                  className={`object-cover md:absolute ${
+                    project.isReversed ? "left-0" : "right-0"
+                  } transform ${project.isReversed ? "md:-translate-x-11" : "md:translate-x-[1.17rem]"}`}
                 />
               </div>
             </div>

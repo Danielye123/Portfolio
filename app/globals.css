@@ -81,7 +81,7 @@ body {
 @media (max-width: 767px) {
   .project-container {
     width: 345px;
-    height: 444px;
+    height: auto;
     border-radius: 16px;
   }
 }
