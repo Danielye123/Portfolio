@@ -13,7 +13,8 @@ const Skills = () => {
       {/*className="grid grid-cols-4 gap-x-[2.5rem] gap-y-12 md:flex md:flex-wrap md:justify-center lg:gap-[4rem] 
           xl:gap-x-[2.8916rem] xl:gap-y-[4.13rem]" */}
       <div className="grid grid-cols-4 gap-x-[2.5rem] gap-y-8 md:flex md:flex-wrap md:justify-center lg:gap-[4rem] 
-          xl:gap-x-[2.8916rem] xl:gap-y-[4.13rem] py-10 px-6 md:px-[150px]">
+          xl:gap-x-[2.8916rem] xl:gap-y-[4.13rem] py-10 ">
+            {/*px-6 md:px-[150px]*/}
         {skills.map((skill, index) => (
           <div
             key={index}

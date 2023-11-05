@@ -32,7 +32,7 @@ const Recommendations = () => {
   const currentRecommendationData = recommendationsData[currentRecommendation];
 
   return (
-    <section className="w-full md:h-[589px] flex flex-col md:justify-start md:items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full flex flex-col md:justify-start md:items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
       <h1 className="text-center text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em]">
         What
         <span className="md:inline mx-1 md:mx-2"></span>
@@ -50,7 +50,7 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex justify-between self-center ml-[60px] cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
+          className="hidden md:flex self-center ml-[60px] cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
           onClick={handlePreviousRecommendation}
         />
 
@@ -62,7 +62,10 @@ const Recommendations = () => {
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
-                  className="md:w-[323px] md:h-[350px] w-[200px] h-[200px] rounded-[16px]"
+                  layout="responsive"
+                  width={323}
+                  height={350}
+                  className="rounded-[16px]"
                 />
             </div>
             {/* Mobile Left Arrow */}
@@ -96,7 +99,7 @@ const Recommendations = () => {
               className="mt-4.25 flex flex-col"
             />
 
-            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
+            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF]">
               {currentRecommendationData.text}
             </p>
 
