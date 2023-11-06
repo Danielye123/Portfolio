@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="w-full px-[24px] md:px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
+    <div className=" w-screen max-w-[1440px] px-[24px] md:px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
       <div className="bg-[#FFBE62] w-full md:px-[85px] px-auto h-[330px] flex items-center flex-col md:flex-row md:justify-between rounded-3xl z-0 overflow-hidden relative">
         <div className="absolute top-[-1.1200000000000045px] left-[1282.96px] transform z-8">
           <Image
@@ -87,11 +87,11 @@ const Contact = () => {
 
         <div
           className="font-poppins md:text-[48px] text-[30px] font-bold md:leading-[55px] leading-[31px] md:tracking-[-0.01em] tracking-[-0.05em] text-[#151E2C]
-         md:w-[520px] md:h-[165px] md:ml-[75px] mt-[77px] md:mt-0 text-left px-[17px] md:px-0 z-20 mb-5 md:mb-0"
+          md:max-w-[520px] min-w-[345px] md:ml-[75px] mt-[77px] md:mt-0 text-left px-[17px] md:px-0 z-20 mb-5 md:mb-0"
         >
           Have a project in mind that requires technical expertise?
         </div>
-        <Link href="/contact" className="md:w-[323px] w-[310px] md:h-auto py-[20px] px-[12px] justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
+        <Link href="/contact" className="md:w-[323px] w-full md:h-auto py-[20px] px-[12px] justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
           Get in touch with me
         </Link>
       </div>

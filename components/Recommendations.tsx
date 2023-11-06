@@ -43,29 +43,26 @@ const Recommendations = () => {
         <span className="md:ml-2">about me</span>
       </h1>
 
-      <div className="w-full md:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-between">
+      <div className="w-full lg:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-between">
         {/* Left Arrow for larger screens */}
         <Image
           src={TestimonialArrowLeft2}
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex self-center ml-[60px] cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
+          className="hidden md:flex self-center lg:ml-[60px] md:mr-12 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
           onClick={handlePreviousRecommendation}
         />
 
         {/* Center Content */}
-        <div className="flex md:flex-row flex-col items-start justify-center">
+        <div className="flex lg:flex-row flex-col items-start justify-center">
         <div className="flex items-start"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
             <div className="flex-shrink-0 rounded-[16px] md:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] overflow-hidden">
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
-                  layout="responsive"
-                  width={323}
-                  height={350}
-                  className="rounded-[16px]"
+                  className="md:w-[323px] md:h-[350px] w-[200px] h-[200px] rounded-[16px]"
                 />
             </div>
             {/* Mobile Left Arrow */}
@@ -90,7 +87,7 @@ const Recommendations = () => {
         </div>
 
           {/* Quote and Attribution Container */}
-          <div className="flex flex-col max-w-[345px] md:max-w-[749px] pb-[10px] pt-[40px] md:pt-0">
+          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-center pb-[10px] pt-[40px] md:pt-0">
             <Image
               src={Stars}
               alt="Star"
@@ -99,7 +96,7 @@ const Recommendations = () => {
               className="mt-4.25 flex flex-col"
             />
 
-            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF]">
+            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] lg:text-left text-center pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
               {currentRecommendationData.text}
             </p>
 

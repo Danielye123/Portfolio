@@ -22,7 +22,7 @@ const FeaturedProjects = () => {
       </h1>
 
       <div className="flex flex-row flex-wrap justify-center px-[24px] md:px-[85px] gap-8 max-w-[1440px] mx-auto">
-        <div className="w-screen text-[#FFFFFF]">
+        <div className="w-full text-[#FFFFFF]">
           {/*<div className="w-full text-[#FFFFFF]"> */}
           {projects.map((project, index) => (
             <div
@@ -41,7 +41,7 @@ const FeaturedProjects = () => {
                     <br className="block md:hidden" />
                     {project.description}
                   </h2>
-                  <div className="flex gap-2 mt-2 text-[.96rem]">
+                  <div className="flex flex-wrap md:flex-block gap-2 mt-2 text-[.96rem]">
                     {project.tech.map((techItem, index) => (
                       <p
                         key={index}
