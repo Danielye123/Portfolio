@@ -21,8 +21,8 @@ const FeaturedProjects = () => {
         </div>
       </h1>
 
-      <div className="flex flex-row flex-wrap justify-center px-[24px] md:px-[85px] gap-8 max-w-[1440px] mx-auto">
-        <div className="w-full text-[#FFFFFF]">
+      <div className="flex flex-row flex-wrap justify-center px-0 md:px-[85px] gap-8 max-w-[1440px] mx-auto">
+        <div className="2xl:w-screen w-full text-[#FFFFFF]">
           {/*<div className="w-full text-[#FFFFFF]"> */}
           {projects.map((project, index) => (
             <div
@@ -36,7 +36,7 @@ const FeaturedProjects = () => {
             >
               <div className="flex flex-1 items-start justify-start md:items-center md:justify-center pl-9">
                 <div className="p-4">
-                  <h2 className="md:text-[48px] text-[32px] font-bold md:leading-[55px] leading-[41px] w-full md:break-words">
+                  <h2 className="md:text-[48px] text-[32px] font-bold md:leading-[55px] leading-[41px] md:break-words">
                     {project.title} {" - "}
                     <br className="block md:hidden" />
                     {project.description}

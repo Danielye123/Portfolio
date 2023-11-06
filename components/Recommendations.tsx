@@ -55,10 +55,10 @@ const Recommendations = () => {
         />
 
         {/* Center Content */}
-        <div className="flex lg:flex-row flex-col items-start justify-center">
+        <div className="flex 2xl:flex-row flex-col items-start justify-center">
         <div className="flex items-start"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
-            <div className="flex-shrink-0 rounded-[16px] md:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] overflow-hidden">
+            <div className="flex-shrink-0 rounded-[16px] 2xl:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] overflow-hidden">
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
@@ -87,7 +87,7 @@ const Recommendations = () => {
         </div>
 
           {/* Quote and Attribution Container */}
-          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-center pb-[10px] pt-[40px] md:pt-0">
+          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-center pb-[10px] pt-[40px] 2xl:pt-0">
             <Image
               src={Stars}
               alt="Star"
