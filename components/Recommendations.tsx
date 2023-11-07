@@ -43,14 +43,14 @@ const Recommendations = () => {
         <span className="md:ml-2">about me</span>
       </h1>
 
-      <div className="w-full lg:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-between">
+      <div className="w-full 2xl:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-between">
         {/* Left Arrow for larger screens */}
         <Image
           src={TestimonialArrowLeft2}
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex self-center lg:ml-[60px] md:mr-12 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
+          className="hidden md:flex self-center 2xl:ml-[60px] md:mr-12 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
           onClick={handlePreviousRecommendation}
         />
 
@@ -58,7 +58,7 @@ const Recommendations = () => {
         <div className="flex 2xl:flex-row flex-col items-start justify-center">
         <div className="flex items-start"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
-            <div className="flex-shrink-0 rounded-[16px] 2xl:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] overflow-hidden">
+            <div className="flex-shrink-0 rounded-[16px] 2xl:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] items-center overflow-hidden">
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
@@ -116,7 +116,7 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex justify-between self-center ml-[60px] cursor-pointer right-arrow"
+          className="hidden md:flex justify-between self-center 2xl:ml-[60px] cursor-pointer right-arrow"
           onClick={handleNextRecommendation}
         />
       </div>
