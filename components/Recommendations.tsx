@@ -55,10 +55,10 @@ const Recommendations = () => {
         />
 
         {/* Center Content */}
-        <div className="flex 2xl:flex-row flex-col items-start justify-center">
-        <div className="flex items-start"> {/* Flex container to wrap image and arrows */}
+        <div className="flex xl:flex-row flex-col items-start justify-center">
+        <div className="flex items-start gap-3"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
-            <div className="flex-shrink-0 rounded-[16px] 2xl:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] items-center overflow-hidden">
+            <div className="flex-shrink-0 rounded-[16px] xl:mx-[26px] md:w-[323px] md:h-[350px] w-[200px] h-[200px] items-center overflow-hidden">
                 <Image
                   src={currentRecommendationData.image}
                   alt="Person's Image"
@@ -87,7 +87,7 @@ const Recommendations = () => {
         </div>
 
           {/* Quote and Attribution Container */}
-          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-center pb-[10px] pt-[40px] 2xl:pt-0">
+          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-start md:text-center pb-[10px] pt-[40px] 2xl:pt-0">
             <Image
               src={Stars}
               alt="Star"
@@ -96,7 +96,7 @@ const Recommendations = () => {
               className="mt-4.25 flex flex-col"
             />
 
-            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] lg:text-left text-center pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
+            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] lg:text-left text-left md:text-center pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
               {currentRecommendationData.text}
             </p>
 
