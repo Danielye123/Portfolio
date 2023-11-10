@@ -14,8 +14,8 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className=" w-screen max-w-[1440px] px-[24px] md:px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
-      <div className="bg-[#FFBE62] w-full md:px-[85px] px-auto h-[330px] flex items-center flex-col md:flex-row md:justify-between rounded-3xl z-0 overflow-hidden relative">
+    <div className=" w-full px-[24px] md:px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
+      <div className="bg-[#FFBE62] max-w-[1440px] w-full md:px-[85px] px-auto h-[330px] flex items-center flex-col md:flex-row md:justify-between rounded-3xl z-0 overflow-hidden relative">
         <div className="absolute top-[-1.1200000000000045px] left-[1282.96px] transform z-8">
           <Image
             src={ellipse}
