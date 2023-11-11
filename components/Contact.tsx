@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { HiArrowRight } from "react-icons/hi2";
 import {
   ellipse,
   rectangle,
@@ -15,7 +16,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <div className=" w-full px-[24px] md:px-[85px] h-[474px] bg-[#FFFFFF] dark:bg-[#151E2C] relative flex items-center justify-center">
-      <div className="bg-[#FFBE62] max-w-[1440px] w-full md:px-[85px] px-auto h-[330px] flex items-center flex-col md:flex-row md:justify-between rounded-3xl z-0 overflow-hidden relative">
+      <div className="bg-[#FFBE62] max-w-[1440px] w-full md:px-[85px] px-auto h-[330px] flex items-center flex-col xl:flex-row md:justify-between lg:py-[30px] md:py-[74px] py-[10px] xl:py-0 rounded-3xl z-0 overflow-hidden relative">
         <div className="absolute top-[-1.1200000000000045px] left-[1282.96px] transform z-8">
           <Image
             src={ellipse}
@@ -32,7 +33,7 @@ const Contact = () => {
             height={180.86}
           />
         </div>
-        <div className="absolute top-[-124.23px] left-[-2px] transform rotate-[270deg] md:rotate-[0deg] z-8">
+        <div className="absolute top-[-124.23px] left-[-2px] transform rotate-[270deg] md:rotate-[0deg] z-8 hidden md:block">
           <Image
             src={ellipse118}
             alt="Pattern ellipse118"
@@ -86,13 +87,14 @@ const Contact = () => {
         </div>
 
         <div
-          className="font-poppins md:text-[48px] text-[30px] font-bold md:leading-[55px] leading-[31px] md:tracking-[-0.01em] tracking-[-0.05em] text-[#151E2C]
-          md:max-w-[520px] min-w-[345px] md:ml-[75px] mt-[77px] md:mt-0 text-left px-[17px] md:px-0 z-20 mb-5 md:mb-0"
+          className="font-poppins lg:text-[48px] text-[30px] font-bold lg:leading-[55px] leading-[31px] lg:tracking-[-0.01em] tracking-[-0.05em] text-[#151E2C]
+          md:max-w-[520px] min-w-[345px] 2xl:ml-[75px] mt-[77px] md:mt-0 xl:text-left text-center px-[17px] md:px-0 z-20 mb-5 md:mb-0"
         >
           Have a project in mind that requires technical expertise?
         </div>
-        <Link href="/contact" className="md:w-[323px] w-full md:h-auto py-[20px] px-[12px] justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
+        <Link href="/contact" className="min-w-[310px] md:min-w-[323px] md:h-auto py-[20px] px-[12px] gap-2 justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
           Get in touch with me
+          <HiArrowRight size={25} />
         </Link>
       </div>
     </div>
