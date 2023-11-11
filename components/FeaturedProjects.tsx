@@ -9,7 +9,7 @@ import { ProjectCard } from ".";
 import { projects } from "@/constants";
 
 const FeaturedProjects = () => {
-  const colors = ["#416CEA", "#0BAB7C", "#DB202C"];
+  const colors = ["#416CEA", "#DB202C", "#0BAB7C"];
   return (
     <section className="min-h-screen flex flex-col justify-start items-center py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] w-full">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em] text-center md:text-left">
@@ -68,7 +68,7 @@ const FeaturedProjects = () => {
                   alt={project.title}
                   className={`object-cover md:absolute ${
                     project.isReversed ? "left-0" : "right-0"
-                  } transform ${project.isReversed ? "md:-translate-x-11" : "md:translate-x-[1.17rem]"}`}
+                  } transform ${project.isReversed ? "md:-translate-x-16" : "md:translate-x-[1.17rem]"}`}
                 />
               </div>
             </div>
