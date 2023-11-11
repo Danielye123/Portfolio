@@ -124,3 +124,29 @@ body {
       display: block; /* or 'inline-block' or 'flex', depending on your design */
   }
 }
+
+.custom-range-slider {
+  width: 470px;
+  height: 70px;
+  /* Additional styles for your slider */
+}
+
+.custom-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Styles to hide the default thumb */
+  background: transparent;
+  border: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-slider-handle {
+  position: absolute;
+  /* Adjust positioning and size to fit the slider */
+}
+
+.company-card {
+  /* Styles for the card */
+  width: 607px;
+  height: 122px;
+}
