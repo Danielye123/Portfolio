@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col justify-start items-center md:py-[72px] md:px-[85px] py-[40px] bg-primary-light dark:bg-primary-darkDefault">
+    <section className="flex flex-col justify-start items-center md:py-[72px] md:px-[85px] py-[40px] bg-primary-light dark:bg-primary-darkDefault w-full">
 <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em] pb-[40px] max-w-[390px] ">
         <div className="inline-block relative">
           <span className="relative z-10">My Skills</span>

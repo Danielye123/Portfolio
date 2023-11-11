@@ -32,7 +32,7 @@ const Recommendations = () => {
   const currentRecommendationData = recommendationsData[currentRecommendation];
 
   return (
-    <section className="w-full flex flex-col md:justify-start md:items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full flex flex-col justify-center md:justify-start items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
       <h1 className="text-center text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em]">
         What
         <span className="md:inline mx-1 md:mx-2"></span>
@@ -40,17 +40,17 @@ const Recommendations = () => {
           <span className="z-20 relative">they say</span>
           <div className="absolute bottom-[-1px] left-0 h-4 w-full bg-[#ffbe62] z-10"></div>
         </span>
-        <span className="md:ml-2">about me</span>
+        <span className="ml-2">about me</span>
       </h1>
 
-      <div className="w-full 2xl:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-between">
+      <div className="w-full 2xl:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-center md:justify-between">
         {/* Left Arrow for larger screens */}
         <Image
           src={TestimonialArrowLeft2}
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex self-center 2xl:ml-[60px] md:mr-12 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
+          className="hidden md:flex self-center 2xl:ml-[60px] md:mr-12 xl:mr-0 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
           onClick={handlePreviousRecommendation}
         />
 
@@ -87,7 +87,7 @@ const Recommendations = () => {
         </div>
 
           {/* Quote and Attribution Container */}
-          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:max-w-[749px] lg:items-start items-start md:text-center pb-[10px] pt-[40px] 2xl:pt-0">
+          <div className="flex flex-col max-w-[345px] md:max-w-[400px] lg:min-w-[650px] 2xl:min-w-[749px] lg:items-start items-start md:text-center pb-[10px] pt-[40px] xl:pt-0">
             <Image
               src={Stars}
               alt="Star"
@@ -96,7 +96,7 @@ const Recommendations = () => {
               className="mt-4.25 flex flex-col"
             />
 
-            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] lg:text-left text-left md:text-center pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] md:min-w-[748px]">
+            <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] lg:min-w-[500px] 2xl:min-w-[749px]">
               {currentRecommendationData.text}
             </p>
 
@@ -116,7 +116,7 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex justify-between self-center 2xl:ml-[60px] cursor-pointer right-arrow"
+          className="hidden md:flex justify-between self-center xl:ml-[25px] cursor-pointer right-arrow"
           onClick={handleNextRecommendation}
         />
       </div>

@@ -21,7 +21,7 @@ const FeaturedProjects = () => {
         </div>
       </h1>
 
-      <div className="flex flex-row flex-wrap justify-center px-0 2xl:px-[85px] gap-8 max-w-[1440px] 2xl:mx-auto">
+      <div className="flex flex-row flex-wrap justify-center px-0 md:px-[24px] 2xl:px-[85px] gap-8 max-w-[1440px] 2xl:mx-auto">
         <div className="2xl:w-screen w-full text-[#FFFFFF]">
           {/*<div className="w-full text-[#FFFFFF]"> */}
           {projects.map((project, index) => (
