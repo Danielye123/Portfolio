@@ -3,7 +3,7 @@ import { check, challenge } from "@/assets";
 
 const HipnodeChallenges = () => {
   return (
-    <section className="md:px-[280px] px-[24px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
+    <section className="2xl:px-[280px] lg:px-[72px] px-[24px] py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C]">
       <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">
         Problem
       </div>

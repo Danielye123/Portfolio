@@ -13,7 +13,7 @@ import {
 
 const HipnodeHero = () => {
   return (
-<section className="pt-[180px] md:px-[85px] px-[24px] w-full min-h-screen bg-[#F3F8FF] dark:bg-[#192333]">
+<section className="pt-[180px] 2xl:px-[280px] lg:px-[72px] px-[24px] w-full min-h-screen bg-[#F3F8FF] dark:bg-[#192333]">
       <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins md:text-xl text-[14px] font-semibold md:leading-[26px] leading-[18px] tracking-[.3em] text-center items-center justify-center">
         WEB DEV PROJECT
       </div>
@@ -33,7 +33,7 @@ const HipnodeHero = () => {
         <Image src={hipnodePhone} alt="phone" className="md:mt-11 mt-7 md:w-[148px] md:h-[295px] w-[69px] h-[138px]" />
       </div>
 
-      <div className="flex items-center justify-center md:gap-[109px] gap-[40px] pt-[72px]">
+      <div className="flex items-center justify-center md:gap-[109px] gap-[40px] pt-[72px] pb-[60px]">
         <button className="text-[#0252CD] dark:text-[#428DFF] hover:underline font-poppins font-semibold md:text-[20px] text-[14px] md:leading-[26px] leading-[20px] flex items-center gap-1">
           <FaEarthAfrica size={20} />
           Demo Site
