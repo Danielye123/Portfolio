@@ -19,7 +19,7 @@ const Skills = () => {
           <div
             key={index}
             className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[54px] h-[52px] md:w-[100px] md:h-[100px] rounded-full flex items-center justify-center
-            grayscale hover:grayscale-0 opacity-50 hover:opacity-100
+            grayscale hover:grayscale-0 opacity-50 hover:opacity-100 ease-in
             ${index === 0 && 'md:order-1'}`}
           >
             <Image src={skill.imgURL} alt={`Skill ${index}`} />
