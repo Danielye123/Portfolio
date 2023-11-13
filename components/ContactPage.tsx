@@ -42,8 +42,8 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <div className="flex md:flex-row md:gap-52 flex-col-reverse md:px-16 pb-10 dark:bg-[#151E2C] w-full h-full">
-        <div className="flex flex-col px-6 md:pl-[180px] py-12 md:space-y-[80px] space-y-9">
+      <div className="flex xl:flex-row xl:gap-52 gap-0 flex-col-reverse sm:px-16 lg:px-[130px] pb-10 dark:bg-[#151E2C] w-full h-full">
+        <div className="flex flex-col px-6 2xl:pl-[180px] md:pl-0 pl-[24px] py-12 md:space-y-[80px] space-y-9">
           <div className="flex flex-col gap-4">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
               My Socials
@@ -98,7 +98,7 @@ const Contact = () => {
         </div>
         {/*form*/}
         <div className="flex-1 items-center justify-center md:pl-0 px-6 py-12 text-[#192333] dark:text-[#FFFFFF]">
-          <form className="flex flex-col md:w-[763px] w-[345px]">
+          <form className="flex flex-col sm:w-full w-[345px]">
             <label
               htmlFor="name"
               className="mb-2 md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] font-normal font-poppins"
@@ -155,7 +155,9 @@ const Contact = () => {
             <div className="flex md:justify-end">
               <button
                 type="submit"
-                className=" bg-primary-accentBlue dark:bg-primary-darkmodeblue hover:bg-opacity-75 dark:hover:bg-opacity-75 text-white py-2 px-4 rounded-full hover:bg-blue-600 w-full md:w-[186px] md:h-[69px] md:px-[20px] md:py-[12px] md:rounded-full"
+                className=" bg-primary-accentBlue dark:bg-primary-darkmodeblue hover:bg-opacity-75 dark:hover:bg-opacity-75 text-white py-5 px-4 rounded-full hover:bg-blue-600 w-full 
+                xl:w-[186px] xl:h-[69px] xl:px-[20px] xl:py-[12px] xl:rounded-full
+                "
               >
                 {/* {!loading ? "Send" : "Sending...."} */}
                 Send
