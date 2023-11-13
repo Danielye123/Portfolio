@@ -33,10 +33,10 @@ function Sidebar({ setToggle, toggle }: any) {
         {/* Close button on the right */}
         <AiOutlineClose
           onClick={() => setToggle(false)}
-          className="w-[35px] h-[35px] text-primary-accentBlue dark:text-primary-darkmodeblue"
+          className="w-[35px] h-[35px] text-primary-accentBlue dark:text-primary-darkmodeblue pr-[8px]"
         />
       </div>
-      <ul className="h-full w-full list-none m-auto px-5 pt-10 flex flex-col justify-start items-start gap-10 text-base font-bold">
+      <ul className="h-full w-full list-none m-auto px-8 pt-10 flex flex-col justify-start items-start gap-10 text-base font-bold">
         <Link href="/" onClick={() => setToggle(false)}>
           <span className="text-black dark:text-white flex gap-3 items-center">
             <HiHome className="w-[30px] h-[30px] inline-block" />
@@ -69,12 +69,12 @@ function Sidebar({ setToggle, toggle }: any) {
           }}
         >
           {theme === "light" ? (
-            <div className="flex flex-row gap-3 items-center  text-text-title dark:text-white dark:hover:text-text-accentBlue hover:text-text-accentBlue">
+            <div className="flex flex-row gap-3 items-center  dark:text-text-accentBlue text-text-accentBlue">
               <FiSun size={30} />
               <span>Mode</span>
             </div>
           ) : (
-            <div className="flex flex-row gap-3 items-center  text-text-title dark:text-white dark:hover:text-text-accentBlue hover:text-text-accentBlue">
+            <div className="flex flex-row gap-3 items-center dark:text-text-accentBlue text-text-accentBlue">
               <FiMoon size={30} />
               <span>Mode</span>
             </div>
