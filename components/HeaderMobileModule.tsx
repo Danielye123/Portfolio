@@ -13,19 +13,19 @@ function Sidebar({ setToggle, toggle }: any) {
   // Sidebar visibility
   const sidebarStyle = {
     transform: toggle ? 'translateX(0)' : 'translateX(100%)',
-    transition: 'transform 0.3s ease-in-out',
+    // transition: 'transform 0.3s ease-in-out',
     opacity: toggle ? "1" : "0",
   };
 
   return (
     <div
-      className="container rounded-bl-3xl z-20 top-0 right-0 p-4 w-full flex flex-col
+      className="rounded-bl-3xl z-20 top-0 right-0 p-4 w-full flex flex-col
       justify-end items-end bg-cover bg-no-repeat bg-[#F3F8FF] dark:bg-[#192333] fixed"
       style={sidebarStyle}
     >
       <div className="flex justify-between items-center w-full px-[24px] xl:px-[85px]">
         {/* Logo "DY" Link on the left */}
-        <Link href="/" className="pl-[10px] md:pt-3">
+        <Link href="/" className="pl-[8px] md:pt-3">
           <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
             DY
           </div>
