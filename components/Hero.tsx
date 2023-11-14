@@ -64,7 +64,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col w-full lg:flex-row text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 lg:gap-0 2xl:gap-[100px] pt-[48px] pb-[32px] xl:pb-[105px] justify-between mt-[48px] md:mt-0">
+    <section className="flex flex-col w-full min-h-screen lg:flex-row text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 lg:gap-0 pt-[48px] md:pt-[4rem] lg:pt-[48px] pb-[32px] xl:pb-[105px] justify-between mt-[48px] md:mt-0">
       <div className="flex flex-col items-start pl-[3.5rem] py-6 xl:px-[85px] md:pb-[100px] md:max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
@@ -116,13 +116,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-end items-center pl-[3.5rem] sm:w-full sm:h-full w-[393px] h-[262px] xl:overflow-hidden my-auto xl:pt-[44px]">
+      <div className="flex justify-end items-center pl-[3.5rem] sm:w-full sm:h-full w-[393px] h-[262px] xl:overflow-hidden my-auto">
         <Image
           src={theme === "dark" ? HeroDarkSVG : HeroLightSVG}
           alt="hero image"
           width={1000}
           height={1000}
-          className="object-fill"
         />
       </div>
       
