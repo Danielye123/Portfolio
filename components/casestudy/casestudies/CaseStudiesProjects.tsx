@@ -24,7 +24,7 @@ const CaseStudiesProjects = () => {
           </Link>
         </div>
         <div className="text-left pl-[50px]">
-          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px]">
+          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px] pt-2">
             Morrent
           </p>
           <p className="font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px] text-[#6F74A7]">
@@ -47,7 +47,7 @@ const CaseStudiesProjects = () => {
           </Link>
         </div>
         <div className="text-left pl-[50px]">
-          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px]">
+          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px] pt-2">
             Hipnode
           </p>
           <p className="font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px] text-[#6F74A7]">
@@ -69,7 +69,7 @@ const CaseStudiesProjects = () => {
           </Link>
         </div>
         <div className="text-left pl-[50px]">
-          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px]">
+          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px] pt-2">
             Filmpire
           </p>
           <p className="font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px] text-[#6F74A7]">
