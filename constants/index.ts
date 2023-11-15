@@ -251,21 +251,21 @@ export const projects = [
     isReversed: false, 
   },
   {
-    title: "Morrent",
-    description: "A Car Rental Application",
-    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
-    link: "/morrent",
-    image: Morrent,
-    bgColor: "bg-[#0BAB7C]",
-    isReversed: true, 
-  },
-  {
     title: "Filmpire",
     description: "A Movie Review Application",
     tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
     link: "/filmpire",
     image: Filmpire,
+    bgColor: "bg-[#0BAB7C]",
+    isReversed: true, 
+  },
+  {
+    title: "Morrent",
+    description: "A Car Rental Application",
+    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
+    link: "/morrent",
+    image: Morrent,
     bgColor: "bg-[#DB202C]",
     isReversed: false, 
-  }
+  },
 ]

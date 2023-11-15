@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { navLinks } from "@/constants";
 import { LogoDY, DYLogo } from "@/assets";
-import { AiOutlineMenu, AiOutlineDownload } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineDownload, AiOutlineClose } from "react-icons/ai";
 import HeaderMobileModule from "./HeaderMobileModule";
 
 const NavBar = () => {
@@ -15,8 +15,8 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 md:px-[85px] w-full z-[100]">
-      <Link href="/" className="pl-[24px] md:pl-0 md:pt-2">
+    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[24px] xl:px-[85px] w-full z-[100]">
+      <Link href="/" className="pl-[24px] md:pl-0 md:pt-3 z-[200]">
         <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
           DY
         </div>
@@ -28,7 +28,7 @@ const NavBar = () => {
           className="w-10 h-10"
         /> */}
       </Link>
-      <nav className="sm:flex hidden text-[#6F74A7] gap-9 justify-between font-bold text-base py-4">
+      <nav className="md:flex hidden text-[#6F74A7] gap-9 justify-between font-bold text-base py-4">
         <Link
           href="/"
           className="hover:text-[#0252CD] hover:duration-500 transition"
@@ -81,7 +81,7 @@ const NavBar = () => {
           )}
         </button>
       </nav>
-      <div className="flex md:hidden pr-[24px] justify-center items-center relative rounded-full bg-primary">
+      <div className="flex md:hidden pr-[24px] justify-center items-center relative rounded-full bg-primary z-[200]">
         <AiOutlineMenu
           size={30}
           className="text-primary-accentBlue dark:text-primary-darkmodeblue"

@@ -64,21 +64,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col w-full md:flex-row py-6 text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 md:gap-[100px] pt-[48px] md:pt-[0px] justify-between mt-[48px] md:mt-0">
-      <div className="flex flex-col items-start px-6 py-6 md:px-[85px] md:pb-[100px] md:max-w-[900px]">
+    <section className="flex flex-col w-full min-h-screen lg:flex-row text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 lg:gap-0 pt-[48px] md:pt-[4rem] lg:pt-[48px] pb-[32px] xl:pb-[105px] justify-between mt-[48px] md:mt-0">
+      <div className="flex flex-col items-start pl-[3.5rem] py-6 xl:px-[85px] md:pb-[100px] md:max-w-[900px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>
         </div>
         <div className="pt-[27px] pb-[10px]">
-          <h1 className="mobile-header-font md:leading-[83px] md:font-bold md:text-[64px] dark:text-[#FFFFFF]">
+          <h1 className="mobile-header-font xl:leading-[83px] md:font-bold lg:text-[56px] lg:leading-[64px] xl:text-[64px] dark:text-[#FFFFFF]">
             Professional
-            <br className="sm:hidden md:block" />
+            <br className="md:block" />
             <div className="inline-block relative">
               <span className="relative z-10">Web Developer</span>
               <div className="underline-divider" />
             </div>
-            <br className="sm:hidden md:block" />
+            <br className="md:block" />
             based in USA
           </h1>
         </div>
@@ -90,7 +90,7 @@ const Hero = () => {
         </div>
         <br />
         <div className="flex md:flex-row flex-col md:gap-[18px] gap-2">
-          <Link href="/contact">
+          <Link href="/casestudies">
             <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] w-[350px] h-[55px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
@@ -116,7 +116,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-end items-center w-full sm:w-[393px] sm:h-[262px] md:pl-[60px] md:pb-[100px] md:w-[1000px] md:h-[1000px]">
+      <div className="flex justify-end items-center pl-[3.5rem] sm:w-full sm:h-full w-[393px] h-[262px] xl:overflow-hidden my-auto">
         <Image
           src={theme === "dark" ? HeroDarkSVG : HeroLightSVG}
           alt="hero image"
@@ -124,6 +124,7 @@ const Hero = () => {
           height={1000}
         />
       </div>
+      
       <ToastContainer />
     </section>
   );
