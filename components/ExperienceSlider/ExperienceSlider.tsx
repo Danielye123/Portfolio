@@ -2,24 +2,23 @@
 
 import React, { useState } from 'react';
 import CompanyCard from './CompanyCard';
-import { Slider } from "..";// Your custom SVG slider component
+import { Slider } from "..";//SVG slider component
 
-const workExperiences = [
-  { id: 1, name: 'Slack', position: 'Full-Stack Developer', details: 'January 2023 - Present' },
-  { id: 2, name: 'Firefox', position: 'Sr. Web Developer', details: 'September 2021 - December 2022' },
-  // ... Add more experiences as needed
-];
-
-const ExperienceSlider = () => {
+const ExperienceSlider = ({ workExperiences, onCompanyChange }) => {
   const [value, setValue] = useState(0);
 
   const handleSliderChange = (event) => {
     const newValue = event.target.value;
     setValue(newValue);
+    const currentExperienceIndex = Math.floor((newValue / 4) * workExperiences.length);
+    const currentExperience = workExperiences[currentExperienceIndex];
+
+    // Call the onCompanyChange prop function with the current experience
+    onCompanyChange(currentExperience);
   };
 
   // Calculate which card to show based on the slider value
-  const currentExperienceIndex = Math.floor((value / 100) * workExperiences.length);
+  const currentExperienceIndex = Math.floor((value / 4) * workExperiences.length);
   const currentExperience = workExperiences[currentExperienceIndex];
 
   return (
@@ -27,14 +26,13 @@ const ExperienceSlider = () => {
     <input
       type="range"
       min="0"
-      max="100"
+      max="3"
       value={value}
       onChange={handleSliderChange}
-      step="25"
+      step="1"
       className="custom-range-slider"
     />
     {/* <Slider className="custom-slider-handle" style={{ left: `${value}%` }} /> */}
-    {/* The company card should be displayed here */}
     <CompanyCard company={currentExperience} />
   </div>
   );

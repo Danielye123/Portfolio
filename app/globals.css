@@ -150,3 +150,7 @@ body {
   width: 607px;
   height: 122px;
 }
+
+.selected-class {
+  background-color: #5CAFFC; 
+}
