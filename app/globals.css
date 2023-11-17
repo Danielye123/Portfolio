@@ -125,19 +125,30 @@ body {
   }
 }
 
+/* Base slider styling */
 .custom-range-slider {
-  width: 470px;
-  height: 70px;
-  /* Additional styles for your slider */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #151E2C66; /* Color of the slider line */
+  border-radius: 1px;
+  cursor: pointer;
 }
 
 .custom-range-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  /* Styles to hide the default thumb */
-  background: transparent;
-  border: none;
-  width: 0;
-  height: 0;
+  appearance: none;
+  width: 44px; /* Inner circle width */
+  height: 44px; /* Inner circle height */
+  border: 1px solid #151E2C66;/* Inner circle border */
+  background: #151E2C; /* Inner Circle background*/
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer; /* Cursor changes when hovering over the thumb */
+  /* Outer circle simulated by box-shadow*/
+  box-shadow: 
+  0 0 0 13px #F3F8FF, /* Inner circle size and color */
+  0 0 0 14px rgba(21, 30, 44, 0.4); /* Outer border size and color with transparency */
 }
 
 .custom-slider-handle {
@@ -153,4 +164,15 @@ body {
 
 .selected-class {
   background-color: #5CAFFC; 
+}
+
+.work-experience-shadow {
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 66px 0px rgba(0, 0, 0, 0.1);
+  background: var(--white-800, #F3F8FF);
+}
+
+.company-card:hover {
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
+  background: var(--accent-primary-light, #0252cd);
 }

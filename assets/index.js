@@ -93,6 +93,9 @@ import BackEndIcon from "./services/BackEndIcon.svg"
 import FrontEndIcon from "./services/FrontEndIcon.svg"
 import WebOptIcon from "./services/WebOptIcon.svg"
 
+import UCMLogo from "./experience/UCMLogo.png";
+import JSMLogo from "./experience/JSMLogo.png";
+
 
 export {
     LogoDY,
@@ -184,4 +187,6 @@ export {
     BackEndIcon,
     FrontEndIcon,
     WebOptIcon,
+    UCMLogo,
+    JSMLogo,
 };
