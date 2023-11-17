@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTheme } from "next-themes";
 
 // ExperienceSlider.js
 const ExperienceSlider = ({ workExperiences, onCompanyChange }) => {
+  const { theme } = useTheme();
   const [value, setValue] = useState(0);
 
   const handleSliderChange = (event) => {
@@ -39,7 +41,8 @@ const ExperienceSlider = ({ workExperiences, onCompanyChange }) => {
         value={value}
         onChange={handleSliderChange}
         step="1"
-        className="custom-range-slider"
+        // className="custom-range-slider"
+        className={theme === "dark" ? "custom-range-slider" : "custom-range-slider-dark"}
       />
     </div>
   );

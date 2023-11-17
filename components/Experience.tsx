@@ -33,9 +33,9 @@ const Experience = () => {
   };
 
   return (
-    <section className="flex justify-center items-center bg-[#FFFFFF] dark:bg-[#151E2C] w-full text-black gap-[26px] py-[72px] px-[85px] mx-auto">
-      <div className="flex flex-col gap-[1.62rem] px-[58px] w-[607px] bg-[#F3F8FF] dark:bg-[#192333] font-poppins z-15 rounded-[10px] work-experience-shadow">
-        <h2 className="font-bold text-[48px] leading-[55px] tracking-[-0.01em] relative pt-[80px] font-poppins text-[#151E2C] dark:text-[#FFFFFF]">
+    <section className="flex flex-col lg:flex-row justify-center items-center bg-[#FFFFFF] dark:bg-[#151E2C] w-full text-black gap-[26px] py-[72px] xl:px-[85px] lg:px-[30px] px-[24px] mx-auto">
+      <div className="flex flex-col gap-[1.62rem] lg:w-[607px] px-[58px] bg-[#F3F8FF] dark:bg-[#192333] font-poppins z-15 rounded-[10px] work-experience-shadow">
+        <h2 className="font-bold xl:text-[48px] lg:text-[44px] text-[36px] xl:leading-[55px] lg:leading-[50px] leading-[41px] tracking-[-0.01em] relative pt-[80px] font-poppins text-[#151E2C] dark:text-[#FFFFFF]">
           <span className="relative inline-block z-10">
             Work
             <div className="absolute bottom-[0px] left-0 h-[15px] w-full bg-[#ffbe62] z-[-1]"></div>
@@ -45,7 +45,7 @@ const Experience = () => {
             <h1 className="relative">Experience</h1>
           </span>
         </h2>
-        <div className="flex flex-col gap-4 text-[18px] font-normal font-poppins leading-[29px] text-[#6F74A7] dark:text-[#F3F8FF] pb-[17px]">
+        <div className="flex flex-col gap-4 xl:text-[18px] lg:text-[14px] font-normal font-poppins xl:leading-[29px] lg:leading-[21px] text-[#6F74A7] dark:text-[#F3F8FF] pb-[17px]">
           <p>
             Take a trip through my career, where {`I've`} not only paved the way
             but also reached important goals, taken on different{" "}
@@ -81,7 +81,7 @@ const Experience = () => {
           />
         </div>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <CompanyCardDisplay
           companies={workExperiences}
           selectedCompany={selectedCompany}

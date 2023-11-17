@@ -133,7 +133,16 @@ body {
   appearance: none;
   width: 100%;
   height: 2px;
-  background: #151e2c66; /* Color of the slider line */
+  background: #778295; /* Color of the slider line */
+  border-radius: 1px;
+  cursor: pointer;
+}
+.custom-range-slider-dark {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #778295; /* Color of the slider line */
   border-radius: 1px;
   cursor: pointer;
 }
@@ -143,13 +152,31 @@ body {
   appearance: none;
   width: 44px; /* Inner circle width */
   height: 44px; /* Inner circle height */
+  border: 1px solid #FFFFFF; /* Inner circle border */
+  background: #FFFFFF; /* Inner Circle background*/
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer; /* Cursor changes when hovering over the thumb */
+  /* Outer circle simulated by box-shadow*/
+  box-shadow: 
+  0 0 0 13px #192333, /* Inner circle size and color in dark mode */
+  0 0 0 14px #778295; /* Outer border size and color in dark mode */
+}
+
+.custom-range-slider-dark::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px; /* Inner circle width */
+  height: 44px; /* Inner circle height */
   border: 1px solid #151e2c66; /* Inner circle border */
   background: #151e2c; /* Inner Circle background*/
   border-radius: 50%; /* Makes it circular */
   cursor: pointer; /* Cursor changes when hovering over the thumb */
   /* Outer circle simulated by box-shadow*/
-  box-shadow: 0 0 0 13px #f3f8ff,
-    /* Inner circle size and color */ 0 0 0 14px rgba(21, 30, 44, 0.4); /* Outer border size and color with transparency */
+  box-shadow: 
+  /* Inner circle size and color */ 
+    0 0 0 13px #f3f8ff,
+    /* Outer border size and color with transparency */
+    0 0 0 14px rgba(21, 30, 44, 0.4); 
 }
 
 .custom-slider-handle {
@@ -157,21 +184,19 @@ body {
   /* Adjust positioning and size to fit the slider */
 }
 
-.company-card {
-  /* Styles for the card */
-  width: 607px;
-  height: 122px;
+.selected-class {
+  transition: transform 150ms;
+  transform: translateY(10px); /* Apply translateY on small screens */
+  filter: grayscale(0); /* Assuming no grayscale by default */
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
 }
 
-.selected-class {
-  width: 607px;
-  height: 122px;
-  transition: transform 150ms;
-  transform: scale(1);
-  transform: scale(1.05) translateX(2rem);
-  filter: grayscale(100%);
-  filter: grayscale(0);
-  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
+/* Medium screens (e.g., tablets) and larger */
+@media (min-width: 768px) {
+  .selected-class {
+    transform: scale(1.05) translateX(2rem); /* Apply translateX on medium screens and larger */
+  }
+  
 }
 
 .work-experience-shadow {
@@ -181,10 +206,13 @@ body {
 }
 
 .company-card:hover {
-  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
   transition: transform 150ms;
-  transform: scale(1);
-  transform: scale(1.05) translateX(2rem);
-  filter: grayscale(100%);
-  filter: grayscale(0);
+  transform: translateY(10px); /* Apply translateY on small screens */
+  filter: grayscale(0); /* Assuming no grayscale by default */
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
+}
+  @media (min-width: 768px) {
+    .selected-class {
+      transform: scale(1.05) translateX(2rem); /* Apply translateX on medium screens and larger */
+    }
 }
