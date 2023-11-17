@@ -9,17 +9,17 @@ import { UCMLogo, JSMLogo } from "@/assets";
 const workExperiences = [
   {
     id: 1,
-    image: UCMLogo,
-    name: "Slack",
+    image: JSMLogo,
+    name: "JavaScript Mastery",
     position: "Full-Stack Developer",
     details: "January 2023 - Present",
   },
   {
     id: 2,
-    image: JSMLogo,
-    name: "Firefox",
-    position: "Sr. Web Developer",
-    details: "September 2021 - December 2022",
+    image: UCMLogo,
+    name: "University Of California Merced",
+    position: "Computer Science Student",
+    details: "August 2016 - May 2021",
   },
   // ... Add more experiences as needed
 ];
