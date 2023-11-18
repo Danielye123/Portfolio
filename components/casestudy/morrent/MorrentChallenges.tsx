@@ -43,7 +43,7 @@ const MorrentChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          Integration of the database/backend to the frontend proved to be one of the biggest challenges.
+          First time using TailwindCSS
         </div>
       </div>
 
@@ -79,9 +79,7 @@ const MorrentChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Learned how to properly handle files, including file upload, storage,
-          and retrieval, ensuring that the app's data is organized & easily
-          accessible while keeping it secure.
+          Sharpened my skills with TailwindCSS
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image

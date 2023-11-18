@@ -1,6 +1,6 @@
 import React from "react";
 
-import { problem } from "@/assets";
+import { FilmpireFrontPage } from "@/assets";
 import Image from "next/image";
 
 const FilmpireProblem = () => {
@@ -14,16 +14,19 @@ const FilmpireProblem = () => {
       </div>
 
       <div className="w-full py-[29px] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px]">
-        One of the main problems that people face when looking to rent a car is
-        the hassle of finding a reliable and user-friendly platform to search
-        for and book rental cars. In addition, car owners who want to rent out
-        their vehicles often struggle to find a suitable platform to list their
-        cars and manage their rentals.
+        In the realm of entertainment, a gap existed - a need for a seamless
+        platform that marries the latest cinematic releases with the convenience
+        of modern technology. Enter Filmpire: a groundbreaking movie
+        application that aimed to bridge this gap by seamlessly delivering
+        real-time movie data and captivating trailers to users, enhancing their
+        cinematic experience. The problem was clear: how to create a dynamic,
+        user-friendly interface that effortlessly integrates with an external
+        API to provide up-to-the-minute movie information and trailers.
       </div>
 
       <div className="flex justify-center items-center">
         <Image
-          src={problem}
+          src={FilmpireFrontPage}
           alt="Problem Statement"
           width={879}
           height={478}

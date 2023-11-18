@@ -161,6 +161,27 @@ export const hipnodeSkills = [
   },
 ];
 
+export const filmpireSkills = [
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
+  },
+];
+
 export const services = [
   {
     // Component: Analytics,

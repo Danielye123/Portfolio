@@ -14,7 +14,7 @@ const workExperiences = [
     image: JSMLogo,
     name: "JavaScript Mastery",
     position: "Full-Stack Developer",
-    details: "August 2021 - 2023",
+    details: "August 2022 - 2023",
     title: "Full-Stack",
     title2: "Developer",
     text: `During my time in the JavaScript Mastery bootcamp, I learned a lot by focusing on my projects along with my group. 
