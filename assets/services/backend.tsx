@@ -19,7 +19,7 @@ const SvgComponent = (
         height="62"
         rx="10"
         fill="#0252CD"
-        class="one"
+        className="one"
       />
     </g>
     <g clip-path="url(#clip0_3309_2100)">
