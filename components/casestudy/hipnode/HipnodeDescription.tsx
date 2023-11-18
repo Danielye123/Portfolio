@@ -4,7 +4,7 @@ const HipnodeDescription = () => {
   return (
     <div className="w-full 2xl:px-[280px] lg:px-[72px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[16px] md:leading-[30px] leading-[23px]">
       Introducing Hipnode: A Revolutionary Social Media Experience Hipnode is
-      not just another social media application - it's a transformative platform
+      not just another social media application - it&apos;s a transformative platform
       that takes your online interactions to a whole new level.
       <br />
       <br />
@@ -15,7 +15,7 @@ const HipnodeDescription = () => {
       thought-provoking posts, and meaningful connections. Our intuitive
       interface makes it effortless to navigate and discover the content that
       resonates with you. Embrace a new era of social networking where your
-      interests, passions, and connections come to life. Whether you're an
+      interests, passions, and connections come to life. Whether you&apos;re an
       artist, an entrepreneur, a tech enthusiast, or a globetrotter, Hipnode
       welcomes you to a vibrant community where diversity is celebrated and
       conversations are limitless.

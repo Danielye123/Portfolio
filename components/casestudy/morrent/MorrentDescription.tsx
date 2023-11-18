@@ -20,7 +20,7 @@ const MorrentDescription = () => {
 
       Car owners are also able to list their cars
       for rent through our Add Car page, while users can easily track their
-      rented and rented-out cars through their profile page. Overall, we've
+      rented and rented-out cars through their profile page. Overall, we&apos;ve
       created an intuitive and user-friendly MVP version of the platform that
       will make renting a car a breeze.
     </div>

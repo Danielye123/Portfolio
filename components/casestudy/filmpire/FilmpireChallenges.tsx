@@ -33,7 +33,7 @@ const FilmpireChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          Introduction to the TMDB API and API's in general
+          Introduction to the TMDB API and API&apos;s in general
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
