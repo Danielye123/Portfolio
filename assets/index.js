@@ -78,6 +78,7 @@ import filmpirePhone from "./filmpire/Filmpire-Mobile.svg";
 import hipnodeComputer from "./hipnode/Hipnode-Laptop.svg";
 import hipnodePhone from "./hipnode/Hipnode-Mobile.svg";
 import hipnodeLink from "./hipnode/hipnode-link.svg";
+import HipnodeFrontPage from "./hipnode/Hipnode-FrontPage.PNG";
 import morrentLink from "./morrent/morrent-link.svg";
 
 import HFHipnode from "./hipnode/highfedhipnode.png";
@@ -189,4 +190,5 @@ export {
     WebOptIcon,
     UCMLogo,
     JSMLogo,
+    HipnodeFrontPage,
 };

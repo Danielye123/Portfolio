@@ -1,6 +1,6 @@
 import React from "react";
 
-import { problem } from "@/assets";
+import { HipnodeFrontPage } from "@/assets";
 import Image from "next/image";
 
 const HipnodeProblem = () => {
@@ -14,16 +14,18 @@ const HipnodeProblem = () => {
       </div>
 
       <div className="w-full py-[29px] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px]">
-        One of the main problems that people face when looking to rent a car is
-        the hassle of finding a reliable and user-friendly platform to search
-        for and book rental cars. In addition, car owners who want to rent out
-        their vehicles often struggle to find a suitable platform to list their
-        cars and manage their rentals.
+        The digital landscape lacked a unified platform that seamlessly
+        amalgamates the robust features of a social media network with the
+        modern advancements of Next.js and Tailwind. SocialConnect, a dynamic
+        social media application, emerged as the solution. The challenge was
+        set: to create a comprehensive, full-stack social media experience
+        encompassing user authentication, real-time interactions, and a
+        feature-rich CRUD functionality.
       </div>
 
       <div className="flex justify-center items-center">
         <Image
-          src={problem}
+          src={HipnodeFrontPage}
           alt="Problem Statement"
           width={879}
           height={478}

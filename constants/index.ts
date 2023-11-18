@@ -128,6 +128,39 @@ export const morrentSkills = [
   },
 ];
 
+export const hipnodeSkills = [
+  {
+    imgURL: TypeScript,
+  },
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: next,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: tailwind,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
+  },
+  {
+    imgURL: mongodb,
+  },
+];
+
 export const services = [
   {
     // Component: Analytics,

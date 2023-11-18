@@ -23,9 +23,8 @@ const HipnodeChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          Gained extensive knowledge on frontend and backend and connecting them
+          together.
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -35,11 +34,8 @@ const HipnodeChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          We conducted brainstorming and carefully weighed our options before
-          making a decision. Furthermore, using NextJS was a new experience for
-          us, and we encountered difficulties while implementing its features.
-          Finally, we had to work under time constraints, which added pressure
-          to the project.
+          Difficulty of communication between this new group of people and this
+          large extensive project.
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -67,8 +63,7 @@ const HipnodeChallenges = () => {
             className="object-contain mt-[6px] flex-none"
           />
           Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          implementation
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -89,9 +84,8 @@ const HipnodeChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Learned how to properly handle files, including file upload, storage,
-          and retrieval, ensuring that the app's data is organized & easily
-          accessible while keeping it secure.
+          The project deepened my understanding of Next.js, exposing me to its
+          server-side rendering capabilities and dynamic routing features.
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
