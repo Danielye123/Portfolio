@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { BsGithub } from "react-icons/bs";
-import { HiOutlineArrowRight } from "react-icons/hi"
+import { HiOutlineArrowRight } from "react-icons/hi";
 import {
   morrentPhone,
   morrentComputer,
@@ -10,6 +10,7 @@ import {
   arrow,
   morrentGit,
 } from "@/assets";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -29,21 +30,39 @@ const Hero = () => {
       </div>
 
       <div className="flex items-center justify-center pt-[56px]">
-        <Image width={598} height={349} src={morrentComputer} alt="computer" className="md:w-[598px] md:h-[349px] w-[278px] h-[162px]" />
-        <Image src={morrentPhone} alt="phone" className="md:mt-11 mt-7 md:w-[148px] md:h-[295px] w-[69px] h-[138px]" />
+        <Image
+          width={598}
+          height={349}
+          src={morrentComputer}
+          alt="computer"
+          className="md:w-[598px] md:h-[349px] w-[278px] h-[162px]"
+        />
+        <Image
+          src={morrentPhone}
+          alt="phone"
+          className="md:mt-11 mt-7 md:w-[148px] md:h-[295px] w-[69px] h-[138px]"
+        />
       </div>
 
       <div className="flex items-center justify-center md:gap-[109px] gap-[40px] pt-[72px] pb-[60px]">
-        <button className="text-[#0252CD] dark:text-[#428DFF] hover:underline font-poppins font-semibold md:text-[20px] text-[14px] md:leading-[26px] leading-[20px] flex items-center gap-1">
+        <Link
+          href="https://web3-car-rent.vercel.app/car-rent"
+          target="_blank"
+          className="text-[#0252CD] dark:text-[#428DFF] hover:underline font-poppins font-semibold md:text-[20px] text-[14px] md:leading-[26px] leading-[20px] flex items-center gap-1"
+        >
           <FaEarthAfrica size={20} />
           Demo Site
           <HiOutlineArrowRight size={24} />
-        </button>
-        <button className="text-[#0252CD] dark:text-[#428DFF] hover:underline font-poppins font-semibold md:text-[20px] text-[14px] md:leading-[26px] leading-[20px] flex items-center gap-1">
+        </Link>
+        <Link
+          href="https://github.com/Danielye123/CarRent"
+          target="_blank"
+          className="text-[#0252CD] dark:text-[#428DFF] hover:underline font-poppins font-semibold md:text-[20px] text-[14px] md:leading-[26px] leading-[20px] flex items-center gap-1"
+        >
           <BsGithub size={20} />
           Source Code
           <HiOutlineArrowRight size={24} />
-        </button>
+        </Link>
       </div>
     </section>
   );

@@ -39,7 +39,6 @@ import Morrent from "./projects/Morrent.png";
 import richard from "./richard.jpg";
 import gnar from "./gnar.jpg";
 import Malphite from "./Malphite.jpg";
-import Yasuo from "./Yasuo.jpg";
 import Star from "./Star.png";
 import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
@@ -75,9 +74,11 @@ import CSbanner from "./caseStudiesPage/CSbanner.png";
 
 import filmpireComputer from "./filmpire/Filmpire-Laptop.svg";
 import filmpirePhone from "./filmpire/Filmpire-Mobile.svg";
+import FilmpireFrontPage from "./filmpire/Filmpire-FrontPage.PNG";
 import hipnodeComputer from "./hipnode/Hipnode-Laptop.svg";
 import hipnodePhone from "./hipnode/Hipnode-Mobile.svg";
 import hipnodeLink from "./hipnode/hipnode-link.svg";
+import HipnodeFrontPage from "./hipnode/Hipnode-FrontPage.PNG";
 import morrentLink from "./morrent/morrent-link.svg";
 
 import HFHipnode from "./hipnode/highfedhipnode.png";
@@ -92,6 +93,9 @@ import AnalyticsIcon from "./services/AnalyticsIcon.svg"
 import BackEndIcon from "./services/BackEndIcon.svg"
 import FrontEndIcon from "./services/FrontEndIcon.svg"
 import WebOptIcon from "./services/WebOptIcon.svg"
+
+import UCMLogo from "./experience/UCMLogo.png";
+import JSMLogo from "./experience/JSMLogo.png";
 
 
 export {
@@ -128,7 +132,6 @@ export {
     richard,
     gnar,
     Malphite,
-    Yasuo,
     Star,
     Stars,
     TestimonialArrowLeft,
@@ -184,4 +187,8 @@ export {
     BackEndIcon,
     FrontEndIcon,
     WebOptIcon,
+    UCMLogo,
+    JSMLogo,
+    HipnodeFrontPage,
+    FilmpireFrontPage,
 };

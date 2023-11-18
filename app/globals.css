@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -30,7 +30,7 @@ body {
 }
 
 .service-card:hover .description-text {
-  color: #F3F8FF;
+  color: #f3f8ff;
 }
 
 .conic-gradient-bg {
@@ -47,7 +47,7 @@ body {
 }
 
 .custom-box-shadow:hover {
-  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28) !important; 
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,11 +61,11 @@ body {
 }
 
 .custom-box-shadow-card {
-  box-shadow: 0px 1px 20px 0px #E0ECFF;
+  box-shadow: 0px 1px 20px 0px #e0ecff;
 }
 
 .my-svg {
-  color: #0252CD !important; /* Override with !important */
+  color: #0252cd !important; /* Override with !important */
   transition: color 0.3s;
 
   /* Additional styles for hover effect */
@@ -75,7 +75,7 @@ body {
 }
 
 .serviceCard:hover .hoverBgChange {
-  background-color: #F3F8FF; 
+  background-color: #f3f8ff;
 }
 
 @media (max-width: 767px) {
@@ -87,7 +87,7 @@ body {
 }
 
 .md-screen-font {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 64px;
   font-weight: 700;
   line-height: 83px;
@@ -95,7 +95,7 @@ body {
 }
 
 .mobile-header-font {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 48px;
@@ -114,13 +114,105 @@ body {
 }
 
 /* By default, hide the arrows */
-.left-arrow, .right-arrow {
+.left-arrow,
+.right-arrow {
   display: none;
 }
 
 /* Show the arrows on larger screens (e.g., tablet and desktop) */
 @media (min-width: 768px) {
-  .left-arrow, .right-arrow {
-      display: block; /* or 'inline-block' or 'flex', depending on your design */
+  .left-arrow,
+  .right-arrow {
+    display: block; /* or 'inline-block' or 'flex', depending on your design */
   }
+}
+
+/* Base slider styling */
+.custom-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #778295; /* Color of the slider line */
+  border-radius: 1px;
+  cursor: pointer;
+}
+.custom-range-slider-dark {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 2px;
+  background: #778295; /* Color of the slider line */
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.custom-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px; /* Inner circle width */
+  height: 44px; /* Inner circle height */
+  border: 1px solid #FFFFFF; /* Inner circle border */
+  background: #FFFFFF; /* Inner Circle background*/
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer; /* Cursor changes when hovering over the thumb */
+  /* Outer circle simulated by box-shadow*/
+  box-shadow: 
+  0 0 0 13px #192333, /* Inner circle size and color in dark mode */
+  0 0 0 14px #778295; /* Outer border size and color in dark mode */
+}
+
+.custom-range-slider-dark::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px; /* Inner circle width */
+  height: 44px; /* Inner circle height */
+  border: 1px solid #151e2c66; /* Inner circle border */
+  background: #151e2c; /* Inner Circle background*/
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer; /* Cursor changes when hovering over the thumb */
+  /* Outer circle simulated by box-shadow*/
+  box-shadow: 
+  /* Inner circle size and color */ 
+    0 0 0 13px #f3f8ff,
+    /* Outer border size and color with transparency */
+    0 0 0 14px rgba(21, 30, 44, 0.4); 
+}
+
+.custom-slider-handle {
+  position: absolute;
+  /* Adjust positioning and size to fit the slider */
+}
+
+.selected-class {
+  transition: transform 150ms;
+  transform: translateY(10px); /* Apply translateY on small screens */
+  filter: grayscale(0); /* Assuming no grayscale by default */
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
+}
+
+/* Medium screens (e.g., tablets) and larger */
+@media (min-width: 768px) {
+  .selected-class {
+    transform: scale(1.05) translateX(2rem); /* Apply translateX on medium screens and larger */
+  }
+  
+}
+
+.work-experience-shadow {
+  border-radius: 1.25rem;
+  box-shadow: 0px 10px 66px 0px rgba(0, 0, 0, 0.1);
+  background: var(--white-800, #f3f8ff);
+}
+
+.company-card:hover {
+  transition: transform 150ms;
+  transform: translateY(10px); /* Apply translateY on small screens */
+  filter: grayscale(0); /* Assuming no grayscale by default */
+  box-shadow: 32px 32px 71px 0px rgba(2, 82, 205, 0.28);
+}
+  @media (min-width: 768px) {
+    .selected-class {
+      transform: scale(1.05) translateX(2rem); /* Apply translateX on medium screens and larger */
+    }
 }

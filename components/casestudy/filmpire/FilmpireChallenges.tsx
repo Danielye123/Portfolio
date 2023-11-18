@@ -23,9 +23,7 @@ const FilmpireChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          First introduction to an advanced website
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -35,11 +33,7 @@ const FilmpireChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          We conducted brainstorming and carefully weighed our options before
-          making a decision. Furthermore, using NextJS was a new experience for
-          us, and we encountered difficulties while implementing its features.
-          Finally, we had to work under time constraints, which added pressure
-          to the project.
+          Introduction to the TMDB API and API's in general
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -49,8 +43,7 @@ const FilmpireChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          However, we collaborated effectively to overcome these obstacles and
-          ultimately delivered a high-quality product within the given timeline.
+          Introduction to many different technologies and features such as Alan AI, React, Material UI, Redux Toolkit
         </div>
       </div>
 
@@ -66,9 +59,7 @@ const FilmpireChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          How to build a website from scratch using react and integrate an API
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -78,8 +69,7 @@ const FilmpireChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Sharpened my backend skills, specifically in optimizing database
-          queries, improving performance, and handling server-side logic.
+          User Authentication/Login features, Search Bar, Navigation etc.
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -89,9 +79,7 @@ const FilmpireChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Learned how to properly handle files, including file upload, storage,
-          and retrieval, ensuring that the app's data is organized & easily
-          accessible while keeping it secure.
+          Light/Dark mode and other features.
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -101,8 +89,7 @@ const FilmpireChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Acquired proficiency in NextJS and implemented various features
-          utilizing industry-standard best practices.
+          The introduction of linters such as ESLINT
         </div>
       </div>
     </section>

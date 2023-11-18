@@ -27,7 +27,6 @@ import {
   analytics,
   gnar,
   Malphite,
-  Yasuo,
   richard,
   FrontEndIcon,
   BackEndIcon,
@@ -125,6 +124,60 @@ export const morrentSkills = [
   },
   {
     imgURL: mongodb,
+  },
+];
+
+export const hipnodeSkills = [
+  {
+    imgURL: TypeScript,
+  },
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: next,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: tailwind,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
+  },
+  {
+    imgURL: mongodb,
+  },
+];
+
+export const filmpireSkills = [
+  {
+    imgURL: JavaScript,
+  },
+  {
+    imgURL: react,
+  },
+  {
+    imgURL: html,
+  },
+  {
+    imgURL: css,
+  },
+  {
+    imgURL: github,
+  },
+  {
+    imgURL: git,
   },
 ];
 

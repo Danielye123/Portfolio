@@ -2,6 +2,7 @@ import {
   Hero,
   Skills,
   Services,
+  Experience,
   FeaturedProjects,
   Recommendations,
   Contact,
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Services />
+      <Experience />
       <FeaturedProjects />
       <Recommendations />
       <Contact />

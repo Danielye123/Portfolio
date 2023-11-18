@@ -3,6 +3,7 @@ import Hero from "./Hero.tsx";
 import Footer from "./Footer.tsx";
 import Skills from "./Skills.tsx";
 import Services from "./Services.tsx";
+import Experience from "./Experience.tsx";
 import ServiceCard from "./ServiceCard.tsx";
 import FeaturedProjects from "./FeaturedProjects.tsx";
 import ProjectCard from "./ProjectCard.tsx";
@@ -50,6 +51,7 @@ import Frontend from "./svgComponents/frontend.tsx";
 import Backend from "./svgComponents/backend.tsx";
 import Analytics from "./svgComponents/Analytics.tsx";
 import Opt from "./svgComponents/Opt.tsx";
+import Slider from "./svgComponents/Slider.tsx";
 
 import Cursor from "./svgComponents/Cursor.tsx";
 
@@ -60,6 +62,7 @@ export {
     Footer,
     Skills,
     Services,
+    Experience,
     ServiceCard,
     FeaturedProjects,
     ProjectCard,
@@ -106,4 +109,5 @@ export {
     Backend,
     Analytics,
     Opt,
+    Slider,
 };

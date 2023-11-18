@@ -16,7 +16,7 @@ const MorrentRole = () => {
                 Start Date
             </p>
             <h1 className="font-semibold text-[24px] leading-[31px] text-[#151E2C] dark:text-[#FFFFFF]">
-                October - 2023
+                October - 2022
             </h1>
         </div>
         <div className="font-poppins">
@@ -24,7 +24,7 @@ const MorrentRole = () => {
                 End Date
             </p>
             <h1 className="font-semibold text-[24px] leading-[31px] text-[#151E2C] dark:text-[#FFFFFF]">
-                November - 2023
+                November - 2022
             </h1>
         </div>
     </div>

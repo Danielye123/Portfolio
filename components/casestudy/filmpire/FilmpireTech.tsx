@@ -1,4 +1,4 @@
-import { morrentSkills } from "@/constants";
+import { filmpireSkills } from "@/constants";
 import Image from "next/image";
 
 const FilmpireTech = () => {
@@ -8,7 +8,7 @@ const FilmpireTech = () => {
       <div className="text-[#151E2C] dark:text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[28px] md:leading-[34px] leading-[29px]">Tech Stack</div>
 
       <div className="flex flex-wrap justify-center pt-[48px] lg:gap-[30px] gap-[20px]">
-        {morrentSkills.map((skill, index) => (
+        {filmpireSkills.map((skill, index) => (
           <div
             key={index}
             className={`md:m-4 m-1 bg-[#F3F8FF] hover:bg-[#FFFFFF] hover:drop-shadow-2xl dark:hover:drop-shadow-2xl transform transition-transform duration-300 hover:scale-200 dark:bg-[#192333] w-[93px] h-[93px] rounded-full flex items-center justify-center`}
