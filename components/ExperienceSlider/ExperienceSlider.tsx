@@ -33,17 +33,26 @@ const ExperienceSlider = ({ workExperiences, onCompanyChange }) => {
   // const currentExperience = workExperiences[currentExperienceIndex];
 
   return (
-    <div className="experience-slider-container pb-[36px]">
-      <input
-        type="range"
-        min="0"
-        max="2"
-        value={value}
-        onChange={handleSliderChange}
-        step="1"
-        // className="custom-range-slider"
-        className={theme === "dark" ? "custom-range-slider" : "custom-range-slider-dark"}
-      />
+    <div>
+      <p className="font-poppins text-[14px] font-normal leading-[22px] text-[#6F74A7] dark:text-[#F3F8FF] pb-[30px] pl-[5px]">
+        👉 Slide the bar to reveal details of my web experience.
+      </p>
+      <div className="experience-slider-container pb-[36px]">
+        <input
+          type="range"
+          min="0"
+          max="2"
+          value={value}
+          onChange={handleSliderChange}
+          step="1"
+          // className="custom-range-slider"
+          className={
+            theme === "dark"
+              ? "custom-range-slider"
+              : "custom-range-slider-dark"
+          }
+        />
+      </div>
     </div>
   );
 };

@@ -91,7 +91,7 @@ const Hero = () => {
         <br />
         <div className="flex md:flex-row flex-col md:gap-[18px] gap-2">
           <Link href="/casestudies">
-            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] w-[345px] h-[55px] flex justify-center">
+            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
               </p>
@@ -100,7 +100,7 @@ const Hero = () => {
 
           <button
             onClick={copyText}
-            className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] w-[345px] h-[55px] flex sm:mt-0 mt-8 items-center justify-center"
+            className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex sm:mt-0 mt-8 items-center justify-center"
           >
             <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
               daniel.jianhao.ye@gmail.com
@@ -116,7 +116,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-end items-center pl-[3.5rem] sm:w-full sm:h-full w-[393px] h-[262px] xl:overflow-hidden my-auto">
+      <div className="flex justify-end items-center pl-[3.5rem] w-full sm:h-full h-[262px] xl:overflow-hidden my-auto">
         <Image
           src={theme === "dark" ? HeroDarkSVG : HeroLightSVG}
           alt="hero image"

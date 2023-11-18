@@ -5,6 +5,8 @@ import ExperienceSlider from "./ExperienceSlider/ExperienceSlider";
 import CompanyCardDisplay from "./ExperienceSlider/CompanyCardDisplay";
 import Image from "next/image";
 import { UCMLogo, JSMLogo } from "@/assets";
+import ExperienceDetails from "./ExperienceSlider/ExperienceDetails";
+import ExperienceDetailsDefault from "./ExperienceSlider/ExperienceDetailsDefault";
 
 const workExperiences = [
   {
@@ -12,7 +14,16 @@ const workExperiences = [
     image: JSMLogo,
     name: "JavaScript Mastery",
     position: "Full-Stack Developer",
-    details: "January 2023 - Present",
+    details: "August 2021 - 2023",
+    title: "Full-Stack",
+    title2: "Developer",
+    text: `During my time in the JavaScript Mastery bootcamp, I learned a lot by focusing on my projects along with my group. 
+    `,
+    text2: 
+    ` 
+    This bootcamp focused more on projects rather than the fundamentals of web development, however, it helped me solidify my grasp on the basics and 
+    took it further by enhancing it and allowing me to build Full Stack Websites based on amazing Figma Designs.
+    `,
   },
   {
     id: 2,
@@ -20,6 +31,14 @@ const workExperiences = [
     name: "University Of California Merced",
     position: "Computer Science Student",
     details: "August 2016 - May 2021",
+    title: "Computer Science",
+    title2: "Student",
+    text: `During my years at the University of California Merced or UC Merced, I learned many different skills relating to computer science. 
+    `,
+    text2: 
+    `
+    This includes learning the basics of programming and languages such as C++. I also learned about algorithms and many more subjects during my time there.
+    `,
   },
   // ... Add more experiences as needed
 ];
@@ -35,46 +54,12 @@ const Experience = () => {
   return (
     <section className="flex flex-col lg:flex-row justify-center items-center bg-[#FFFFFF] dark:bg-[#151E2C] w-full text-black gap-[26px] py-[72px] xl:px-[85px] lg:px-[30px] px-[24px] mx-auto">
       <div className="flex flex-col gap-[1.62rem] lg:w-[607px] px-[58px] bg-[#F3F8FF] dark:bg-[#192333] font-poppins z-15 rounded-[10px] work-experience-shadow">
-        <h2 className="font-bold xl:text-[48px] lg:text-[44px] text-[36px] xl:leading-[55px] lg:leading-[50px] leading-[41px] tracking-[-0.01em] relative pt-[80px] font-poppins text-[#151E2C] dark:text-[#FFFFFF]">
-          <span className="relative inline-block z-10">
-            Work
-            <div className="absolute bottom-[0px] left-0 h-[15px] w-full bg-[#ffbe62] z-[-1]"></div>
-          </span>{" "}
-          <span className="relative inline-block">
-            <span className="" />
-            <h1 className="relative">Experience</h1>
-          </span>
-        </h2>
-        <div className="flex flex-col gap-4 xl:text-[18px] lg:text-[14px] font-normal font-poppins xl:leading-[29px] lg:leading-[21px] text-[#6F74A7] dark:text-[#F3F8FF] pb-[17px]">
-          <p>
-            Take a trip through my career, where {`I've`} not only paved the way
-            but also reached important goals, taken on different{" "}
-            <span className="font-semibold text-[#0252CD] dark:text-[#428DFF]">
-              roles
-            </span>
-            , worked on impressive{" "}
-            <span className="font-semibold text-[#0252CD] dark:text-[#428DFF]">
-              projects
-            </span>
-            , and accomplished notable things.
-          </p>
-          <p>
-            From coding in the late hours to collaborating with talented teams,
-            my career has been a dynamic adventure filled with{" "}
-            <span className="font-semibold text-[#0252CD] dark:text-[#428DFF]">
-              growth{" "}
-            </span>{" "}
-            and{" "}
-            <span className="font-semibold text-[#0252CD] dark:text-[#428DFF]">
-              innovation
-            </span>
-            .
-          </p>
-          <p className="font-poppins text-[14px] font-normal leading-[22px] text-[#6F74A7] dark:text-[#F3F8FF] pt-[52px] pl-[5px]">
-            👉 Slide the bar to reveal details of my web experience.
-          </p>
+        <div className=" xl:min-h-[400px] lg:min-h-[350px]">
+          {selectedCompany
+            ? ExperienceDetails(selectedCompany)
+            : ExperienceDetailsDefault()}
         </div>
-        <div className="pb-[36px]">
+        <div className="pt-[26px] pb-[36px]">
           <ExperienceSlider
             workExperiences={workExperiences}
             onCompanyChange={handleCompanyChange}
