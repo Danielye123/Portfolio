@@ -23,9 +23,7 @@ const MorrentChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          First time creating and integrating the backend/database.
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -35,11 +33,7 @@ const MorrentChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          We conducted brainstorming and carefully weighed our options before
-          making a decision. Furthermore, using NextJS was a new experience for
-          us, and we encountered difficulties while implementing its features.
-          Finally, we had to work under time constraints, which added pressure
-          to the project.
+          First time using Nextjs so it was a struggle to learn all of its features and implementing a backend without express.
         </div>
         <div className="pt-[20px] pb-[30px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -49,8 +43,7 @@ const MorrentChallenges = () => {
             alt="challenge"
             className="object-contain mt-[6px] flex-none"
           />
-          However, we collaborated effectively to overcome these obstacles and
-          ultimately delivered a high-quality product within the given timeline.
+          Integration of the database/backend to the frontend proved to be one of the biggest challenges.
         </div>
       </div>
 
@@ -66,9 +59,7 @@ const MorrentChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Gained extensive knowledge of full authentication and authorization
-          implementation, including the use of industry-standard security
-          protocols such as JSON Web Tokens.
+          Successfully learned the differences between NextJs backend and React/normal express backend.
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
@@ -78,8 +69,7 @@ const MorrentChallenges = () => {
             alt="check"
             className="object-contain mt-[6px] flex-none"
           />
-          Sharpened my backend skills, specifically in optimizing database
-          queries, improving performance, and handling server-side logic.
+          Sharpened my backend skills, specifically in building a database and quering the database.
         </div>
         <div className="pt-[20px] px-[40px] flex gap-4 items-start text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal text-[18px] leading-[29px]">
           <Image
