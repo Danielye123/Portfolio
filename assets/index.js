@@ -39,7 +39,6 @@ import Morrent from "./projects/Morrent.png";
 import richard from "./richard.jpg";
 import gnar from "./gnar.jpg";
 import Malphite from "./Malphite.jpg";
-import Yasuo from "./Yasuo.jpg";
 import Star from "./Star.png";
 import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
@@ -133,7 +132,6 @@ export {
     richard,
     gnar,
     Malphite,
-    Yasuo,
     Star,
     Stars,
     TestimonialArrowLeft,
