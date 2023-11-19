@@ -74,11 +74,11 @@ import CSbanner from "./caseStudiesPage/CSbanner.png";
 
 import filmpireComputer from "./filmpire/Filmpire-Laptop.svg";
 import filmpirePhone from "./filmpire/Filmpire-Mobile.svg";
-import FilmpireFrontPage from "./filmpire/Filmpire-FrontPage.PNG";
+import FilmpireFrontPage from "./filmpire/Filmpire-FrontPage.png";
 import hipnodeComputer from "./hipnode/Hipnode-Laptop.svg";
 import hipnodePhone from "./hipnode/Hipnode-Mobile.svg";
 import hipnodeLink from "./hipnode/hipnode-link.svg";
-import HipnodeFrontPage from "./hipnode/Hipnode-FrontPage.PNG";
+import HipnodeFrontPage from "./hipnode/Hipnode-FrontPage.png";
 import morrentLink from "./morrent/morrent-link.svg";
 
 import HFHipnode from "./hipnode/highfedhipnode.png";

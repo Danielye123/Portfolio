@@ -1,4 +1,10 @@
-const CompanyCard = ({ company }) => {
+import { ExperienceState } from "../Experience";
+
+interface CompanyCard  {
+  company: ExperienceState;
+}
+
+const CompanyCard: React.FC<CompanyCard> = ({ company }) => {
     if (!company) return null;
   
     return (

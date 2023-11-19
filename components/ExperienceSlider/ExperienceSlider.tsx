@@ -2,13 +2,21 @@
 
 import React, { useState } from "react";
 import { useTheme } from "next-themes";
+import { ChangeEvent } from 'react';
+import { Company, ExperienceState } from "../Experience";
+
+interface ExperienceSliderProps {
+  workExperiences: Company[];
+  onCompanyChange: (company: ExperienceState) => void;
+}
+
 
 // ExperienceSlider.js
-const ExperienceSlider = ({ workExperiences, onCompanyChange }) => {
+const ExperienceSlider: React.FC<ExperienceSliderProps> = ({ workExperiences, onCompanyChange }) => {
   const { theme } = useTheme();
   const [value, setValue] = useState(0);
 
-  const handleSliderChange = (event) => {
+  const handleSliderChange = (event: ChangeEvent<HTMLInputElement>) => {
     const newValue = parseInt(event.target.value, 10);
     setValue(newValue);
 

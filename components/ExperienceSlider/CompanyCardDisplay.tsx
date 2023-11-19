@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { Company, ExperienceState } from "../Experience";
 
-const CompanyCardDisplay = ({ companies, selectedCompany }) => {
+interface CompanyCardDisplayProps {
+  companies: Company[];
+  selectedCompany: ExperienceState;
+}
+
+const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({ companies, selectedCompany }) => {
   if (!companies || companies.length === 0)
     return <div>No companies available</div>;
 
@@ -8,7 +14,7 @@ const CompanyCardDisplay = ({ companies, selectedCompany }) => {
     <div className="w-full">
       {companies.map((company, index) => (
         <div
-          key={index}
+          key={company.id}
           className={`company-card bg-[#F3F8FF] dark:bg-[#151E2C] flex items-center group ${
             selectedCompany?.id === company.id
               ? "selected-class group grayscale-0 bg-[#FFFFFF] dark:bg-[#192333]"
