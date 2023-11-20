@@ -36,9 +36,6 @@ import opt2 from "./services/opt.tsx";
 import Filmpire from "./projects/Filmpire.png";
 import Hipnode from "./projects/Hipnode.png";
 import Morrent from "./projects/Morrent.png";
-import richard from "./richard.jpg";
-import gnar from "./gnar.jpg";
-import Malphite from "./Malphite.jpg";
 import Star from "./Star.png";
 import Stars from "./Stars.png";
 import TestimonialArrowLeft from "./TestimonialArrowLeft.png";
@@ -98,6 +95,12 @@ import UCMLogo from "./experience/UCMLogo.png";
 import JSMLogo from "./experience/JSMLogo.png";
 
 
+import adrianH from "./testimonials/adrianprofilepic.jpg";
+import richard from "./testimonials/richard.jpg";
+import gnar from "./testimonials/gnar.jpg";
+import Malphite from "./testimonials/Malphite.jpg";
+
+
 export {
     LogoDY,
     DYLogo,
@@ -130,6 +133,7 @@ export {
     Hipnode,
     Filmpire,
     richard,
+    adrianH,
     gnar,
     Malphite,
     Star,

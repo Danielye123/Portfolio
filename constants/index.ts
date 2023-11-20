@@ -13,25 +13,14 @@ import {
   react,
   tailwind,
   TypeScript,
-  ICON1,
-  ICON2,
-  ICON3,
-  ICON4,
   Filmpire,
   Hipnode,
   Morrent,
   ex,
-  frontend,
-  backend,
-  opt,
-  analytics,
   gnar,
   Malphite,
   richard,
-  FrontEndIcon,
-  BackEndIcon,
-  WebOptIcon,
-  AnalyticsIcon,
+  adrianH,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -274,21 +263,15 @@ export const featuredProjects = [
 
 export const recommendationsData = [
   {
+    image: adrianH,
+    text: "Daniel is a standout graduate of the JSM Masterclass Experience. His technical skills in React and Next.js are exceptional. The projects he developed with his team during the Masterclass, like Lyriks and Hipnode, reflect his ability to apply complex concepts in real-world situations. He's a quick learner and a team player, ready to make a significant impact in any development role.",
+    author: "Adrian Hajdin",
+    position: "Founder & CEO at JavaScript Mastery",
+  },
+  {
     image: richard,
     text: "Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies. Working alongside Daniel has been a pleasure as he is a team player and communicates efficiently. Under pressure, he has shown competence and dedication to the goal of delivering projects in a timely manner. I highly recommended Daniel to any organization looking for a passionate developer.",
     author: "Richard Gabriel",
-    position: "React Software Engineer",
-  },
-  {
-    image: gnar,
-    text: "Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies. ",
-    author: "Random guy",
-    position: "React Software Engineer",
-  },
-  {
-    image: Malphite,
-    text: "Daniel is a disciplined and problem-solving software developer. ",
-    author: "2nd Random guy",
     position: "React Software Engineer",
   },
 ];
