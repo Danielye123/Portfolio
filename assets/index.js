@@ -6,21 +6,19 @@ import laptophero from "./laptophero.png";
 import laptopherodark from "./laptopherodark.png";
 import HeroLightSVG from "./HeroLightSVG.svg";
 import HeroDarkSVG from "./HeroDarkSVG.svg";
-import html from "./skills/html.png";
-import css from "./skills/css.png";
-import express from "./skills/express.png";
-import exDark from "./skills/exDark.png";
+import html from "./skills/html.svg";
+import css from "./skills/css.svg";
 import ex from  "./skills/ex.svg";
-import git from "./skills/git.png";
-import github from "./skills/github.png";
-import JavaScript from "./skills/JavaScript.png";
-import mongodb from "./skills/mongodb.png";
-import motion from "./skills/motion.png";
-import next from "./skills/next.png";
-import nodejs from "./skills/nodejs.png";
-import react from "./skills/react.png";
-import tailwind from "./skills/tailwind.png";
-import TypeScript from "./skills/TypeScript.png";
+import git from "./skills/git.svg";
+import github from "./skills/github.svg";
+import JavaScript from "./skills/js.svg";
+import mongodb from "./skills/mongodb.svg";
+import motion from "./skills/motion.svg";
+import next from "./skills/next.svg";
+import nodejs from "./skills/nodejs.svg";
+import react from "./skills/react.svg";
+import tailwind from "./skills/tailwind.svg";
+import TypeScript from "./skills/ts.svg";
 import ICON1 from "./services/ICON1.png";
 import ICON2 from "./services/ICON2.png";
 import ICON3 from "./services/ICON3.png";
@@ -112,8 +110,6 @@ export {
     HeroDarkSVG,
     html,
     css,
-    express,
-    exDark,
     ex,
     git,
     github,

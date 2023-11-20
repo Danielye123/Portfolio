@@ -1,8 +1,6 @@
 import {
   JavaScript,
   css,
-  express,
-  exDark,
   git,
   github,
   html,
