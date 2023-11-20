@@ -1,35 +1,47 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   Stars,
-  TestimonialArrowLeft,
-  TestimonialArrowRight,
   TestimonialArrowLeft2,
   TestimonialArrowRight2,
 } from "@/assets";
 import { recommendationsData } from "@/constants";
-import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { useTheme } from "next-themes";
-import { HiArrowRight } from "react-icons/hi2";
 
 const Recommendations = () => {
-  const [currentRecommendation, setCurrentRecommendation] = useState(0);
+  const [currentRecommendation, setCurrentRecommendation] = useState<number>(0);
+  const [nextRecommendation, setNextRecommendation] = useState<number | null>(null);
+  const [animationDirection, setAnimationDirection] = useState<string>('');
+
+  useEffect(() => {
+    if (nextRecommendation !== null) {
+      const timeoutId = setTimeout(() => {
+        setCurrentRecommendation(nextRecommendation);
+        setNextRecommendation(null);
+        setAnimationDirection('in-' + animationDirection);
+      }, 500); // Duration of the exit animation
+      return () => clearTimeout(timeoutId);
+    }
+  }, [nextRecommendation, animationDirection]);
 
   const handleNextRecommendation = () => {
-    setCurrentRecommendation((prevIndex) =>
-      prevIndex === recommendationsData.length - 1 ? 0 : prevIndex + 1
+    setAnimationDirection('left');
+    setNextRecommendation(
+      currentRecommendation === recommendationsData.length - 1 ? 0 : currentRecommendation + 1
     );
   };
 
   const handlePreviousRecommendation = () => {
-    setCurrentRecommendation((prevIndex) =>
-      prevIndex === 0 ? recommendationsData.length - 1 : prevIndex - 1
+    setAnimationDirection('right');
+    setNextRecommendation(
+      currentRecommendation === 0 ? recommendationsData.length - 1 : currentRecommendation - 1
     );
   };
 
   const currentRecommendationData = recommendationsData[currentRecommendation];
+  const animationClass = animationDirection ? `slide-${animationDirection}` : '';
+
 
   return (
     <section className="w-full flex flex-col justify-center md:justify-start items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
@@ -55,6 +67,7 @@ const Recommendations = () => {
         />
 
         {/* Center Content */}
+        <div className={`transition-opacity duration-500 ${animationClass}`}>
         <div className="flex xl:flex-row flex-col items-start justify-center">
         <div className="flex items-start gap-3"> {/* Flex container to wrap image and arrows */}
             {/* Image Container */}
@@ -94,7 +107,7 @@ const Recommendations = () => {
               width={116}
               height={20}
               className="mt-4.25 flex flex-col"
-            />
+              />
 
             <p className="font-poppins text-[18px] md:text-[24px] font-normal leading-[28px] md:leading-[31px] text-left pt-[20px] text-[#6F74A7] dark:text-[#F3F8FF] lg:min-w-[500px] 2xl:min-w-[749px]">
               {currentRecommendationData.text}
@@ -107,6 +120,7 @@ const Recommendations = () => {
             <p className="font-poppins text-[18px] font-normal leading-[29px] text-left text-[#6F74A7] dark:text-[#F3F8FF] pt-[4px]">
               {currentRecommendationData.position}
             </p>
+          </div>
           </div>
         </div>
 

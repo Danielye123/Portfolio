@@ -46,6 +46,7 @@ export const navLinks = [
 
 export const skills = [
   {
+    name: "JavaScript",
     imgURL: JavaScript,
   },
   {

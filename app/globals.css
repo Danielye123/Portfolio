@@ -216,3 +216,64 @@ body {
       transform: scale(1.05) translateX(2rem); /* Apply translateX on medium screens and larger */
     }
 }
+
+/* Recommendations animations */
+@keyframes slide-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slide-out-left 0.5s ease forwards;
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.5s ease forwards;
+}
+
+.slide-right {
+  animation: slide-out-right 0.5s ease forwards;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.5s ease forwards;
+}
