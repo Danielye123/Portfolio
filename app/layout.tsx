@@ -76,7 +76,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="/assets/images/portfolio_front_page_resized.png"
+          content="https://portfolio-danielye123.vercel.app/assets/images/portfolio_front_page_resized.png"
         />
       </Head>
       <Theme>
