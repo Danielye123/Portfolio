@@ -3,13 +3,13 @@ import { useState, useRef, FormEvent, ChangeEvent } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
-// import emailjs from "@emailjs/browser";
 import { useTheme } from "next-themes";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BiSolidPhone } from "react-icons/bi";
 import { HiMail } from "react-icons/hi";
+import emailjs from "@emailjs/browser"
 
 const socials = [
   {
@@ -25,7 +25,40 @@ const socials = [
 ];
 
 const Contact = () => {
-  const { theme, setTheme } = useTheme();
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+    comment: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const { name, email, message, comment } = formState;
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID as string,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+      form.current!,
+      process.env.NEXT_PUBLIC_USER_ID as string
+    )
+    .then(() => {
+      toast.success("Email sent successfully");
+      setLoading(false);
+      setFormState({ name: "", email: "", message: "", comment: "" });
+    })
+    .catch((error: any) => {
+      toast.error("Error sending email: " + error.text);
+      setLoading(false);
+    });
+  };
 
   return (
     <div className=" flex flex-col items-center justify-between w-full pt-[70px] dark:bg-[#192333] bg-[#FFFFFF]">
@@ -98,7 +131,7 @@ const Contact = () => {
         </div>
         {/*form*/}
         <div className="flex-1 items-center justify-center md:pl-0 px-6 py-12 text-[#192333] dark:text-[#FFFFFF]">
-          <form className="flex flex-col sm:w-full w-[345px]">
+          <form onSubmit={sendEmail} ref={form} className="flex flex-col sm:w-full w-[345px]">
             <label
               htmlFor="name"
               className="mb-2 md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] font-normal font-poppins"
@@ -109,6 +142,8 @@ const Contact = () => {
               type="text"
               id="name"
               name="name"
+              value={name}
+              onChange={handleChange}
               required
               className=" p-4 mb-[48px] rounded-lg border border-[#CCE1FF] dark:border dark:border-[#2C3C56] bg-[#F3F8FF] dark:bg-[#192333]"
             />
@@ -122,6 +157,8 @@ const Contact = () => {
               type="email"
               id="email"
               name="email"
+              value={email}
+              onChange={handleChange}
               required
               className="p-4 mb-[48px] rounded-lg border border-[#CCE1FF] dark:border dark:border-[#2C3C56] bg-[#F3F8FF] dark:bg-[#192333]"
             />
@@ -134,6 +171,8 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
+              value={message}
+              onChange={handleChange}
               required
               className="p-2 mb-[48px] rounded-lg min-h-[190px] border border-[#CCE1FF] dark:border dark:border-[#2C3C56] bg-[#F3F8FF] dark:bg-[#192333]"
             ></textarea>
@@ -149,6 +188,8 @@ const Contact = () => {
             <textarea
               id="comment"
               name="comment"
+              value={comment}
+              onChange={handleChange}
               required
               className="p-2 mb-[48px] rounded-lg  min-h-[60px] border border-[#CCE1FF] dark:border dark:border-[#2C3C56] bg-[#F3F8FF] dark:bg-[#192333]"
             ></textarea>
@@ -159,8 +200,7 @@ const Contact = () => {
                 xl:w-[186px] xl:h-[69px] xl:px-[20px] xl:py-[12px] xl:rounded-full
                 "
               >
-                {/* {!loading ? "Send" : "Sending...."} */}
-                Send
+                {!loading ? "Send" : "Sending..."}
               </button>
             </div>
             <ToastContainer />
