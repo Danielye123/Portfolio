@@ -98,6 +98,8 @@ import richard from "./testimonials/richard.jpg";
 import gnar from "./testimonials/gnar.jpg";
 import Malphite from "./testimonials/Malphite.jpg";
 
+import portfolioFrontPage from "./portfolio_front_page.png";
+
 
 export {
     LogoDY,
@@ -191,4 +193,5 @@ export {
     JSMLogo,
     HipnodeFrontPage,
     FilmpireFrontPage,
+    portfolioFrontPage,
 };
