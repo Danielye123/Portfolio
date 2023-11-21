@@ -94,6 +94,7 @@ import JSMLogo from "./experience/JSMLogo.png";
 
 
 import adrianH from "./testimonials/adrianprofilepic.jpg";
+import mateo from "./testimonials/mateoprofilepic.jpg";
 import richard from "./testimonials/richard.jpg";
 import gnar from "./testimonials/gnar.jpg";
 import Malphite from "./testimonials/Malphite.jpg";
@@ -132,6 +133,7 @@ export {
     Filmpire,
     richard,
     adrianH,
+    mateo,
     gnar,
     Malphite,
     Star,

@@ -19,6 +19,7 @@ import {
   Malphite,
   richard,
   adrianH,
+  mateo,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -200,45 +201,6 @@ export const services = [
   },
 ];
 
-// export const services = [
-//   {
-//     // Component: Analytics,
-//     imgURL: AnalyticsIcon,
-//     title: "Analytics & SEO",
-//     description:
-//       "Implement tracking & analytics tools to monitor website performance & improve SEO.",
-//     width: 21, 
-//     height: 20, 
-//   },
-//   {
-//     // Component: Frontend,
-//     imgURL: FrontEndIcon,
-//     title: "Front-End Dev",
-//     description:
-//       "Front-end dev includes creating the user interface and interactive elements of websites and apps.",
-//           width: 24, 
-//     height: 20, 
-//   },
-//   {
-//     // Component: Backend,
-//     imgURL: BackEndIcon,
-//     title: "Back-End Dev",
-//     description:
-//       "Manages server-side logic, databases, and ensures seamless data flow in web applications.",
-//       width: 24, 
-//       height: 20, 
-//   },
-//   {
-//     // Component: Opt,
-//     imgURL: WebOptIcon,
-//     title: "Web Optimization",
-//     description:
-//       "Web optimization focuses on improving website performance for a smoother user experience",
-//       width: 30, 
-//       height: 24, 
-//   },
-// ];
-
 export const featuredProjects = [
   {
     imgUrl: Hipnode,
@@ -272,6 +234,12 @@ export const recommendationsData = [
     text: "Daniel is a disciplined and problem-solving software developer focused on best practices and staying current with the latest technologies. Working alongside Daniel has been a pleasure as he is a team player and communicates efficiently. Under pressure, he has shown competence and dedication to the goal of delivering projects in a timely manner. I highly recommended Daniel to any organization looking for a passionate developer.",
     author: "Richard Gabriel",
     position: "React Software Engineer",
+  },
+  {
+    image: mateo,
+    text: "I had the privilege of mentoring Daniel during his time at the JSM Bootcamp, and the thing that always stood out is how dedicated he is. Daniel would show up, day in and day out, and put in the work - probably the most valuable skill these days. A consistent learner, who isn't afraid to ask questions to better the entire team. Truly a great person to have on your side!",
+    author: "Mateo Sindičić",
+    position: "Lead Software Developer",
   },
 ];
 
