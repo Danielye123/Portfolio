@@ -55,7 +55,10 @@ function Sidebar({ setToggle, toggle }: any) {
             Contact
           </span>
         </Link>
-        <Link href="/resume" onClick={() => setToggle(false)}>
+        <Link 
+          href="https://drive.google.com/file/d/1Znd56RVkC73f09WszQU0_sgCJy2XCAPx/view?usp=sharing"
+          target="_blank" 
+          onClick={() => setToggle(false)}>
           <span className="text-black dark:text-white flex gap-3 items-center">
             <AiOutlineDownload className="w-[30px] h-[30px] inline-block" />
             Resume
