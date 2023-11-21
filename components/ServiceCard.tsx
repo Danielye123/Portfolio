@@ -2,7 +2,7 @@ import { services } from "@/constants";
 
 const ServiceCard = () => {
   return (
-    <div className="flex flex-row flex-wrap gap-[40px] mt-8 md:mt-16 md:pb-20 md:px-12 lg:px-0 xl:px-12 justify-center hover:overflow-hidden">
+    <div className="flex flex-row flex-wrap gap-[40px] mt-8 md:mt-16 pb-14 md:pb-20 md:px-12 lg:px-0 xl:px-12 justify-center hover:overflow-hidden">
       {services.map((service, index) => (
         <div
           key={index}
