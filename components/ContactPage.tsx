@@ -2,8 +2,6 @@
 import { useState, useRef, FormEvent, ChangeEvent } from "react";
 
 import Link from "next/link";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
