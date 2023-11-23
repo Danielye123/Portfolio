@@ -20,6 +20,7 @@ import {
   richard,
   adrianH,
   mateo,
+  jackson,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -240,6 +241,12 @@ export const recommendationsData = [
     text: "I had the privilege of mentoring Daniel during his time at the JSM Bootcamp, and the thing that always stood out is how dedicated he is. Daniel would show up, day in and day out, and put in the work - probably the most valuable skill these days. A consistent learner, who isn't afraid to ask questions to better the entire team. Truly a great person to have on your side!",
     author: "Mateo Sindičić",
     position: "Lead Software Developer",
+  },
+  {
+    image: jackson,
+    text: "Daniel is a dedicated and driven person. Throughout the projects that we have collaborated in college, he has shown that he is a team player who is willing to step outside of his comfort zone to pick up new skills in order to help others on top of finishing his tasks. His welcoming personality improves the efficiency of the team by getting everyone involved from project planning to execution. Daniel brings a joyful and collaborative spirit to every situation.",
+    author: "Zhuohong Jackson Chen",
+    position: "Full Stack Software Engineer @ General Motors",
   },
 ];
 

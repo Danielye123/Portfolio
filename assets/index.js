@@ -92,10 +92,10 @@ import WebOptIcon from "./services/WebOptIcon.svg"
 import UCMLogo from "./experience/UCMLogo.png";
 import JSMLogo from "./experience/JSMLogo.png";
 
-
 import adrianH from "./testimonials/adrianprofilepic.jpg";
 import mateo from "./testimonials/mateoprofilepic.jpg";
 import richard from "./testimonials/richard.jpg";
+import jackson from "./testimonials/jacksonprofilepic.jpg";
 import gnar from "./testimonials/gnar.jpg";
 import Malphite from "./testimonials/Malphite.jpg";
 
@@ -134,6 +134,7 @@ export {
     richard,
     adrianH,
     mateo,
+    jackson,
     gnar,
     Malphite,
     Star,
