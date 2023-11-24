@@ -67,7 +67,7 @@ const Services = () => {
           <div className="absolute left-0 bottom-[0px] h-[15px] w-full bg-[#ffbe62] z-0" />
         </div>
         <span className="ml-[10px]"></span>
-        do I provide
+        do I provide?
       </h1>
 
       <ServiceCard />

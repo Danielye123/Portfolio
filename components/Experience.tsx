@@ -34,8 +34,8 @@ const workExperiences = [
     text: `During my time in the JavaScript Mastery bootcamp, I learned a lot by focusing on my projects along with my group. 
     `,
     text2: ` 
-    This bootcamp focused more on projects rather than the fundamentals of web development, however, it helped me solidify my grasp on the basics and 
-    took it further by enhancing it and allowing me to build Full Stack Websites based on amazing Figma Designs.
+    This bootcamp focused more on projets rather than the fundamentaals of web development. However, it helped me solidify my grasp  on the basics while further enhancing my knowledge and enabling me to build
+    Full Stack Websites based on amazing Figma Designs.
     `,
   },
   {
@@ -49,8 +49,8 @@ const workExperiences = [
     text: `Bachelors Degree: Computer Science.
     `,
     text2: `
-    During my years at the University of California Merced or UC Merced, I learned many different skills relating to computer science. 
-    This includes learning the basics of programming and languages such as C++. I also learned about algorithms and many more subjects during my time there.
+    During my studies at the University of California, Merced, I honed a diverse skill set in computer science, focusing on programming fundamentals, particularly in C++, and delving deeply into algorithm design and analysis. 
+    This comprehensive education provided me with a solid foundation and a broad understanding of key computer science concepts.
     `,
   },
   // ... Add more experiences as needed

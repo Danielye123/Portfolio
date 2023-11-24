@@ -15,7 +15,7 @@ const CaseStudiesHero = () => {
     <div className="text-[#6F74A7] dark:text-[#FFFFFF] text-center pt-[25px] font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px]">
         Dive into my recent success stories and discover how I&apos;ve helped&nbsp;
         <br className="hidden md:block" />
-        clients overcome challenges, innovate, and achieve their goals
+        clients overcome challenges, innovate, and achieve their goals.
     </div>
 </section>
 

@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="absolute inset-x-0 bottom-2 xl:bottom-3 bg-primary-highlight xl:h-[22px] h-[18px]"></div>
           </div>
           <span className="text-[#6F74A7] dark:text-[#F3F8FF] text-[14px] xl:text-[20px]">
-            Let&apos;s Collaborate on Your Next Project
+            Let&apos;s Collaborate on Your Next Project!
           </span>
         </div>
       </div>
@@ -77,7 +77,7 @@ const Contact = () => {
         <div className="flex flex-col px-6 2xl:pl-[180px] md:pl-0 pl-[24px] py-12 md:space-y-[80px] space-y-9">
           <div className="flex flex-col gap-4">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
-              My Socials
+              My Socials:
             </h3>
             <div className="flex flex-row gap-4 text-[#778295] dark:text-[#F3F8FF]">
               {socials.map((social, index) => (
@@ -94,7 +94,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-5">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
-              Phone Number
+              Phone Number:
             </h3>
             <div className="flex flex-row gap-2 items-center hover:opacity-75 group cursor-pointer text-[#778295] dark:text-[#F3F8FF]">
               <BiSolidPhone
@@ -111,7 +111,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-5">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
-              Email Address
+              Email Address:
             </h3>
             <div className="flex flex-row gap-2 items-center group hover:opacity-75 cursor-pointer text-[#778295] dark:text-[#F3F8FF]">
               <HiMail
@@ -164,7 +164,7 @@ const Contact = () => {
               htmlFor="message1"
               className="mb-2 md:text-[20px] text-[18px] md:leading-[30px] leading-[28px] font-normal font-poppins"
             >
-              Write something about your project goals and timeframe
+              Write something about your project goals and timeframe.
             </label>
             <textarea
               id="message"

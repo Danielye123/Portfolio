@@ -198,7 +198,7 @@ export const services = [
     Component: Opt,
     title: "Web Optimization",
     description:
-      "Web optimization focuses on improving website performance for a smoother user experience",
+      "Web optimization focuses on improving website performance for a smoother user experience.",
   },
 ];
 
