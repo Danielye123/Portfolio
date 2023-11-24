@@ -18,11 +18,11 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] sm:hover:drop-shadow-2xl sm:dark:hover:drop-shadow-2xl transform transition-transform hover:scale-110 dark:bg-[#192333] w-[52px] h-[52px] sm:w-[100px] sm:h-[100px] rounded-full flex items-center justify-center
-            grayscale hover:grayscale-0 ease-in opacity-80 hover:opacity-100 border border-[#0252CD] border-opacity-10 hover:border-opacity-20 sm:border-none 
+            className={`group m-4 bg-[#F3F8FF] hover:bg-[#FFFFFF] sm:hover:drop-shadow-2xl sm:dark:hover:drop-shadow-2xl transform transition-transform hover:scale-110 dark:bg-[#192333] w-[52px] h-[52px] sm:w-[100px] sm:h-[100px] rounded-full flex items-center justify-center
+            ease-in border border-[#0252CD] border-opacity-10 hover:border-opacity-20 sm:border-none
             ${index === 0 && 'md:order-1'}`}
           >
-            <Image src={skill.imgURL} alt={`Skill ${index}`} className="sm:w-[50px] sm:h-[50px] w-[26px] h-[26px]" />
+            <Image src={skill.imgURL} alt={`Skill ${index}`} className="sm:w-[50px] sm:h-[50px] w-[26px] h-[26px] grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100" />
           </div>
         ))}
       </div>
