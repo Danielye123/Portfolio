@@ -101,6 +101,10 @@ import Malphite from "./testimonials/Malphite.jpg";
 
 import portfolioFrontPage from "./portfolio_front_page.png";
 
+import arrowDarkLeftMobile from "./testimonials/arrowDarkLeftMobile.svg";
+import arrowDarkRightMobile from "./testimonials/arrowDarkRightMobile.svg";
+import exDark from "./skills/exDark.svg";
+
 
 export {
     LogoDY,
@@ -197,4 +201,7 @@ export {
     HipnodeFrontPage,
     FilmpireFrontPage,
     portfolioFrontPage,
+    arrowDarkLeftMobile,
+    arrowDarkRightMobile,
+    exDark,
 };

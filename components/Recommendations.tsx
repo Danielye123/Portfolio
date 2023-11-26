@@ -2,14 +2,18 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import {
   Stars,
   TestimonialArrowLeft2,
   TestimonialArrowRight2,
+  arrowDarkLeftMobile,
+  arrowDarkRightMobile,
 } from "@/assets";
 import { recommendationsData } from "@/constants";
 
 const Recommendations = () => {
+  const { theme } = useTheme();
   const [currentRecommendation, setCurrentRecommendation] = useState<number>(0);
   const [nextRecommendation, setNextRecommendation] = useState<number | null>(null);
   const [animationDirection, setAnimationDirection] = useState<string>('');
@@ -58,7 +62,8 @@ const Recommendations = () => {
       <div className="w-full 2xl:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-center md:justify-between">
         {/* Left Arrow for larger screens */}
         <Image
-          src={TestimonialArrowLeft2}
+          // src={TestimonialArrowLeft2}
+          src={theme === "dark" ? arrowDarkLeftMobile : TestimonialArrowLeft2}
           alt="arrow"
           width={56}
           height={56}
@@ -126,7 +131,7 @@ const Recommendations = () => {
 
         {/* Right Arrow */}
         <Image
-          src={TestimonialArrowRight2}
+          src={theme === "dark" ? arrowDarkRightMobile : TestimonialArrowRight2}
           alt="arrow"
           width={56}
           height={56}
