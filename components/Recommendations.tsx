@@ -62,7 +62,7 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex self-center 2xl:ml-[60px] md:mr-12 xl:mr-0 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow"
+          className="hidden md:flex self-center 2xl:ml-[60px] md:mr-12 xl:mr-0 cursor-pointer transition-opacity duration-500 ease-in-out left-arrow hover:brightness-95 dark:hover:brightness-150"
           onClick={handlePreviousRecommendation}
         />
 
@@ -84,7 +84,7 @@ const Recommendations = () => {
               alt="arrow"
               width={48}
               height={48}
-              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out"
+              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out hover:brightness-95 dark:hover:brightness-150"
               onClick={handlePreviousRecommendation}
             />
 
@@ -94,7 +94,7 @@ const Recommendations = () => {
               alt="arrow"
               width={48}
               height={48}
-              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out"
+              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out hover:brightness-95 dark:hover:brightness-150"
               onClick={handleNextRecommendation}
             />
         </div>
@@ -130,7 +130,7 @@ const Recommendations = () => {
           alt="arrow"
           width={56}
           height={56}
-          className="hidden md:flex justify-between self-center xl:ml-[25px] cursor-pointer right-arrow"
+          className="hidden md:flex justify-between self-center xl:ml-[25px] cursor-pointer right-arrow hover:brightness-95 dark:hover:brightness-150"
           onClick={handleNextRecommendation}
         />
       </div>
