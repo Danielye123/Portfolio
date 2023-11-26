@@ -21,6 +21,7 @@ import {
   adrianH,
   mateo,
   jackson,
+  exDark,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
