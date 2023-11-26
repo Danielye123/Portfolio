@@ -9,7 +9,7 @@ import React from "react";
 
 const CaseStudiesProjects = () => {
   return (
-    <div className="flex flex-wrap justify-center items-start min-h-screen py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] px-[152px] gap-[30px] md:gap-[36px]">
+    <div className="flex flex-wrap justify-center items-start py-[72px] bg-[#FFFFFF] dark:bg-[#151E2C] px-[152px] gap-[30px] md:gap-[36px]">
       {/* taking out px-[152px] makes other screens 2 by 2*/}
       {/* Box 1 */}
       <div className="flex flex-col">
