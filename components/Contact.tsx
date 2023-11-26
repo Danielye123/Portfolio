@@ -92,9 +92,10 @@ const Contact = () => {
         >
           Have a project in mind that requires technical expertise?
         </div>
-        <Link href="/contact" className="min-w-[310px] md:min-w-[323px] md:h-auto py-[20px] px-[12px] gap-2 justify-center flex rounded-full bg-[#0252CD] dark:bg-[#428DFF] text-white z-20">
+        <Link href="/contact" className="min-w-[310px] md:min-w-[323px] md:h-auto py-[20px] px-[12px] gap-2 justify-center
+         flex rounded-full bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] text-white z-20 group">
           Get in touch with me
-          <HiArrowRight size={25} />
+          <HiArrowRight size={25} className="transition-transform group-hover:translate-x-1" />
         </Link>
       </div>
     </div>

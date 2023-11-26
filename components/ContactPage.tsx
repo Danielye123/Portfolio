@@ -196,7 +196,7 @@ const Contact = () => {
             <div className="flex md:justify-end">
               <button
                 type="submit"
-                className=" bg-primary-accentBlue dark:bg-primary-darkmodeblue hover:bg-opacity-75 dark:hover:bg-opacity-75 text-white py-5 px-4 rounded-full hover:bg-blue-600 w-full 
+                className=" bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] text-white py-5 px-4 rounded-full w-full 
                 xl:w-[186px] xl:h-[69px] xl:px-[20px] xl:py-[12px] xl:rounded-full
                 "
               >

@@ -91,7 +91,7 @@ const Hero = () => {
         <br />
         <div className="flex md:flex-row flex-col md:gap-[18px] gap-2">
           <Link href="/casestudies">
-            <button className="dark:bg-[#428DFF] bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex justify-center">
+            <button className="bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
               </p>

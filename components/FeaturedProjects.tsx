@@ -77,14 +77,14 @@ const FeaturedProjects = () => {
       </div>
 
       <Link href="/casestudies">
-        <button className=" flex flex-row items-center justify-center mt-[48px] bg-text-accentBlue font-bold dark:bg-primary-darkmodeblue rounded-full w-[323px] h-[69px] md:text-base hover:duration-500 transition">
+        <button className="group flex flex-row items-center justify-center mt-[48px] font-bold bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] rounded-full w-[323px] h-[69px] md:text-base hover:duration-200 transition">
           <span className="py-5 pr-[10px] pl-[45px] text-center text-white font-poppins font-semibold text-[18px] leading-[29px]">
             See more case studies
           </span>
           <BsArrowRight
             size={65}
             color="white"
-            className="pr-[34px] items-center justify-center"
+            className="pr-[34px] items-center justify-center transition-transform group-hover:translate-x-1"
           />
         </button>
       </Link>
