@@ -62,8 +62,7 @@ const Recommendations = () => {
       <div className="w-full 2xl:px-[85px] md:pt-[64px] pt-[36px] flex items-center justify-center md:justify-between">
         {/* Left Arrow for larger screens */}
         <Image
-          // src={TestimonialArrowLeft2}
-          src={theme === "dark" ? arrowDarkLeftMobile : TestimonialArrowLeft2}
+          src={TestimonialArrowLeft2}
           alt="arrow"
           width={56}
           height={56}
@@ -85,21 +84,21 @@ const Recommendations = () => {
             </div>
             {/* Mobile Left Arrow */}
             <Image
-              src={TestimonialArrowLeft2}
+              src={theme === "dark" ? arrowDarkLeftMobile : TestimonialArrowLeft2}
               alt="arrow"
               width={48}
               height={48}
-              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out hover:brightness-95 dark:hover:brightness-150"
+              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out"
               onClick={handlePreviousRecommendation}
             />
 
             {/* Mobile Right Arrow */}
             <Image
-              src={TestimonialArrowRight2}
+              src={theme === "dark" ? arrowDarkRightMobile : TestimonialArrowRight2}
               alt="arrow"
               width={48}
               height={48}
-              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out hover:brightness-95 dark:hover:brightness-150"
+              className="md:hidden cursor-pointer transition-opacity duration-500 ease-in-out"
               onClick={handleNextRecommendation}
             />
         </div>
@@ -131,7 +130,7 @@ const Recommendations = () => {
 
         {/* Right Arrow */}
         <Image
-          src={theme === "dark" ? arrowDarkRightMobile : TestimonialArrowRight2}
+          src={TestimonialArrowRight2}
           alt="arrow"
           width={56}
           height={56}
