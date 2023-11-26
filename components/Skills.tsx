@@ -22,7 +22,7 @@ const Skills = () => {
             <div className="relative flex items-center justify-center">
             <div 
               className={`absolute bottom-full mb-2 sm:mb-4 text-center bg-[#FFFFFF] dark:bg-[#192333] text-black dark:text-[#F3F8FF] font-poppins font-normal text-[12px] leading-[18px] md:text-lg
-              sm:py-2 sm:px-6 py-1 px-3 rounded-full opacity-0 group-hover:opacity-100 border dark:border-[#192333] transition-transform duration-500 border-[#0252CD] border-opacity-20
+              sm:py-2 sm:px-6 py-1 px-3 rounded-full opacity-0 group-hover:opacity-100 border transition-transform duration-500 border-[#0252CD] border-opacity-30
               ${skill.name === "Framer Motion" ? "overflow-hidden whitespace-nowrap text-overflow-ellipsis max-w-[200px]" : ""}`}
             >
                 {skill.name}
@@ -30,7 +30,7 @@ const Skills = () => {
               <div
                 className={`bg-[#F3F8FF] hover:bg-[#FFFFFF] sm:hover:drop-shadow-2xl sm:dark:hover:drop-shadow-2xl transform transition-transform duration-100 hover:scale-110
                   dark:bg-[#192333] w-[52px] h-[52px] sm:w-[100px] sm:h-[100px] rounded-full flex items-center justify-center ease-in border
-                  border-[#0252CD] border-opacity-10 hover:border-opacity-20 sm:border-none ${
+                  border-[#0252CD] border-opacity-10 hover:border-opacity-30 sm:border-none ${
                   index === 0 && "md:order-1"
                 }`}
               >
