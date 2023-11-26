@@ -103,6 +103,7 @@ const Contact = () => {
               />
               <Link
                 href="tel:+1 (415)-200-6222"
+                target="_blank"
                 className="text-[#778295] md:text-base font-semibold dark:text-[#F3F8FF]"
               >
                 +1 (415)-200-6222
@@ -119,7 +120,8 @@ const Contact = () => {
                 className="hover:opacity-75 w-6 h-6 sm:w-8 sm:h-8"
               />
               <Link
-                href=""
+                href="mailto: daniel.jianhao.ye@gmail.com"
+                target="_blank"
                 className="text-[#778295] md:text-base font-semibold dark:text-[#F3F8FF] "
               >
                 daniel.jianhao.ye@gmail.com
