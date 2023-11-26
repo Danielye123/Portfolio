@@ -50,40 +50,52 @@ export const skills = [
     imgURL: JavaScript,
   },
   {
+    name: "React",
     imgURL: react,
   },
   {
+    name: "Next.js",
     imgURL: next,
   },
   {
+    name: "TypeScript",
     imgURL: TypeScript,
   },
   {
+    name: "HTML",
     imgURL: html,
   },
   {
+    name: "CSS",
     imgURL: css,
   },
   {
+    name: "TailwindCSS",
     imgURL: tailwind,
   },
   {
-    imgURL: github,
-  },
-  {
-    imgURL: git,
-  },
-  {
+    name: "MongoDB",
     imgURL: mongodb,
   },
   {
+    name: "Node.js",
     imgURL: nodejs,
   },
   {
+    name: "Express.js",
     imgURL: ex,
   },
   {
+    name: "Framer Motion",
     imgURL: motion,
+  },
+  {
+    name: "Github",
+    imgURL: github,
+  },
+  {
+    name: "Git",
+    imgURL: git,
   },
 ];
 
