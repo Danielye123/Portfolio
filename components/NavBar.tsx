@@ -49,7 +49,7 @@ const NavBar = () => {
         </Link>
 
         <Link
-          href="https://drive.google.com/file/d/1Znd56RVkC73f09WszQU0_sgCJy2XCAPx/view?usp=sharing"
+          href="https://drive.google.com/file/d/12v70bma2-Gcjo6Giket9mvd8_g6okMGT/view?usp=sharing"
           target="_blank"
           className="hover:text-[#0252CD] hover:duration-500 transition"
         >

@@ -56,7 +56,7 @@ function Sidebar({ setToggle, toggle }: any) {
           </span>
         </Link>
         <Link 
-          href="https://drive.google.com/file/d/1Znd56RVkC73f09WszQU0_sgCJy2XCAPx/view?usp=sharing"
+          href="https://drive.google.com/file/d/12v70bma2-Gcjo6Giket9mvd8_g6okMGT/view?usp=sharing"
           target="_blank" 
           onClick={() => setToggle(false)}>
           <span className="text-black dark:text-white flex gap-3 items-center">

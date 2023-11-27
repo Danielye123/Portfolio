@@ -102,84 +102,109 @@ export const skills = [
 
 export const morrentSkills = [
   {
+    name: "JavaScript",
     imgURL: JavaScript,
   },
   {
+    name: "React.js",
     imgURL: react,
   },
   {
+    name: "Next.js",
     imgURL: next,
   },
   {
+    name: "HTML",
     imgURL: html,
   },
   {
+    name: "CSS",
     imgURL: css,
   },
   {
+    name: "TailwindCSS",
     imgURL: tailwind,
   },
   {
+    name: "Github",
     imgURL: github,
   },
   {
+    name: "Git",
     imgURL: git,
   },
   {
+    name: "MongoDB",
     imgURL: mongodb,
   },
 ];
 
 export const hipnodeSkills = [
   {
+    name: "TypeScript",
     imgURL: TypeScript,
   },
   {
+    name: "JavaScript",
     imgURL: JavaScript,
   },
   {
+    name: "React",
     imgURL: react,
   },
   {
+    name: "Next.js",
     imgURL: next,
   },
   {
+    name: "HTML",
     imgURL: html,
   },
   {
+    name: "CSS",
     imgURL: css,
   },
   {
+    name: "TailwindCSS",
     imgURL: tailwind,
   },
   {
+    name: "Github",
     imgURL: github,
   },
   {
+    name: "Git",
     imgURL: git,
   },
   {
+    name: "MongoDB",
     imgURL: mongodb,
   },
 ];
 
 export const filmpireSkills = [
   {
+    name: "JavaScript",
     imgURL: JavaScript,
   },
   {
+    name: "React",
     imgURL: react,
   },
   {
+    name: "HTML",
     imgURL: html,
   },
   {
+    name: "CSS",
     imgURL: css,
   },
   {
+    name: "Github",
     imgURL: github,
   },
   {
+    name: "Git",
     imgURL: git,
   },
 ];
