@@ -28,7 +28,7 @@ const HipnodeCaseStudiesOther = () => {
           </p>
           <Link
             href="/filmpire"
-            className="lg:w-96 lg:h-[48px] w-[307px] h-[41px] mx-[24px] py-[14px] lg:py-[24px] lg:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
+            className="lg:w-96 lg:h-[48px] w-[307px] h-[41px] mx-[24px] py-[14px] lg:py-[24px] lg:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] text-white flex justify-center items-center"
             >
             <p className="text-[#FFFFFF] font-poppins font-semibold text-[14px] leading-[20px] text-center">
               See Case Study
@@ -50,7 +50,7 @@ const HipnodeCaseStudiesOther = () => {
           </p>
           <Link
             href="/morrent"
-            className="lg:w-96 lg:h-[48px] w-[307px] h-[41px] mx-[24px] py-[14px] lg:py-[24px] lg:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] dark:bg-[#428DFF] text-white flex justify-center items-center"
+            className="lg:w-96 lg:h-[48px] w-[307px] h-[41px] mx-[24px] py-[14px] lg:py-[24px] lg:px-[135px] rounded-full border border-[#0252CD] gap-[10px] bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] text-white flex justify-center items-center"
           >
             <p className="text-[#FFFFFF] font-poppins font-semibold text-[14px] leading-[20px] text-center">
               See Case Study
