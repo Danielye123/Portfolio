@@ -48,7 +48,9 @@ const Recommendations = () => {
 
 
   return (
-    <section className="w-full flex flex-col justify-center md:justify-start items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
+      <div className="flex flex-col justify-center md:justify-start items-center px-[24px] py-[48px] md:px-[85px] md:py-[72px] container">
+
       <h1 className="text-center text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em]">
         What
         <span className="md:inline mx-1 md:mx-2"></span>
@@ -137,6 +139,8 @@ const Recommendations = () => {
           className="hidden md:flex justify-between self-center xl:ml-[25px] cursor-pointer right-arrow hover:brightness-95 dark:hover:brightness-150"
           onClick={handleNextRecommendation}
         />
+      </div>
+             
       </div>
     </section>
   );

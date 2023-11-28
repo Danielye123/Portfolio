@@ -15,7 +15,9 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <header className="flex justify-between bg-[#F3F8FF] fixed dark:bg-[#192333] py-4 px-[24px] xl:px-[85px] w-full z-[100]">
+    <header className="w-full bg-[#F3F8FF] dark:bg-[#192333] fixed z-[100]">
+      <div className="flex justify-between bg-[#F3F8FF] dark:bg-[#192333] py-4 px-[24px] xl:px-[85px] w-full navbar-3xl"> 
+
       <Link href="/" className="pl-[24px] md:pl-0 md:pt-3 z-[200]">
         <div className="conic-gradient-bg w-[45px] h-[45px] flex items-center justify-center text-[22px] rounded-full logo-font object-contain text-white">
           DY
@@ -88,6 +90,7 @@ const NavBar = () => {
           onClick={() => setToggle((prevToggle) => !prevToggle)}
         />
         <HeaderMobileModule setToggle={setToggle} toggle={toggle} />
+      </div>
       </div>
     </header>
   );

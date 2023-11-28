@@ -21,12 +21,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background:
+      rgb(var(--background-end-rgb));
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-end-rgb: 255, 255, 255;
+  }
 }
 
 .service-card:hover .description-text {
@@ -276,4 +277,21 @@ body {
 
 .slide-in-right {
   animation: slide-in-right 0.5s ease forwards;
+}
+
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1921px) {
+  .navbar-3xl {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px; /* Max width you want */
+    left: 0;
+    right: 0;
+    transform: translateX(0);
+  }
 }

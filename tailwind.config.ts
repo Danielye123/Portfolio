@@ -53,10 +53,8 @@ module.exports = {
         '200': '2',
       },
       screens: {
-        xs: "350px",
-        xxl: "1921px",
+        '3xl': '1921px',
       },
-      
     },
   },
 },
