@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const MorrentFigmaDesign = () => {
   return (
-    <div className="w-full text-center bg-[#0252CD] dark:bg-[#428DFF]">
+    <div className="container w-full text-center bg-[#0252CD] dark:bg-[#428DFF]">
         <div className="text-[#FFFFFF] font-poppins font-semibold md:text-[32px] text-[14px] md:leading-[34px] leading-[20px] text-center items-center justify-center md:py-[36px] py-[9px]">
             HIGH-FIDELITY FIGMA DESIGN
         </div>

@@ -5,7 +5,8 @@ import Link from "next/link";
 
 const FilmpireCaseStudiesOther = () => {
   return (
-    <section className="2xl:px-[280px] md:px-[72px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
+    <div className="container 2xl:px-[280px] md:px-[72px] px-[24px] py-[72px]">
        <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins font-semibold md:text-[14px] text-[12px] md:leading-[20px] leading-[17px] pb-[10px]">
         Projects
       </div>
@@ -57,6 +58,7 @@ const FilmpireCaseStudiesOther = () => {
             </p>
           </Link>
         </div>
+      </div>
       </div>
     </section>
   );

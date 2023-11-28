@@ -14,7 +14,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="pt-[180px] 2xl:px-[280px] lg:px-[72px] px-[24px] w-full min-h-screen bg-[#F3F8FF] dark:bg-[#192333]">
+    <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
+      <div className="pt-[180px] 2xl:px-[280px] lg:px-[72px] px-[24px] container">
       <div className="text-[#0252CD] dark:text-[#428DFF] font-poppins md:text-xl text-[14px] font-semibold md:leading-[26px] leading-[18px] tracking-[.3em] text-center items-center justify-center">
         WEB DEV PROJECT
       </div>
@@ -63,6 +64,7 @@ const Hero = () => {
           Source Code
           <HiOutlineArrowRight size={24} />
         </Link>
+      </div>
       </div>
     </section>
   );

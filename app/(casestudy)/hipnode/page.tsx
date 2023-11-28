@@ -14,8 +14,7 @@ import {
 
 const hipnode = () => {
   return (
-    <main className="dark:bg-[#192333] bg-[#F3F8FF] w-full">
-      <div className="container">
+    <main className="dark:bg-[#192333] bg-[#FFFFFF] w-full">
         <HipnodeHero />
         <HipnodeRole />
         <HipnodeTech />
@@ -27,7 +26,6 @@ const hipnode = () => {
         <HipnodeCaseStudiesOther />
         <Contact />
         <Footer />
-      </div>
     </main>
   );
 };

@@ -2,7 +2,8 @@ import React from "react";
 
 const HipnodeDescription = () => {
   return (
-    <div className="w-full 2xl:px-[280px] lg:px-[72px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[16px] md:leading-[30px] leading-[23px]">
+    <div className="bg-[#F3F8FF] dark:bg-[#192333] w-full">
+    <div className="container w-full 2xl:px-[280px] lg:px-[72px] px-[24px] py-[72px] bg-[#F3F8FF] dark:bg-[#192333] text-[#6F74A7] dark:text-[#F3F8FF] font-poppins font-normal md:text-[20px] text-[16px] md:leading-[30px] leading-[23px]">
       Introducing Hipnode: A Revolutionary Social Media Experience Hipnode is
       not just another social media application - it&apos;s a transformative platform
       that takes your online interactions to a whole new level.
@@ -25,6 +26,7 @@ const HipnodeDescription = () => {
       and genuine connections. With Hipnode, your social media experience will
       never be the same again. Explore, engage, and elevate - welcome to the
       future of social networking.
+    </div>
     </div>
   );
 };
