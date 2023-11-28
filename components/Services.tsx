@@ -58,7 +58,7 @@ import { ServiceCard } from ".";
 
 const Services = () => {
   return (
-    <section className="flex flex-col justify-start items-center py-12 md:py-[72px] bg-[#F3F8FF] dark:bg-[#192333] w-full overflow-hidden">
+    <section className="flex flex-col justify-start items-center pt-12 md:pt-[72px] bg-[#F3F8FF] dark:bg-[#192333] w-full overflow-hidden">
       <h1 className="text-primary-darkDefault dark:text-primary-light font-poppins font-bold text-[36px] md:text-[48px] leading-[41px] md:leading-[55px] tracking-[-0.01em] text-center md:text-left">
         What
         <span className="mr-[10px]"></span>
