@@ -58,10 +58,21 @@ const workExperiences = [
 
 const Experience = () => {
   const [selectedCompany, setSelectedCompany] = useState<ExperienceState>(null);
+  const [sliderValue, setSliderValue] = useState(0);
 
   // Function to update the selected company
   const handleCompanyChange = (company: ExperienceState) => {
     setSelectedCompany(company);
+    // Find the index of the selected company in the workExperiences array
+    const companyIndex = workExperiences.findIndex(c => c.id === company?.id);
+    // Update the slider value based on the index
+     // +1 is added to align with the slider's range starting from 1
+    if (companyIndex !== -1) {
+      setSliderValue(companyIndex + 1);
+    } else {
+      // Set to 0 if no company is selected
+      setSliderValue(0);
+    }
   };
 
   return (
@@ -78,6 +89,7 @@ const Experience = () => {
           <ExperienceSlider
             workExperiences={workExperiences}
             onCompanyChange={handleCompanyChange}
+            sliderValue={sliderValue}
           />
         </div>
       </div>

@@ -8,11 +8,12 @@ import { Company, ExperienceState } from "../Experience";
 interface ExperienceSliderProps {
   workExperiences: Company[];
   onCompanyChange: (company: ExperienceState) => void;
+  sliderValue: number;
 }
 
 
 // ExperienceSlider.js
-const ExperienceSlider: React.FC<ExperienceSliderProps> = ({ workExperiences, onCompanyChange }) => {
+const ExperienceSlider: React.FC<ExperienceSliderProps> = ({ workExperiences, onCompanyChange, sliderValue }) => {
   const { theme } = useTheme();
   const [value, setValue] = useState(0);
 
@@ -24,12 +25,8 @@ const ExperienceSlider: React.FC<ExperienceSliderProps> = ({ workExperiences, on
     if (newValue === 0) {
       onCompanyChange(null);
     } else {
-      // Adjusted index calculation to start from 0
-      const currentExperienceIndex = Math.floor(
-        ((newValue - 1) / 2) * workExperiences.length
-      );
-      const currentExperience = workExperiences[currentExperienceIndex];
-      // Call the onCompanyChange prop function with the current experience
+      // Use the slider value directly as an index (subtracting 1 because array indexes start at 0)
+      const currentExperience = workExperiences[newValue - 1];
       onCompanyChange(currentExperience);
     }
   };
@@ -49,8 +46,8 @@ const ExperienceSlider: React.FC<ExperienceSliderProps> = ({ workExperiences, on
         <input
           type="range"
           min="0"
-          max="2"
-          value={value}
+          max={workExperiences.length}
+          value={sliderValue}
           onChange={handleSliderChange}
           step="1"
           // className="custom-range-slider"
