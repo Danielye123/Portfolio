@@ -84,15 +84,15 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="font-poppins font-normal text-[12px] leading-[18px] md:text-lg text-text-body dark:text-[#F3F8FF] pt-[14px] md:pt-[0px] md:pb-[36px]">
+        <div className="font-poppins font-normal text-[12px] leading-[18px] md:text-lg text-text-body dark:text-[#F3F8FF] pt-[14px] md:pt-[0px] pb-[20px] lg:pb-[30px] xl:pb-[36px]">
           Transforming the web one line of code at a time: <br />
           Crafting cutting-edge digital experiences with precision, <br />
           passion, and a profound commitment to excellence
         </div>
-        <br />
+
         <div className="flex md:flex-row flex-col md:gap-[18px] gap-2">
           <Link href="/casestudies">
-            <button className="bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] sm:mt-0 mt-8 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex justify-center">
+            <button className="bg-[#0252CD] hover:bg-[#428DFF] dark:bg-[#428DFF] dark:hover:bg-[#0252CD] md:mt-0 mt-4 rounded-full py-4 px-8 md:w-[186px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex justify-center">
               <p className="text-[#FFFFFF] font-poppins text-center text-lg font-semibold leading-[29px] tracking-normal">
                 My Work
               </p>
@@ -101,7 +101,7 @@ const Hero = () => {
 
           <button
             onClick={copyText}
-            className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex sm:mt-0 mt-8 items-center justify-center"
+            className="dark:bg-[#151E2C] bg-[#FFFFFF] rounded-full py-4 px-8 md:w-[305px] md:h-[64px] sm:w-[345px] w-full h-[55px] flex md:mt-0 mt-4 items-center justify-center"
           >
             <p className="text-[#6F74A7] dark:text-[#FFFFFF] font-poppins text-center text-base font-semibold leading-7 tracking-normal">
               daniel.jianhao.ye@gmail.com
@@ -109,8 +109,8 @@ const Hero = () => {
             <Image
               src={clipboard}
               alt="clipboard"
-              width={19}
-              height={19}
+              width={25}
+              height={25}
               className="object-contain ml-2 cursor-pointer"
             />
           </button>
