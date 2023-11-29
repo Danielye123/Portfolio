@@ -85,6 +85,7 @@ const Experience = () => {
         <CompanyCardDisplay
           companies={workExperiences}
           selectedCompany={selectedCompany}
+          onCompanySelect={handleCompanyChange}
         />
       </div>
     </section>

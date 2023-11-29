@@ -65,8 +65,8 @@ const Hero = () => {
 
   return (
     <section className="container dark:bg-[#192333] bg-[#F3F8FF]">
-    <div className="flex flex-col w-full lg:flex-row text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 lg:gap-0 pt-[48px] md:pt-[4rem] lg:pt-[48px] xl:pt-[150px] pb-[32px] xl:pb-[105px] justify-between mt-[48px] md:mt-0">
-      <div className="flex flex-col items-start pl-[24px] md:pl-[3.5rem] py-6 xl:px-[85px] md:max-w-[900px] my-auto">
+    <div className="flex flex-col w-full lg:flex-row text-black dark:bg-[#192333] bg-[#F3F8FF] gap-6 lg:gap-0 pt-[48px] md:pt-[150px] pb-[32px] pb-100-on-2xl pb-0-on-3xl justify-between mt-[48px] md:mt-0">
+      <div className="flex flex-col items-start pl-[24px] md:pl-[3.5rem] py-6 xl:px-[85px] md:max-w-[900px] my-auto 2xl:pb-[100px]">
         <div className="flex-none h-1/5"></div> {/* Spacer div */}
         <div className="font-semibold text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] text-text-accentBlue dark:text-primary-darkmodeblue font-poppins tracking-[.3em]">
           <h2>HI, I AM DANIEL YE</h2>

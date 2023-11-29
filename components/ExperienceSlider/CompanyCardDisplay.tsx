@@ -4,9 +4,15 @@ import { Company, ExperienceState } from "../Experience";
 interface CompanyCardDisplayProps {
   companies: Company[];
   selectedCompany: ExperienceState;
+  onCompanySelect: (company: Company) => void;
 }
 
-const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({ companies, selectedCompany }) => {
+const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({
+  companies,
+  selectedCompany,
+  onCompanySelect,
+}) => {
+
   if (!companies || companies.length === 0)
     return <div>No companies available</div>;
 
@@ -15,19 +21,21 @@ const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({ companies, sele
       {companies.map((company, index) => (
         <div
           key={company.id}
-          className={`company-card bg-[#F3F8FF] dark:bg-[#151E2C] flex items-center group ${
+          onClick={() => onCompanySelect(company)}
+          className={`company-card bg-[#F3F8FF] dark:bg-[#151E2C] flex items-center ${
             selectedCompany?.id === company.id
-              ? "selected-class group grayscale-0 bg-[#FFFFFF] dark:bg-[#192333]"
+              ? "selected-class group bg-[#FFFFFF] dark:bg-[#192333]"
               : ""
-          } rounded-[10px] mb-[35px] group 
-          transition-transform transform md:hover:scale-105 md:hover:translate-x-8 hover:grayscale-0
+          } rounded-[10px] mb-[35px] group hover:bg-[#FFFFFF] hover:dark:bg-[#192333]
+          transition-transform transform md:hover:scale-105 md:hover:translate-x-8 hover:grayscale-0 hover:cursor-pointer
          `}
         >
-          {/* <div className="flex flex-row pl-[32px] grayscale group-hover:grayscale-0"> */}
           <div className="flex flex-col md:flex-row pl-[32px] py-[30px] w-full items-center">
             <div
               className={`${
-                selectedCompany?.id !== company.id ? "grayscale group-hover:grayscale-0 bg-[#FFFFFF] dark:bg-[#192333]" : ""
+                selectedCompany?.id !== company.id
+                  ? "grayscale group-hover:grayscale-0"
+                  : ""
               }`}
             >
               <Image
@@ -35,7 +43,6 @@ const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({ companies, sele
                 alt="companyImage"
                 width={58}
                 height={58}
-                className=""
               />
             </div>
             <div className="pl-[32px] sm:pr-[100px] pr-[40px]">
@@ -48,7 +55,6 @@ const CompanyCardDisplay: React.FC<CompanyCardDisplayProps> = ({ companies, sele
             </div>
           </div>
         </div>
-        // </div>
       ))}
     </div>
   );
