@@ -22,6 +22,12 @@ import {
   mateo,
   jackson,
   exDark,
+  filmpireComputer,
+  filmpirePhone,
+  morrentPhone,
+  morrentComputer,
+  hipnodePhone,
+  hipnodeComputer,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -317,3 +323,39 @@ export const projects = [
     isReversed: false, 
   },
 ]
+
+export const caseStudiesHero = [
+  {
+    name: 'FilmpireHero',
+    sectionClass: 'w-full bg-[#F3F8FF] dark:bg-[#192333]',
+    title: 'Filmpire - An AI-Powered Movie Application',
+    demoLink: 'https://filmpiredanielye.netlify.app/#/',
+    sourceCodeLink: 'https://github.com/Danielye123/Filmpire_Daniel',
+    computerImage: filmpireComputer,
+    phoneImage: filmpirePhone,
+    projectType: 'WEB DEV PROJECT',
+    backgroundColor: '#ffbe62'
+  },
+  {
+    name: 'HipnodeHero',
+    sectionClass: 'w-full bg-[#F3F8FF] dark:bg-[#192333]',
+    title: 'Hipnode - A Social Media Application',
+    demoLink: 'https://hip-node-jet.vercel.app',
+    sourceCodeLink: 'https://github.com/Danielye123/HipNode',
+    computerImage: hipnodeComputer,
+    phoneImage: hipnodePhone,
+    projectType: 'WEB DEV PROJECT',
+    backgroundColor: '#ffbe62'
+  },
+  {
+    name: 'MorrentHero',
+    sectionClass: 'w-full bg-[#F3F8FF] dark:bg-[#192333]',
+    title: 'Morrent - A Car Rental Website',
+    demoLink: 'https://web3-car-rent.vercel.app/car-rent',
+    sourceCodeLink: 'https://github.com/Danielye123/CarRent',
+    computerImage: morrentComputer,
+    phoneImage: morrentPhone,
+    projectType: 'WEB DEV PROJECT',
+    backgroundColor: '#ffbe62'
+  }
+];

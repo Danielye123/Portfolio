@@ -10,12 +10,13 @@ import {
   HipnodeCaseStudiesOther,
   Contact,
   Footer,
+  CaseStudiesHero,
 } from "@/components";
 
 const hipnode = () => {
   return (
     <main className="dark:bg-[#192333] bg-[#FFFFFF] w-full">
-        <HipnodeHero />
+        <CaseStudiesHero />
         <HipnodeRole />
         <HipnodeTech />
         <HipnodeDescription />

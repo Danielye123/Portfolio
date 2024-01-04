@@ -1,9 +1,9 @@
-import { MorrentHero, MorrentRole, MorrentTech, MorrentDescription, MorrentProblem, MorrentFigmaDesign, MorrentProcess, MorrentChallenges, MorrentCaseStudiesOther, Contact, Footer } from "@/components"
+import { MorrentHero, MorrentRole, MorrentTech, MorrentDescription, MorrentProblem, MorrentFigmaDesign, MorrentProcess, MorrentChallenges, MorrentCaseStudiesOther, Contact, Footer, CaseStudiesHero } from "@/components"
 
 const morrent = () => {
   return (
     <main className="dark:bg-[#192333] bg-[#FFFFFF] w-full">
-        <MorrentHero />
+        <CaseStudiesHero />
         <MorrentRole />
         <MorrentTech />
         <MorrentDescription />
