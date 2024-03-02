@@ -3,7 +3,7 @@ import { MorrentHero, MorrentRole, MorrentTech, MorrentDescription, MorrentProbl
 const morrent = () => {
   return (
     <main className="dark:bg-[#192333] bg-[#FFFFFF] w-full">
-        <CaseStudiesHero />
+        <MorrentHero />
         <MorrentRole />
         <MorrentTech />
         <MorrentDescription />

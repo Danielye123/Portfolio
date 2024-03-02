@@ -16,7 +16,7 @@ import {
 const filmpire = () => {
   return (
     <main className="dark:bg-[#151E2C] bg-[#FFFFFF] w-full">
-        <CaseStudiesHero />
+        <FilmpireHero />
         <FilmpireRole />
         <FilmpireTech />
         <FilmpireDescription />
