@@ -6,6 +6,7 @@ interface skillsProp {
         map(arg0: (skill: any, index: number) => React.JSX.Element): React.ReactNode;
         name: string;
         imgURL: any;
+        [key: string]: any;
     }
 }
 
