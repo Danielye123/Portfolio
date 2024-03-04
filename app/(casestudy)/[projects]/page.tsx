@@ -2,7 +2,9 @@
 
 import React from "react";
 import ProjectsHero from "@/components/casestudy/projects/ProjectsHero";
-import { projectData } from "@/constants";
+import { projectData } from "@/constants/projectData";
+import ProjectRole from "@/components/casestudy/projects/ProjectsRole";
+import ProjectTech from "@/components/casestudy/projects/ProjectTech";
 
 const Page = ({ params }: { params: { projects: string } }) => {
     const projectId = params.projects
@@ -15,10 +17,14 @@ const Page = ({ params }: { params: { projects: string } }) => {
       return <div>Project not found</div>;
     }
 
+    const skillsKey = `${projectId}Skills`;
+    const skills = project[skillsKey];
+
   return (
   <div className="dark:bg-[#151E2C] bg-[#FFFFFF] w-full">
-    <ProjectsHero project={project}  />
-    {/* {project} */}
+    <ProjectsHero hero={project.hero}  />
+    <ProjectRole project={project.role}  />
+    <ProjectTech skills={skills} />
   </div>
   )
 };

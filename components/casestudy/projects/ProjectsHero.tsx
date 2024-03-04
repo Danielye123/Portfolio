@@ -6,22 +6,21 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import Link from "next/link";
 
 interface ProjectHero {
-  name: string;
-  sectionClass: string;
-  title1: string;
-  title2: string;
-  demoLink: string;
-  sourceCodeLink: string;
-  computerImage: string; 
-  phoneImage: string; 
-  projectType: string;
-  backgroundColor: string;
-  hero: ProjectHero;
+  hero: {
+    name: string;
+    sectionClass: string;
+    title1: string;
+    title2: string;
+    demoLink: string;
+    sourceCodeLink: string;
+    computerImage: any; 
+    phoneImage: any; 
+    projectType: string;
+    backgroundColor: string;
+  }
 }
 
-const ProjectsHero = ({ project }: { project: ProjectHero }) => {
-  // Destructure the project data for easier access
-  const { hero } = project;
+const ProjectsHero = ({ hero }: ProjectHero ) => {
   return (
     <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
       <div className="pt-[180px] 2xl:px-[280px] lg:px-[72px] px-[24px] container">
