@@ -11,7 +11,6 @@ import {
   morrentGit,
 } from "@/assets";
 import Link from "next/link";
-import { caseStudiesHero } from "@/constants";
 
 const FilmpireHero = () => {
   return (
@@ -24,10 +23,10 @@ const FilmpireHero = () => {
       <div className="text-[#151E2C] dark:text-[#FFFFFF] text-center pt-[30px]">
         <div className="font-poppins md:text-[64px] text-[42px] font-bold md:leading-[83.2px] leading-[48px] relative">
           <span className="relative inline-block z-10">
-            Filmpire{caseStudiesHero.name[0]}
+            Filmpire
             <div className="absolute left-0 bottom-[0px] h-[13px] md:h-[27px] w-full bg-[#ffbe62] z-[-1]" />
           </span>
-          <span className="ml-4">- An AI-Powered Movie Application {caseStudiesHero.description}</span>
+          <span className="ml-4">- An AI-Powered Movie Application</span>
         </div>
       </div>
 

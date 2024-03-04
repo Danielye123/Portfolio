@@ -506,7 +506,8 @@ export const projectData = [
     hero: {
       name: "MorrentHero",
       sectionClass: "w-full bg-[#F3F8FF] dark:bg-[#192333]",
-      title: "Morrent - A Car Rental Website",
+      title1: "Morrent ",
+      title2: "- A Car Rental Website",
       demoLink: "https://web3-car-rent.vercel.app/car-rent",
       sourceCodeLink: "https://github.com/Danielye123/CarRent",
       computerImage: morrentComputer,
