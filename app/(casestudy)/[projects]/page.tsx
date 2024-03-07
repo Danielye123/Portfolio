@@ -6,6 +6,7 @@ import { projectData } from "@/constants/projectData";
 import ProjectRole from "@/components/casestudy/projects/ProjectsRole";
 import ProjectTech from "@/components/casestudy/projects/ProjectTech";
 import ProjectDescription from "@/components/casestudy/projects/ProjectDescription";
+import ProjectProblem from "@/components/casestudy/projects/ProjectProblem";
 
 const Page = ({ params }: { params: { projects: string } }) => {
     const projectId = params.projects
@@ -27,6 +28,7 @@ const Page = ({ params }: { params: { projects: string } }) => {
     <ProjectRole project={project.role}  />
     <ProjectTech skills={skills} />
     <ProjectDescription description={project.description} />
+    <ProjectProblem problem={project.problem} />
   </div>
   )
 };
