@@ -68,7 +68,7 @@ export const projectData = [
       figma: {
         image: FilmpireHF,
       },
-      challenges: {
+      CL: {
         challenges: [
           {
             text1: "First introduction to an advanced website",

@@ -7,6 +7,9 @@ import ProjectRole from "@/components/casestudy/projects/ProjectsRole";
 import ProjectTech from "@/components/casestudy/projects/ProjectTech";
 import ProjectDescription from "@/components/casestudy/projects/ProjectDescription";
 import ProjectProblem from "@/components/casestudy/projects/ProjectProblem";
+import ProjectFigmaDesign from "@/components/casestudy/projects/ProjectFigmaDesign";
+import ProjectProcess from "@/components/casestudy/projects/ProjectProcess";
+import ProjectChallenges from "@/components/casestudy/projects/ProjectChallenges";
 
 const Page = ({ params }: { params: { projects: string } }) => {
     const projectId = params.projects
@@ -29,6 +32,9 @@ const Page = ({ params }: { params: { projects: string } }) => {
     <ProjectTech skills={skills} />
     <ProjectDescription description={project.description} />
     <ProjectProblem problem={project.problem} />
+    <ProjectFigmaDesign figma={project.figma} />
+    <ProjectProcess />
+    <ProjectChallenges CL={project.challenges}  />
   </div>
   )
 };
