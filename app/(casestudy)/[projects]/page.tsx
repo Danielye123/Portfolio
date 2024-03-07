@@ -37,7 +37,7 @@ const Page = ({ params }: { params: { projects: string } }) => {
     <ProjectFigmaDesign figma={project.figma} />
     <ProjectProcess />
     <ProjectChallenges CL={project.challenges}  />
-    <ProjectCaseStudiesOther otherProjects={project.otherProjects} />
+    <ProjectCaseStudiesOther otherProjects={project.otherProjects || []} />
   </div>
   )
 };

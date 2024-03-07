@@ -6,7 +6,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import Link from "next/link";
 
 interface ProjectHero {
-  hero: {
+  hero?: {
     name: string;
     sectionClass: string;
     title1: string;
@@ -21,6 +21,11 @@ interface ProjectHero {
 }
 
 const ProjectsHero = ({ hero }: ProjectHero ) => {
+
+  if (!hero) {
+    return <div className="text-black dark:text-white">No data available</div>;
+  }
+
   return (
     <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
       <div className="pt-[180px] 2xl:px-[280px] lg:px-[72px] px-[24px] container">

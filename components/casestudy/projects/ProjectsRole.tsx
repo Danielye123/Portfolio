@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface ProjectRoleProps {
-  project: {
+  project?: {
     role: string,
     startDate: string,
     endDate: string,
@@ -9,7 +9,9 @@ interface ProjectRoleProps {
 }
 
 const ProjectRole = ({ project }: ProjectRoleProps ) => {
-  // const role = project;
+  if (!project) {
+    return <div className="text-black dark:text-white">No data available</div>;
+  }
 
   return (
     <div className="container w-full 2xl:px-[280px] lg:px-[72px] px-[24px] py-16 bg-[#FFFFFF] dark:bg-[#151E2C] flex flex-col md:flex-row md:gap-[191px] gap-[36px] justify-between">

@@ -3,18 +3,20 @@ import React from "react";
 import Link from "next/link";
 
 type CaseStudyData = {
-  otherProjects: {
-    map(arg0: (project: any) => React.JSX.Element): React.ReactNode;
+  otherProjects?: {
     id: string;
     name: string;
     description: string;
     image: any;
     link: string;
-    [key: string]: any;
-  };
+  }[]; // Indicates that otherProjects is an array of objects with these properties
 };
 
 const ProjectCaseStudiesOther = ({ otherProjects }: CaseStudyData) => {
+  if (!otherProjects) {
+    return <div className="text-black dark:text-white">No data available</div>;
+  }
+
   return (
     <section className="w-full bg-[#F3F8FF] dark:bg-[#192333]">
       <div className="container 2xl:px-[280px] lg:px-[72px] px-[24px] py-[72px]">
