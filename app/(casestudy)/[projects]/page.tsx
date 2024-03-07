@@ -10,6 +10,7 @@ import ProjectProblem from "@/components/casestudy/projects/ProjectProblem";
 import ProjectFigmaDesign from "@/components/casestudy/projects/ProjectFigmaDesign";
 import ProjectProcess from "@/components/casestudy/projects/ProjectProcess";
 import ProjectChallenges from "@/components/casestudy/projects/ProjectChallenges";
+import ProjectCaseStudiesOther from "@/components/casestudy/projects/ProjectCaseStudiesOther";
 
 const Page = ({ params }: { params: { projects: string } }) => {
     const projectId = params.projects
@@ -25,6 +26,7 @@ const Page = ({ params }: { params: { projects: string } }) => {
     const skillsKey = `${projectId}Skills`;
     const skills = (project as any)[skillsKey];
 
+
   return (
   <div className="dark:bg-[#151E2C] bg-[#FFFFFF] w-full">
     <ProjectsHero hero={project.hero}  />
@@ -35,6 +37,7 @@ const Page = ({ params }: { params: { projects: string } }) => {
     <ProjectFigmaDesign figma={project.figma} />
     <ProjectProcess />
     <ProjectChallenges CL={project.challenges}  />
+    <ProjectCaseStudiesOther otherProjects={project.otherProjects} />
   </div>
   )
 };
