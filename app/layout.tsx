@@ -32,6 +32,7 @@
 //   );
 // }
 import Theme from "@/components/Theme";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -83,6 +84,7 @@ export default function RootLayout({
         <body>
           <NavBar />
           <div className="">{children}</div>
+          <Analytics />
         </body>
       </Theme>
     </html>
