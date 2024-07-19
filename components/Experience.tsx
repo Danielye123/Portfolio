@@ -34,7 +34,7 @@ const workExperiences = [
     text: `During my time in the JavaScript Mastery bootcamp, I learned a lot by focusing on my projects along with my group. 
     `,
     text2: ` 
-    This bootcamp focused more on projets rather than the fundamentaals of web development. However, it helped me solidify my grasp  on the basics while further enhancing my knowledge and enabling me to build
+    This bootcamp focused more on projects rather than the fundamentals of web development. However, it helped me solidify my grasp on the basics while further enhancing my knowledge and enabling me to build
     Full Stack Websites based on amazing Figma Designs.
     `,
   },
