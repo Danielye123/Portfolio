@@ -81,6 +81,15 @@ import carrent from "./morrent/Carrent.svg";
 import FilmpireShow from "./filmpire/FilmpireShow.svg";
 import FilmpireHF from "./filmpire/Filmpire-HF.svg";
 
+import awwwardsComputer from "./awwwards/awwwardsComputer.png";
+import awwwardsPhone from "./awwwards/awwwardsPhone.png";
+import awwwardsLink from "./awwwards/awwwardsLink.png";
+import awwwardsBefore from "./awwwards/awwwardsBefore.png";
+import awwwardsAfter from "./awwwards/awwwardsAfter.png";
+import awwwardsVault from "./awwwards/vault.png";
+import awwwardsRoadmap from "./awwwards/roadmap.png";
+import awwwardsCaseStudies from "./caseStudiesPage/awwwardsCaseStudies.png";
+
 import LeftArrow from "./LeftArrow.tsx";
 import RightArrow from "./RightArrow.tsx";
 
@@ -91,6 +100,7 @@ import WebOptIcon from "./services/WebOptIcon.svg"
 
 import UCMLogo from "./experience/UCMLogo.png";
 import JSMLogo from "./experience/JSMLogo.png";
+import robinflow from "./experience/robinflow.svg";
 
 import adrianH from "./testimonials/adrianprofilepic.jpg";
 import mateo from "./testimonials/mateoprofilepic.jpg";
@@ -198,10 +208,19 @@ export {
     WebOptIcon,
     UCMLogo,
     JSMLogo,
+    robinflow,
     HipnodeFrontPage,
     FilmpireFrontPage,
     portfolioFrontPage,
     arrowDarkLeftMobile,
     arrowDarkRightMobile,
     exDark,
+    awwwardsComputer,
+    awwwardsPhone,
+    awwwardsLink,
+    awwwardsBefore,
+    awwwardsAfter,
+    awwwardsVault,
+    awwwardsRoadmap,
+    awwwardsCaseStudies,
 };

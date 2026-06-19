@@ -11,6 +11,7 @@ import ProjectFigmaDesign from "@/components/casestudy/projects/ProjectFigmaDesi
 import ProjectProcess from "@/components/casestudy/projects/ProjectProcess";
 import ProjectChallenges from "@/components/casestudy/projects/ProjectChallenges";
 import ProjectCaseStudiesOther from "@/components/casestudy/projects/ProjectCaseStudiesOther";
+import ProjectBeforeAfter from "@/components/casestudy/projects/ProjectBeforeAfter";
 
 const Page = ({ params }: { params: { projects: string } }) => {
     const projectId = params.projects
@@ -26,6 +27,8 @@ const Page = ({ params }: { params: { projects: string } }) => {
     const skillsKey = `${projectId}Skills`;
     const skills = (project as any)[skillsKey];
 
+    const proj = project as any;
+
 
   return (
   <div className="dark:bg-[#151E2C] bg-[#FFFFFF] w-full">
@@ -33,8 +36,9 @@ const Page = ({ params }: { params: { projects: string } }) => {
     <ProjectRole project={project.role}  />
     <ProjectTech skills={skills} />
     <ProjectDescription description={project.description} />
-    <ProjectProblem problem={project.problem} />
-    <ProjectFigmaDesign figma={project.figma} />
+    {proj.beforeAfter && <ProjectBeforeAfter beforeAfter={proj.beforeAfter} />}
+    {proj.problem && <ProjectProblem problem={proj.problem} />}
+    {proj.figma && <ProjectFigmaDesign figma={proj.figma} />}
     <ProjectProcess />
     <ProjectChallenges CL={project.challenges}  />
     <ProjectCaseStudiesOther otherProjects={project.otherProjects || []} />

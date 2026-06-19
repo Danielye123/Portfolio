@@ -26,6 +26,12 @@ import {
   problem,
   react,
   tailwind,
+  awwwardsComputer,
+  awwwardsPhone,
+  awwwardsBefore,
+  awwwardsAfter,
+  awwwardsVault,
+  awwwardsRoadmap,
 } from "@/assets";
 
 export const projectData = [
@@ -426,6 +432,181 @@ export const projectData = [
         {
           text4: `Acquired proficiency in NextJS and implemented various features
             utilizing industry-standard best practices.`,
+          icon: check,
+        },
+      ],
+    },
+    otherProjects: [
+      {
+        id: "filmpire",
+        name: "Filmpire",
+        description: "A movie web application made with React",
+        link: "/filmpire",
+        image: FilmpireShow,
+      },
+      {
+        id: "hipnode",
+        name: "Hipnode",
+        description: "A social media application made with React and Next.js",
+        link: "/hipnode",
+        image: hipnodeLink,
+      },
+    ],
+  },
+
+  {
+    id: "awwwards",
+    hero: {
+      name: "AwwwardsHero",
+      sectionClass: "w-full bg-[#F3F8FF] dark:bg-[#192333]",
+      title1: "Zentry ",
+      title2: "- An Animated GSAP Landing Page",
+      demoLink: "https://animationproject-pi.vercel.app",
+      sourceCodeLink: "https://github.com/Danielye123/AdvancedAnime",
+      computerImage: awwwardsComputer,
+      phoneImage: awwwardsPhone,
+      projectType: "FRONT-END / GSAP",
+      backgroundColor: "#ffbe62",
+    },
+    role: {
+      role: "Front-End Developer",
+      startDate: "May - 2026",
+      endDate: "June - 2026",
+    },
+    awwwardsSkills: [
+      {
+        name: "JavaScript",
+        imgURL: JavaScript,
+      },
+      {
+        name: "React",
+        imgURL: react,
+      },
+      {
+        name: "TailwindCSS",
+        imgURL: tailwind,
+      },
+      {
+        name: "HTML",
+        imgURL: html,
+      },
+      {
+        name: "CSS",
+        imgURL: css,
+      },
+      {
+        name: "Github",
+        imgURL: github,
+      },
+      {
+        name: "Git",
+        imgURL: git,
+      },
+    ],
+    description: {
+      part1: `An animated, scroll-driven landing page built with React, Vite, Tailwind CSS and GSAP.
+        It features a video hero carousel, scroll-pinned reveals, a bento feature grid and a custom interactive roadmap.`,
+      part2: `It began as a follow-along of a Zentry-style GSAP tutorial. I used that as a foundation and then made it my own, adding six brand-new sections and several custom interactions while keeping the original animation system intact.`,
+      part3: `This project pushed my comfort with GSAP ScrollTrigger (pinning, scrubbing, snapping) and taught me how to
+        extend an existing codebase cleanly rather than building everything from scratch.`,
+    },
+    beforeAfter: {
+      title: "From tutorial to my own",
+      description: `This started as a follow-along of a Zentry-style GSAP tutorial. I used it as a foundation and made it my own, adding six new sections and several custom interactions.
+        Watch the original tutorial build and my version side
+        by side below, then scroll through some of the new sections I added.`,
+      before: awwwardsBefore,
+      after: awwwardsAfter,
+      // Side-by-side autoplay players (the screenshots above are used as posters):
+      beforeVideo: "/videos/tutorial.mp4",
+      afterVideo: "/videos/finishedproduct.mp4",
+      beforeLabel: "Tutorial",
+      afterLabel: "My",
+      beforeLink: "https://animationproject-5ro1djdzx-danielye123s-projects.vercel.app",
+      afterLink: "https://animationproject-pi.vercel.app",
+      newSectionsIntro: `The tutorial baseline was only Hero → About → Features → Story → Contact. On top of that I
+        built six new sections, listed in the order they appear on the page:`,
+      newSections: [
+        {
+          title: "Marquee",
+          file: "Marquee.jsx",
+          description: `A full-width violet band of looping words (Play · Connect · Earn · Explore · Compete · Evolve) separated by diamonds, scrolling infinitely via GSAP, a rhythmic transition strip between the Hero/About and Features.`,
+        },
+        {
+          title: `Stats — "By the Numbers"`,
+          file: "Stats.jsx",
+          description: `Four headline metrics (120M+ players, 50+ worlds, 99% uptime, 24/7 support) that count up from
+            zero when scrolled into view, driven by a GSAP ScrollTrigger tween on a counter object.`,
+        },
+        {
+          title: `Gallery — "The Vault"`,
+          file: "Gallery.jsx",
+          image: awwwardsVault,
+          description: `A bento-style mixed-media grid with three tile types: mouse-tracking 3D tilt cards, a
+            click-to-cycle video tile that rotates through the four hero videos, and a glowing "relic" tile with a
+            floating animation. This section used all the unused assets from the original tutorial documents.`,
+        },
+        {
+          title: `Timeline — "The Roadmap"`,
+          file: "Timeline.jsx",
+          image: awwwardsRoadmap,
+          description: `An interactive horizontal-scroll roadmap that pins the viewport and turns
+            vertical scroll into horizontal travel through four phases (Genesis → Expansion → Convergence → Ascension),
+            with snap-to-phase scrolling, a progress bar that fills and lights up phase markers, and a direction-aware
+            Skip button.`,
+        },
+        {
+          title: `Testimonials — "What Players Are Saying"`,
+          file: "Testimonials.jsx",
+          description: `An infinite auto-scrolling marquee of quote cards (name + role) that pauses on hover, reusing
+            the same GSAP loop pattern as the Marquee section.`,
+        },
+        {
+          title: `FAQ — "Frequently Asked"`,
+          file: "Faq.jsx",
+          description: `An accordion with smooth grid-rows height transitions and a rotating + icon, opening one item
+            at a time.`,
+        },
+      ],
+      newSectionsNote: `These aren't random additions, they reuse the project's own primitives (the AnimatedTitle, the GSAP marquee loop, ScrollTrigger, the bento tilt), so they read as native to the original design rather than bolted on.`,
+    },
+    challenges: {
+      challenges: [
+        {
+          text1:
+            "Extending an unfamiliar GSAP codebase without breaking its existing animations.",
+          icon: challenge,
+        },
+        {
+          text2:
+            "Building a horizontal scroll-pinned roadmap with a synced progress bar and phase snapping.",
+          icon: challenge,
+        },
+        {
+          text3:
+            "Resolving a conflict between CSS smooth-scroll and GSAP ScrollTrigger snapping.",
+          icon: challenge,
+        },
+      ],
+      learnings: [
+        {
+          text1:
+            "Added six new sections: Marquee, Stats, Gallery, Roadmap, Testimonials and FAQ.",
+          icon: check,
+        },
+        {
+          text2:
+            "Built an interactive roadmap with scroll-snapping and a direction-aware skip button.",
+          icon: check,
+        },
+        {
+          text3:
+            "Wired up real navigation and fixed bugs left over from the tutorial.",
+          icon: check,
+        },
+        {
+          text4:
+            "Learned to reuse a project's existing patterns so new work looks native to it.",
           icon: check,
         },
       ],

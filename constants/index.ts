@@ -39,6 +39,7 @@ import {
   FilmpireShow,
   hipnodeLink,
   morrentLink,
+  awwwardsCaseStudies,
 } from "@/assets";
 
 import Analytics from "../components/svgComponents/Analytics";
@@ -307,13 +308,22 @@ export const recommendationsData = [
 
 export const projects = [
   {
+    title: "Zentry",
+    description: "Animated GSAP Landing Page",
+    tech: ["ReactJS", "Vite", "TailwindCSS", "GSAP"],
+    link: "/awwwards",
+    image: awwwardsCaseStudies,
+    bgColor: "bg-[#5724FF]",
+    isReversed: false,
+  },
+  {
     title: "Hipnode",
     description: "Social Media Application",
     tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
     link: "/hipnode",
     image: Hipnode,
     bgColor: "bg-[#416CEA]",
-    isReversed: false,
+    isReversed: true,
   },
   {
     title: "Filmpire",
@@ -322,15 +332,6 @@ export const projects = [
     link: "/filmpire",
     image: Filmpire,
     bgColor: "bg-[#0BAB7C]",
-    isReversed: true,
-  },
-  {
-    title: "Morrent",
-    description: "A Car Rental Application",
-    tech: ["ReactJS", "Next.js", "Node.js", "MongoDB"],
-    link: "/morrent",
-    image: Morrent,
-    bgColor: "bg-[#DB202C]",
     isReversed: false,
   },
 ];

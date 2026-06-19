@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import ExperienceSlider from "./ExperienceSlider/ExperienceSlider";
 import CompanyCardDisplay from "./ExperienceSlider/CompanyCardDisplay";
 import Image, { StaticImageData } from "next/image";
-import { UCMLogo, JSMLogo } from "@/assets";
+import { UCMLogo, JSMLogo, robinflow } from "@/assets";
 import ExperienceDetails from "./ExperienceSlider/ExperienceDetails";
 import ExperienceDetailsDefault from "./ExperienceSlider/ExperienceDetailsDefault";
 
@@ -25,6 +25,20 @@ export type ExperienceState = Company | null;
 const workExperiences = [
   {
     id: 1,
+    image: robinflow,
+    name: "Robinflow",
+    position: "Software Engineer",
+    details: "November 2023 - Current",
+    title: "Software",
+    title2: "Engineer",
+    text: `[TODO: Add a short summary of your role at Robinflow here.]
+    `,
+    text2: `
+    [TODO: Add more detail about your responsibilities, the technologies you work with, and what you've accomplished at Robinflow.]
+    `,
+  },
+  {
+    id: 2,
     image: JSMLogo,
     name: "JavaScript Mastery",
     position: "Full-Stack Developer",
@@ -39,7 +53,7 @@ const workExperiences = [
     `,
   },
   {
-    id: 2,
+    id: 3,
     image: UCMLogo,
     name: "University Of California Merced",
     position: "Computer Science Student",

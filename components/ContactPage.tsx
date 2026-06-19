@@ -92,7 +92,7 @@ const Contact = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          {/* <div className="flex flex-col gap-5">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
               Phone Number:
             </h3>
@@ -109,7 +109,7 @@ const Contact = () => {
                 +1 (415)-200-6222
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-5">
             <h3 className="sm:text-2xl text-xl font-normal text-[#192333] dark:text-[#FFFFFF]">
               Email Address:

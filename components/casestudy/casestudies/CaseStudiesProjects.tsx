@@ -2,6 +2,7 @@ import {
   FilmpireCaseStudies,
   MorrentCaseStudies,
   HipNodeCaseStudies,
+  awwwardsCaseStudies,
 } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
@@ -77,6 +78,29 @@ const CaseStudiesProjects = () => {
           </p>
         </div>
       </div>
+
+      <div className="flex flex-col">
+        <div className="md:w-[550px] md:h-[328px] w-[345px] h-[205px] bg-[#5724FF] flex flex-col justify-end items-center rounded-lg px-[36px] mb-3">
+          <Link href="/awwwards" className="md:mb-[-10px] mb-0">
+            <Image
+              src={awwwardsCaseStudies}
+              alt="awwwards"
+              width={452}
+              height={265}
+              className="w-[274px] h-[160px] md:w-[452px] md:h-[265px]"
+            />
+          </Link>
+        </div>
+        <div className="text-left pl-[50px]">
+          <p className="font-poppins font-semibold md:text-[32px] text-[20px] md:leading-[34px] leading-[26px] text-[#151E2C] dark:text-[#FFFFFF] md:pb-[10px] pb-[4px] pt-2">
+            Zentry
+          </p>
+          <p className="font-poppins font-normal md:text-[20px] text-[14px] md:leading-[30px] leading-[21px] text-[#6F74A7]">
+            Animated GSAP Landing Page
+          </p>
+        </div>
+      </div>
+
       {/* Box 4 */}
       {/* <div className="flex flex-col pb-[36px]">
         <div className="w-[550px] h-[328px] bg-[#0BAB7C] flex flex-col justify-end items-center rounded-lg mx-6 mb-6">
