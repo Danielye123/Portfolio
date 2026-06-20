@@ -53,7 +53,7 @@ const ProjectBeforeAfter = ({ beforeAfter }: BeforeAfterProp) => {
     before,
     after,
     beforeLabel = "Tutorial",
-    afterLabel = "My",
+    afterLabel = "Mine",
     beforeLink,
     afterLink,
     beforeVideo,
