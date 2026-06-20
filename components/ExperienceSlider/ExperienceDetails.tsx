@@ -11,9 +11,21 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({selectedCompany}) 
   // Apply highlighting to specific words here
   const highlightWord = (word: string) => {
     const clean = cleanWord(word);
-    const wordsToHighlight = ['projects', 'fundamentals', 'algorithms', 'Full', 'Stack', 'Bachelors', 'Degree', 'skills'];
+    const wordsToHighlight = ['projects', 'fundamentals', 'algorithms', 'Full', 'Stack', 'Bachelors', 'Degree', 'skills',
+      'Nextjs', 'TypeScript', 'Tailwind', 'WebSockets', 'AWS', 'Cognito', 'Zustand', 'React', 'Query',
+      'realtime', 'optionsflow', 'marketdata', 'platform', 'Software', 'Engineer'];
     return wordsToHighlight.includes(clean);
   };
+
+  // Render a paragraph's text, highlighting the key words in blue
+  const renderWithHighlights = (text?: string) =>
+    text?.split(' ').map((word, index) =>
+      highlightWord(word) ? (
+        <span key={index} className="font-semibold text-[#0252CD] dark:text-[#428DFF]">{word} </span>
+      ) : (
+        <span key={index}>{word} </span>
+      )
+    );
 
   return (
     <div>
@@ -28,22 +40,11 @@ const ExperienceDetails: React.FC<ExperienceDetailsProps> = ({selectedCompany}) 
         </span>
       </h2>
       <div className="flex flex-col gap-4 xl:text-[18px] lg:text-[14px] font-normal font-poppins xl:leading-[29px] lg:leading-[21px] text-[#6F74A7] dark:text-[#F3F8FF] pb-[17px]">
-        <p> {selectedCompany?.text.split(' ').map((word, index) => (
-                    highlightWord(word) ? (
-                        <span key={index} className="font-semibold text-[#0252CD] dark:text-[#428DFF]">{word} </span>
-                        ) : (
-                          <span key={index}>{word} </span>
-                        )
-                    ))}
-        </p>
-        <p>{selectedCompany?.text2.split(' ').map((word, index) => (
-                    highlightWord(word) ? (
-                      <span key={index} className="font-semibold text-[#0252CD] dark:text-[#428DFF]">{word} </span>
-                    ) : (
-                      <span key={index}>{word} </span>
-                    )
-                  ))}
-        </p>
+        <p> {renderWithHighlights(selectedCompany?.text)}</p>
+        <p>{renderWithHighlights(selectedCompany?.text2)}</p>
+        {selectedCompany?.text3 && (
+          <p>{renderWithHighlights(selectedCompany.text3)}</p>
+        )}
       </div>
     </div>
   )

@@ -18,6 +18,7 @@ export interface Company {
   title2: string;
   text: string;
   text2: string;
+  text3?: string;
 }
 
 export type ExperienceState = Company | null;
@@ -31,10 +32,13 @@ const workExperiences = [
     details: "November 2023 - Current",
     title: "Software",
     title2: "Engineer",
-    text: `[TODO: Add a short summary of your role at Robinflow here.]
+    text: `As a Software Engineer at Robinflow, I build the product behind a real-time options-flow and market-data platform that helps traders spot and act on institutional activity as it happens.
     `,
     text2: `
-    [TODO: Add more detail about your responsibilities, the technologies you work with, and what you've accomplished at Robinflow.]
+    I work day to day in Next.js, TypeScript, and Tailwind to ship features like live options-flow, dark-pool, and gamma-exposure dashboards, streaming real-time market data over WebSockets and turning it into interactive charts, signals and tables. Beyond the UI, I've built out the AWS Cognito authentication flow, a shared state and data-fetching layer with Zustand and React Query, and a fully wired accessibility system.
+    `,
+    text3: `
+    I've touched on the backend AWS data pipeline to help keep it healthy in production.
     `,
   },
   {
