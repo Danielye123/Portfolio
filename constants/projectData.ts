@@ -521,7 +521,8 @@ export const projectData = [
       beforeVideo: "/videos/tutorial.mp4",
       afterVideo: "/videos/finishedproduct.mp4",
       beforeLabel: "Tutorial",
-      afterLabel: "My",
+      afterLabel: "Mine",
+      afterLinkLabel: "My",
       beforeLink: "https://animationproject-5ro1djdzx-danielye123s-projects.vercel.app",
       afterLink: "https://animationproject-pi.vercel.app",
       newSectionsIntro: `The tutorial baseline was only Hero → About → Features → Story → Contact. On top of that I

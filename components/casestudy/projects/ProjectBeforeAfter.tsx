@@ -14,6 +14,8 @@ interface BeforeAfterProp {
     after: any;
     beforeLabel?: string;
     afterLabel?: string;
+    beforeLinkLabel?: string;
+    afterLinkLabel?: string;
     beforeLink?: string;
     afterLink?: string;
     beforeVideo?: string;
@@ -53,7 +55,9 @@ const ProjectBeforeAfter = ({ beforeAfter }: BeforeAfterProp) => {
     before,
     after,
     beforeLabel = "Tutorial",
-    afterLabel = "Mine",
+    afterLabel = "My",
+    beforeLinkLabel,
+    afterLinkLabel,
     beforeLink,
     afterLink,
     beforeVideo,
@@ -88,12 +92,14 @@ const ProjectBeforeAfter = ({ beforeAfter }: BeforeAfterProp) => {
               {
                 src: beforeVideo,
                 label: beforeLabel,
+                linkLabel: beforeLinkLabel ?? beforeLabel,
                 poster: before,
                 link: beforeLink,
               },
               {
                 src: afterVideo,
                 label: afterLabel,
+                linkLabel: afterLinkLabel ?? afterLabel,
                 poster: after,
                 link: afterLink,
               },
@@ -145,7 +151,7 @@ const ProjectBeforeAfter = ({ beforeAfter }: BeforeAfterProp) => {
                       className="mt-[14px] flex items-center justify-center gap-1 font-poppins text-[14px] font-semibold text-[#0252CD] hover:underline dark:text-[#428DFF] md:text-[16px]"
                     >
                       <FaEarthAfrica size={16} />
-                      {v.label} version
+                      {v.linkLabel} version
                       <HiOutlineArrowRight size={18} />
                     </Link>
                   )}
